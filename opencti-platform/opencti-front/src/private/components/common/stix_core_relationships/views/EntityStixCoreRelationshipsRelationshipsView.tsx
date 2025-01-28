@@ -29,7 +29,7 @@ interface EntityStixCoreRelationshipsRelationshipsViewProps {
   isRelationReversed?: boolean
   enableContextualView: boolean
   enableNestedView?: boolean
-  paddingRightButtonAdd?: number
+  paddingInlineEndButtonAdd?: number
   role?: string,
   handleChangeView?: (viewMode: string) => void
 }
@@ -48,7 +48,7 @@ const EntityStixCoreRelationshipsRelationshipsView: FunctionComponent<EntityStix
   currentView,
   enableNestedView,
   enableContextualView,
-  paddingRightButtonAdd = null,
+  paddingInlineEndButtonAdd = null,
   handleChangeView,
 }) => {
   const { viewStorage, helpers: storageHelpers, localStorageKey } = localStorage;
@@ -277,7 +277,7 @@ const EntityStixCoreRelationshipsRelationshipsView: FunctionComponent<EntityStix
           defaultStartTime={defaultStartTime}
           defaultStopTime={defaultStopTime}
           paginationOptions={paginationOptions}
-          paddingRight={paddingRightButtonAdd ?? 220}
+          paddingInlineEnd={paddingInlineEndButtonAdd ?? 220}
         />
       </Security>
     </>

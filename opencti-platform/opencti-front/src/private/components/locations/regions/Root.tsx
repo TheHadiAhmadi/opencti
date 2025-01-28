@@ -27,7 +27,7 @@ import useQueryLoading from '../../../../utils/hooks/useQueryLoading';
 import Loader, { LoaderVariant } from '../../../../components/Loader';
 import { useFormatter } from '../../../../components/i18n';
 import Breadcrumbs from '../../../../components/Breadcrumbs';
-import { getCurrentTab, getPaddingRight } from '../../../../utils/utils';
+import { getCurrentTab, getpaddingInlineEnd } from '../../../../utils/utils';
 import RegionEdition from './RegionEdition';
 import Security from '../../../../utils/Security';
 import { KNOWLEDGE_KNUPDATE } from '../../../../utils/hooks/useGranted';
@@ -95,7 +95,7 @@ const RootRegionComponent = ({ queryRef, regionId }) => {
   const { forceUpdate } = useForceUpdate();
   const { region, connectorsForImport, connectorsForExport } = data;
   const link = `/dashboard/locations/regions/${regionId}/knowledge`;
-  const paddingRight = getPaddingRight(location.pathname, region?.id, '/dashboard/locations/regions');
+  const paddingInlineEnd = getpaddingInlineEnd(location.pathname, region?.id, '/dashboard/locations/regions');
   return (
     <>
       {region ? (
@@ -127,7 +127,7 @@ const RootRegionComponent = ({ queryRef, regionId }) => {
               }
             />
           </Routes>
-          <div style={{ paddingRight }}>
+          <div style={{ paddingInlineEnd }}>
             <Breadcrumbs elements={[
               { label: t_i18n('Locations') },
               { label: t_i18n('Regions'), link: '/dashboard/locations/regions' },

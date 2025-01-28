@@ -93,7 +93,7 @@ const inlineStylesLight = {
 
 const StyledBadge = styled(Badge)(() => ({
   '& .MuiBadge-badge': {
-    right: 8,
+    insetInlineEnd: 8,
     top: 4,
   },
 }));

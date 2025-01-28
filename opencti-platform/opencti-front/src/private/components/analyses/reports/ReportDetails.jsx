@@ -40,7 +40,7 @@ const useStyles = makeStyles((theme) => ({
     height: 50,
     minHeight: 50,
     maxHeight: 50,
-    paddingRight: 0,
+    paddingInlineEnd: 0,
   },
   itemText: {
     whiteSpace: 'nowrap',
@@ -88,7 +88,7 @@ const useStyles = makeStyles((theme) => ({
   },
   itemMarking: {
     width: 110,
-    paddingRight: 20,
+    paddingInlineEnd: 20,
   },
   relatedContainers: {
     paddingTop: 0,

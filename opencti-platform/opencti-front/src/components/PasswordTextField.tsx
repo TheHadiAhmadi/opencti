@@ -38,7 +38,7 @@ const PasswordTextField: FunctionComponent<PasswordTextFieldProps> = ({
         aria-label={isVisible ? t_i18n('Hide') : t_i18n('Show')}
         style={{
           position: 'absolute',
-          right: 1,
+          insetInlineEnd: 1,
           top: '60%',
           margin: 0,
           padding: 0,

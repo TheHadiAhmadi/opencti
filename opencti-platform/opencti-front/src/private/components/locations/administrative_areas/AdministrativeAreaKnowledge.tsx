@@ -37,7 +37,7 @@ const AdministrativeAreaKnowledge = ({
           element={
             <StixCoreRelationship
               entityId={administrativeArea.id}
-              paddingRight={true}
+              paddingInlineEnd={true}
             />
           }
         />
@@ -46,7 +46,7 @@ const AdministrativeAreaKnowledge = ({
           element={
             <StixSightingRelationship
               entityId={administrativeArea.id}
-              paddingRight={true}
+              paddingInlineEnd={true}
             />
           }
         />

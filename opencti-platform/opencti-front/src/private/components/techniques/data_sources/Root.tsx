@@ -23,7 +23,7 @@ import useQueryLoading from '../../../../utils/hooks/useQueryLoading';
 import Loader, { LoaderVariant } from '../../../../components/Loader';
 import { useFormatter } from '../../../../components/i18n';
 import Breadcrumbs from '../../../../components/Breadcrumbs';
-import { getCurrentTab, getPaddingRight } from '../../../../utils/utils';
+import { getCurrentTab, getpaddingInlineEnd } from '../../../../utils/utils';
 import Security from '../../../../utils/Security';
 import { KNOWLEDGE_KNUPDATE } from '../../../../utils/hooks/useGranted';
 import DataSourceEdition from './DataSourceEdition';
@@ -85,11 +85,11 @@ const RootDataSourceComponent = ({ queryRef, dataSourceId }) => {
   const { t_i18n } = useFormatter();
   const data = usePreloadedQuery(dataSourceQuery, queryRef);
   const { dataSource, connectorsForImport, connectorsForExport, settings } = data;
-  const paddingRight = getPaddingRight(location.pathname, dataSource?.id, '/dashboard/techniques/data_sources', false);
+  const paddingInlineEnd = getpaddingInlineEnd(location.pathname, dataSource?.id, '/dashboard/techniques/data_sources', false);
   return (
     <>
       {dataSource ? (
-        <div style={{ paddingRight }}>
+        <div style={{ paddingInlineEnd }}>
           <Breadcrumbs elements={[
             { label: t_i18n('Techniques') },
             { label: t_i18n('Data sources'), link: '/dashboard/techniques/data_sources' },

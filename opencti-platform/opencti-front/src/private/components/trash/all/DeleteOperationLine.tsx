@@ -67,11 +67,11 @@ const cellSx = {
   whiteSpace: 'nowrap',
   overflow: 'hidden',
   textOverflow: 'ellipsis',
-  paddingRight: '10px',
+  paddingInlineEnd: '10px',
 };
 
 const listItemSx = {
-  paddingLeft: '10px',
+  paddingInlineStart: '10px',
   height: 50,
 };
 

@@ -36,7 +36,7 @@ const useStyles = makeStyles<Theme>(() => ({
   },
   external: {
     marginTop: -2,
-    paddingLeft: 10,
+    paddingInlineStart: 10,
   },
 }));
 
@@ -172,7 +172,7 @@ EntityDetailsRightsBarProps
           height: '100%',
           maxHeight: '100%',
           overflowY: 'auto',
-          paddingRight: 20,
+          paddingInlineEnd: 20,
         }}
       >
         {selectedEntity.entity_type === 'basic-relationship' && (

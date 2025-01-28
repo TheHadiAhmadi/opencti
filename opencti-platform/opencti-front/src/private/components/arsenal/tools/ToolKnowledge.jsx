@@ -25,7 +25,7 @@ class ToolKnowledgeComponent extends Component {
             element={
               <StixCoreRelationship
                 entityId={tool.id}
-                paddingRight={true}
+                paddingInlineEnd={true}
               />
             }
           />
@@ -34,7 +34,7 @@ class ToolKnowledgeComponent extends Component {
             element={
               <StixSightingRelationship
                 entityId={tool.id}
-                paddingRight={true}
+                paddingInlineEnd={true}
               />
             }
           />

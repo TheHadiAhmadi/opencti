@@ -173,7 +173,7 @@ const ToolBar: FunctionComponent<{
       PaperProps={{
         variant: 'elevation',
         elevation: 1,
-        style: { paddingLeft: navOpen ? 185 : 60, bottom: bannerHeightNumber },
+        style: { paddingInlineStart: navOpen ? 185 : 60, bottom: bannerHeightNumber },
       }}
     >
       <Toolbar style={{ minHeight: 54 }}>

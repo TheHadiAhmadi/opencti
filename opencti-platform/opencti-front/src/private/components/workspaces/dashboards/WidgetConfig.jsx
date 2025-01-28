@@ -85,7 +85,7 @@ const useStyles = makeStyles((theme) => ({
     zIndex: 1100,
   },
   button: {
-    marginLeft: theme.spacing(2),
+    marginInlineStart: theme.spacing(2),
   },
   speedDialButton: {
     backgroundColor: theme.palette.primary.main,

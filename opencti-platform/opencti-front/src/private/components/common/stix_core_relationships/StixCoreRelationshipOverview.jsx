@@ -207,7 +207,7 @@ class StixCoreRelationshipContainer extends Component {
   }
 
   render() {
-    const { t, fldt, nsdt, classes, stixCoreRelationship, paddingRight } = this.props;
+    const { t, fldt, nsdt, classes, stixCoreRelationship, paddingInlineEnd } = this.props;
     const { expanded } = this.state;
     const { from } = stixCoreRelationship;
     const { to } = stixCoreRelationship;
@@ -552,7 +552,7 @@ class StixCoreRelationshipContainer extends Component {
                   key={inference.rule.id}
                   inference={inference}
                   stixCoreRelationship={stixCoreRelationship}
-                  paddingRight={paddingRight}
+                  paddingInlineEnd={paddingInlineEnd}
                 />
               ))}
               {expandable && (
@@ -579,7 +579,7 @@ class StixCoreRelationshipContainer extends Component {
               color="primary"
               aria-label="Edit"
               className={
-                paddingRight
+                paddingInlineEnd
                   ? classes.editButtonWithPadding
                   : classes.editButton
               }
@@ -630,7 +630,7 @@ class StixCoreRelationshipContainer extends Component {
 StixCoreRelationshipContainer.propTypes = {
   entityId: PropTypes.string,
   stixCoreRelationship: PropTypes.object,
-  paddingRight: PropTypes.bool,
+  paddingInlineEnd: PropTypes.bool,
   classes: PropTypes.object,
   t: PropTypes.func,
   nsdt: PropTypes.func,

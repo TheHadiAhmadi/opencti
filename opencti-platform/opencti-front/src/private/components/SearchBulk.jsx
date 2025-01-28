@@ -51,12 +51,12 @@ const useStyles = makeStyles((theme) => ({
     margin: 0,
   },
   itemHead: {
-    paddingLeft: 10,
+    paddingInlineStart: 10,
     textTransform: 'uppercase',
     cursor: 'pointer',
   },
   item: {
-    paddingLeft: 10,
+    paddingInlineStart: 10,
     height: 50,
   },
   bodyItem: {
@@ -68,7 +68,7 @@ const useStyles = makeStyles((theme) => ({
   },
   goIcon: {
     position: 'absolute',
-    right: -10,
+    insetInlineEnd: -10,
   },
   chip: {
     fontSize: 13,
@@ -113,7 +113,7 @@ const inlineStylesHeaders = {
     whiteSpace: 'nowrap',
     overflow: 'hidden',
     textOverflow: 'ellipsis',
-    paddingRight: 10,
+    paddingInlineEnd: 10,
   },
   value: {
     float: 'left',
@@ -123,7 +123,7 @@ const inlineStylesHeaders = {
     whiteSpace: 'nowrap',
     overflow: 'hidden',
     textOverflow: 'ellipsis',
-    paddingRight: 10,
+    paddingInlineEnd: 10,
   },
   author: {
     float: 'left',
@@ -133,7 +133,7 @@ const inlineStylesHeaders = {
     whiteSpace: 'nowrap',
     overflow: 'hidden',
     textOverflow: 'ellipsis',
-    paddingRight: 10,
+    paddingInlineEnd: 10,
   },
   creator: {
     float: 'left',
@@ -143,7 +143,7 @@ const inlineStylesHeaders = {
     whiteSpace: 'nowrap',
     overflow: 'hidden',
     textOverflow: 'ellipsis',
-    paddingRight: 10,
+    paddingInlineEnd: 10,
   },
   labels: {
     float: 'left',
@@ -153,7 +153,7 @@ const inlineStylesHeaders = {
     whiteSpace: 'nowrap',
     overflow: 'hidden',
     textOverflow: 'ellipsis',
-    paddingRight: 10,
+    paddingInlineEnd: 10,
     cursor: 'default',
   },
   created_at: {
@@ -164,7 +164,7 @@ const inlineStylesHeaders = {
     whiteSpace: 'nowrap',
     overflow: 'hidden',
     textOverflow: 'ellipsis',
-    paddingRight: 10,
+    paddingInlineEnd: 10,
   },
   analyses: {
     float: 'left',
@@ -174,7 +174,7 @@ const inlineStylesHeaders = {
     whiteSpace: 'nowrap',
     overflow: 'hidden',
     textOverflow: 'ellipsis',
-    paddingRight: 10,
+    paddingInlineEnd: 10,
   },
   markings: {
     float: 'left',
@@ -183,7 +183,7 @@ const inlineStylesHeaders = {
     whiteSpace: 'nowrap',
     overflow: 'hidden',
     textOverflow: 'ellipsis',
-    paddingRight: 10,
+    paddingInlineEnd: 10,
   },
 };
 
@@ -195,7 +195,7 @@ const inlineStyles = {
     whiteSpace: 'nowrap',
     overflow: 'hidden',
     textOverflow: 'ellipsis',
-    paddingRight: 10,
+    paddingInlineEnd: 10,
   },
   value: {
     float: 'left',
@@ -204,7 +204,7 @@ const inlineStyles = {
     whiteSpace: 'nowrap',
     overflow: 'hidden',
     textOverflow: 'ellipsis',
-    paddingRight: 10,
+    paddingInlineEnd: 10,
   },
   author: {
     float: 'left',
@@ -213,7 +213,7 @@ const inlineStyles = {
     whiteSpace: 'nowrap',
     overflow: 'hidden',
     textOverflow: 'ellipsis',
-    paddingRight: 10,
+    paddingInlineEnd: 10,
   },
   creator: {
     float: 'left',
@@ -222,7 +222,7 @@ const inlineStyles = {
     whiteSpace: 'nowrap',
     overflow: 'hidden',
     textOverflow: 'ellipsis',
-    paddingRight: 10,
+    paddingInlineEnd: 10,
   },
   labels: {
     float: 'left',
@@ -231,7 +231,7 @@ const inlineStyles = {
     whiteSpace: 'nowrap',
     overflow: 'hidden',
     textOverflow: 'ellipsis',
-    paddingRight: 10,
+    paddingInlineEnd: 10,
   },
   created_at: {
     float: 'left',
@@ -240,7 +240,7 @@ const inlineStyles = {
     whiteSpace: 'nowrap',
     overflow: 'hidden',
     textOverflow: 'ellipsis',
-    paddingRight: 10,
+    paddingInlineEnd: 10,
   },
   analyses: {
     float: 'left',
@@ -249,7 +249,7 @@ const inlineStyles = {
     whiteSpace: 'nowrap',
     overflow: 'hidden',
     textOverflow: 'ellipsis',
-    paddingRight: 10,
+    paddingInlineEnd: 10,
   },
   markings: {
     float: 'left',
@@ -257,7 +257,7 @@ const inlineStyles = {
     whiteSpace: 'nowrap',
     overflow: 'hidden',
     textOverflow: 'ellipsis',
-    paddingRight: 10,
+    paddingInlineEnd: 10,
   },
 };
 

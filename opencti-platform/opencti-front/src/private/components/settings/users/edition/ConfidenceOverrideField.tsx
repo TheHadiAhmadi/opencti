@@ -183,7 +183,7 @@ const ConfidenceOverrideField: FunctionComponent<UserConfidenceOverridesFieldCom
                 onSubmit={handleSubmitConfidence}
               />
             )}
-            <div style={{ textAlign: 'right', marginTop: '20px' }}>
+            <div style={{ textAlign: 'end', marginTop: '20px' }}>
               <Button
                 variant="contained"
                 color="error"

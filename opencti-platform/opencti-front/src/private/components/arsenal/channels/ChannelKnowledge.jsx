@@ -25,7 +25,7 @@ class ChannelKnowledgeComponent extends Component {
             element={
               <StixCoreRelationship
                 entityId={channel.id}
-                paddingRight={true}
+                paddingInlineEnd={true}
               />
             }
           />
@@ -34,7 +34,7 @@ class ChannelKnowledgeComponent extends Component {
             element={
               <StixSightingRelationship
                 entityId={channel.id}
-                paddingRight={true}
+                paddingInlineEnd={true}
               />
             }
           />

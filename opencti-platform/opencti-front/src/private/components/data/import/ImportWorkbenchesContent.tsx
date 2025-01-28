@@ -187,7 +187,7 @@ const ImportWorkbenchesContent = () => {
   };
 
   return (
-    <div style={{ height: '100%', paddingRight: 200 }} className="break">
+    <div style={{ height: '100%', paddingInlineEnd: 200 }} className="break">
       <Breadcrumbs elements={[{ label: t_i18n('Data') }, { label: t_i18n('Analyst workbenches'), current: true }]} />
       <ImportMenu />
       <Dialog

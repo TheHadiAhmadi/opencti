@@ -53,8 +53,8 @@ const Index = ({ settings }: IndexProps) => {
   const settingsMessagesBannerHeight = useSettingsMessagesBannerHeight();
   const boxSx = {
     flexGrow: 1,
-    paddingLeft: 3,
-    paddingRight: 3,
+    paddingInlineStart: 3,
+    paddingInlineEnd: 3,
     paddingBottom: 1,
     transition: theme.transitions.create('width', {
       easing: theme.transitions.easing.easeInOut,
@@ -75,6 +75,9 @@ const Index = ({ settings }: IndexProps) => {
       if (bodyMode !== themeMode) {
         body.setAttribute('data-theme', themeMode);
       }
+      
+      console.log(theme)
+      body.setAttribute('dir', theme.direction)
     }
   }, [theme]);
   return (

@@ -61,7 +61,7 @@ class StixCoreRelationshipStixCoreRelationshipsLinesContainer extends Component 
         >
           <StixCoreRelationshipCreationFromRelation
             entityId={entityId}
-            paddingRight={220}
+            paddingInlineEnd={220}
             variant="inLine"
             paginationOptions={paginationOptions}
           />

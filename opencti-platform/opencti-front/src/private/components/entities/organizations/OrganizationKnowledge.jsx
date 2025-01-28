@@ -19,7 +19,7 @@ class OrganizationKnowledgeComponent extends Component {
           element={
             <StixCoreRelationship
               entityId={organization.id}
-              paddingRight={true}
+              paddingInlineEnd={true}
             />
           }
         />
@@ -28,7 +28,7 @@ class OrganizationKnowledgeComponent extends Component {
           element={
             <StixSightingRelationship
               entityId={organization.id}
-              paddingRight={true}
+              paddingInlineEnd={true}
             />
           }
         />

@@ -28,7 +28,7 @@ interface EntityStixCoreRelationshipsProps {
   isRelationReversed: boolean;
   allDirections?: boolean;
   role?: string;
-  paddingRightButtonAdd?: number;
+  paddingInlineEndButtonAdd?: number;
   handleChangeView?: (viewMode: string) => void;
 }
 
@@ -47,7 +47,7 @@ EntityStixCoreRelationshipsProps
   isRelationReversed,
   allDirections,
   role,
-  paddingRightButtonAdd,
+  paddingInlineEndButtonAdd,
   handleChangeView,
 }) => {
   const classes = useStyles();
@@ -82,7 +82,7 @@ EntityStixCoreRelationshipsProps
             enableNestedView={enableNestedView}
             enableContextualView={enableContextualView}
             isRelationReversed={isRelationReversed}
-            paddingRightButtonAdd={paddingRightButtonAdd}
+            paddingInlineEndButtonAdd={paddingInlineEndButtonAdd}
             handleChangeView={handleChangeView}
           />
         )}
@@ -101,7 +101,7 @@ EntityStixCoreRelationshipsProps
             isRelationReversed={isRelationReversed}
             allDirections={allDirections}
             role={role}
-            paddingRightButtonAdd={paddingRightButtonAdd}
+            paddingInlineEndButtonAdd={paddingInlineEndButtonAdd}
             handleChangeView={handleChangeView}
           />
         )}

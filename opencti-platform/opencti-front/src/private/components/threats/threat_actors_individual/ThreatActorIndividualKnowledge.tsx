@@ -43,7 +43,7 @@ const ThreatActorIndividualKnowledgeComponent = ({
         element={
           <StixCoreRelationship
             entityId={threatActorIndividual.id}
-            paddingRight={true}
+            paddingInlineEnd={true}
           />
         }
       />
@@ -52,7 +52,7 @@ const ThreatActorIndividualKnowledgeComponent = ({
         element={
           <StixSightingRelationship
             entityId={threatActorIndividual.id}
-            paddingRight={true}
+            paddingInlineEnd={true}
           />
         }
       />

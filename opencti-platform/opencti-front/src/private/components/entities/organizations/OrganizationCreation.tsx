@@ -292,7 +292,7 @@ export const OrganizationCreationForm: FunctionComponent<OrganizationFormProps> 
           />
           <div style={{
             marginTop: '20px',
-            textAlign: 'right',
+            textAlign: 'end',
           }}
           >
             <Button

@@ -23,7 +23,7 @@ import ErrorNotFound from '../../../../components/ErrorNotFound';
 import EntityStixSightingRelationships from '../../events/stix_sighting_relationships/EntityStixSightingRelationships';
 import { useFormatter } from '../../../../components/i18n';
 import Breadcrumbs from '../../../../components/Breadcrumbs';
-import { getCurrentTab, getPaddingRight } from '../../../../utils/utils';
+import { getCurrentTab, getpaddingInlineEnd } from '../../../../utils/utils';
 import PositionEdition from './PositionEdition';
 import Security from '../../../../utils/Security';
 import { KNOWLEDGE_KNUPDATE } from '../../../../utils/hooks/useGranted';
@@ -98,7 +98,7 @@ const RootPosition = ({ positionId, queryRef }: RootPositionProps) => {
   const { forceUpdate } = useForceUpdate();
 
   const link = `/dashboard/locations/positions/${positionId}/knowledge`;
-  const paddingRight = getPaddingRight(location.pathname, positionId, '/dashboard/locations/positions');
+  const paddingInlineEnd = getpaddingInlineEnd(location.pathname, positionId, '/dashboard/locations/positions');
 
   return (
     <>
@@ -130,7 +130,7 @@ const RootPosition = ({ positionId, queryRef }: RootPositionProps) => {
               }
             />
           </Routes>
-          <div style={{ paddingRight }}>
+          <div style={{ paddingInlineEnd }}>
             <Breadcrumbs elements={[
               { label: t_i18n('Locations') },
               { label: t_i18n('Positions'), link: '/dashboard/locations/positions' },

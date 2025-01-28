@@ -38,7 +38,7 @@ const useStyles = makeStyles(() => createStyles({
   mainButton: ({ bannerHeightNumber }) => ({
     position: 'fixed',
     bottom: `${bannerHeightNumber + 30}px`,
-    right: 30,
+    insetInlineEnd: 30,
   }),
 }));
 

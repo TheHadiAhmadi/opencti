@@ -26,7 +26,7 @@ import { useFormatter } from '../../../../components/i18n';
 import Breadcrumbs from '../../../../components/Breadcrumbs';
 import { useIsEnforceReference } from '../../../../utils/hooks/useEntitySettings';
 import useGranted, { KNOWLEDGE_KNUPDATE_KNBYPASSREFERENCE } from '../../../../utils/hooks/useGranted';
-import { getCurrentTab, getPaddingRight } from '../../../../utils/utils';
+import { getCurrentTab, getpaddingInlineEnd } from '../../../../utils/utils';
 import TaskEdition from './TaskEdition';
 import useHelper from '../../../../utils/hooks/useHelper';
 
@@ -86,11 +86,11 @@ const RootTaskComponent = ({ queryRef, taskId }) => {
     connectorsForExport,
     connectorsForImport,
   } = usePreloadedQuery<RootTaskQuery>(TaskQuery, queryRef);
-  const paddingRight = getPaddingRight(location.pathname, data?.id, '/dashboard/cases/tasks');
+  const paddingInlineEnd = getpaddingInlineEnd(location.pathname, data?.id, '/dashboard/cases/tasks');
   return (
     <>
       {data ? (
-        <div style={{ paddingRight }}>
+        <div style={{ paddingInlineEnd }}>
           <Breadcrumbs elements={[
             { label: t_i18n('Cases') },
             { label: t_i18n('Tasks'), link: '/dashboard/cases/tasks' },

@@ -19,7 +19,7 @@ class IndividualKnowledgeComponent extends Component {
           element={
             <StixCoreRelationship
               entityId={individual.id}
-              paddingRight={true}
+              paddingInlineEnd={true}
             />
           }
         />
@@ -28,7 +28,7 @@ class IndividualKnowledgeComponent extends Component {
           element={
             <StixSightingRelationship
               entityId={individual.id}
-              paddingRight={true}
+              paddingInlineEnd={true}
             />
           }
         />

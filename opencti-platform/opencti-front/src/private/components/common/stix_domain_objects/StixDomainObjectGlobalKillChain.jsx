@@ -27,7 +27,7 @@ const styles = (theme) => ({
     color: theme.palette.primary.main,
   },
   nested: {
-    paddingLeft: theme.spacing(4),
+    paddingInlineStart: theme.spacing(4),
   },
 });
 

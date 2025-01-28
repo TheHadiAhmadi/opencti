@@ -275,7 +275,7 @@ const Login: FunctionComponent<LoginProps> = ({ type, settings }) => {
           }}
         >
           <Alert severity="warning">
-            <AlertTitle style={{ textAlign: 'left' }}>Warning</AlertTitle>
+            <AlertTitle style={{ textAlign: 'start' }}>Warning</AlertTitle>
             You were automatically logged out due to session expiration.
           </Alert>
         </Paper>

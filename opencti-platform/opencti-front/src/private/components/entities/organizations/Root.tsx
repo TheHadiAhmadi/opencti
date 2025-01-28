@@ -25,7 +25,7 @@ import StixCoreObjectKnowledgeBar from '../../common/stix_core_objects/StixCoreO
 import EntityStixSightingRelationships from '../../events/stix_sighting_relationships/EntityStixSightingRelationships';
 import { useFormatter } from '../../../../components/i18n';
 import Breadcrumbs from '../../../../components/Breadcrumbs';
-import { getCurrentTab, getPaddingRight } from '../../../../utils/utils';
+import { getCurrentTab, getpaddingInlineEnd } from '../../../../utils/utils';
 import Security from '../../../../utils/Security';
 import { KNOWLEDGE_KNUPDATE } from '../../../../utils/hooks/useGranted';
 import OrganizationEdition from './OrganizationEdition';
@@ -125,7 +125,7 @@ const RootOrganization = ({ organizationId, queryRef }: RootOrganizationProps) =
   const { forceUpdate } = useForceUpdate();
 
   const link = `/dashboard/entities/organizations/${organizationId}/knowledge`;
-  const paddingRight = getPaddingRight(location.pathname, organizationId, '/dashboard/entities/organizations', viewAs === 'knowledge');
+  const paddingInlineEnd = getpaddingInlineEnd(location.pathname, organizationId, '/dashboard/entities/organizations', viewAs === 'knowledge');
   return (
     <>
       {organization ? (
@@ -158,7 +158,7 @@ const RootOrganization = ({ organizationId, queryRef }: RootOrganizationProps) =
               )}
             />
           </Routes>
-          <div style={{ paddingRight }}>
+          <div style={{ paddingInlineEnd }}>
             <Breadcrumbs elements={[
               { label: t_i18n('Entities') },
               { label: t_i18n('Organizations'), link: '/dashboard/entities/organizations' },

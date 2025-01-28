@@ -25,7 +25,7 @@ import StixCoreObjectKnowledgeBar from '../../common/stix_core_objects/StixCoreO
 import EntityStixSightingRelationships from '../../events/stix_sighting_relationships/EntityStixSightingRelationships';
 import { useFormatter } from '../../../../components/i18n';
 import Breadcrumbs from '../../../../components/Breadcrumbs';
-import { getCurrentTab, getPaddingRight } from '../../../../utils/utils';
+import { getCurrentTab, getpaddingInlineEnd } from '../../../../utils/utils';
 import Security from '../../../../utils/Security';
 import { KNOWLEDGE_KNUPDATE } from '../../../../utils/hooks/useGranted';
 import SystemEdition from './SystemEdition';
@@ -123,7 +123,7 @@ const RootSystem = ({ systemId, queryRef }: RootSystemProps) => {
   const { forceUpdate } = useForceUpdate();
 
   const link = `/dashboard/entities/systems/${systemId}/knowledge`;
-  const paddingRight = getPaddingRight(location.pathname, systemId, '/dashboard/entities/systems');
+  const paddingInlineEnd = getpaddingInlineEnd(location.pathname, systemId, '/dashboard/entities/systems');
   return (
     <>
       {system ? (
@@ -153,7 +153,7 @@ const RootSystem = ({ systemId, queryRef }: RootSystemProps) => {
               )}
             />
           </Routes>
-          <div style={{ paddingRight }}>
+          <div style={{ paddingInlineEnd }}>
             <Breadcrumbs elements={[
               { label: t_i18n('Entities') },
               { label: t_i18n('Systems'), link: '/dashboard/entities/systems' },

@@ -146,7 +146,7 @@ const RoleEditionCapabilitiesComponent: FunctionComponent<RoleEditionCapabilitie
           <ListItem
             key="sensitive"
             divider={true}
-            style={{ paddingLeft: 0 }}
+            style={{ paddingInlineStart: 0 }}
           >
             <ListItemIcon style={{ minWidth: 32 }}>
               <LocalPoliceOutlined fontSize="small" />
@@ -172,7 +172,7 @@ const RoleEditionCapabilitiesComponent: FunctionComponent<RoleEditionCapabilitie
         {capabilities.edges.map((edge) => {
           const capability = edge?.node;
           if (capability) {
-            const paddingLeft = capability.name.split('_').length * 20 - 20;
+            const paddingInlineStart = capability.name.split('_').length * 20 - 20;
             const roleCapability = roleCapabilities.find(
               (r) => r.name === capability.name,
             );
@@ -188,7 +188,7 @@ const RoleEditionCapabilitiesComponent: FunctionComponent<RoleEditionCapabilitie
               <ListItem
                 key={capability.name}
                 divider={true}
-                style={{ paddingLeft }}
+                style={{ paddingInlineStart }}
               >
                 <ListItemIcon style={{ minWidth: 32 }}>
                   <LocalPoliceOutlined fontSize="small" />

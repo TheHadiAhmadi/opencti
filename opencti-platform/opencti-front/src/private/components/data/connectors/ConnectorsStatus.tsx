@@ -44,12 +44,12 @@ const useStyles = makeStyles<Theme>((theme) => ({
     marginTop: 10,
   },
   itemHead: {
-    paddingLeft: 10,
+    paddingInlineStart: 10,
     textTransform: 'uppercase',
     cursor: 'pointer',
   },
   item: {
-    paddingLeft: 10,
+    paddingInlineStart: 10,
     height: 50,
   },
   bodyItem: {
@@ -59,7 +59,7 @@ const useStyles = makeStyles<Theme>((theme) => ({
     whiteSpace: 'nowrap',
     overflow: 'hidden',
     textOverflow: 'ellipsis',
-    paddingRight: 10,
+    paddingInlineEnd: 10,
   },
   icon: {
     color: theme.palette.primary.main,
@@ -94,7 +94,7 @@ const inlineStyles: Record<string, CSSProperties> = {
   messages: {
     float: 'left',
     width: '10%',
-    paddingLeft: 5,
+    paddingInlineStart: 5,
     height: 20,
     whiteSpace: 'nowrap',
     overflow: 'hidden',
@@ -107,7 +107,7 @@ const inlineStyles: Record<string, CSSProperties> = {
   updated_at: {
     float: 'left',
     width: '15%',
-    paddingLeft: 5,
+    paddingInlineStart: 5,
     height: 20,
     whiteSpace: 'nowrap',
     overflow: 'hidden',
@@ -329,7 +329,7 @@ const ConnectorsStatusComponent: FunctionComponent<ConnectorsStatusComponentProp
             <ListItem
               classes={{ root: classes.itemHead }}
               divider={false}
-              style={{ paddingTop: 0, paddingRight: 10 }}
+              style={{ paddingTop: 0, paddingInlineEnd: 10 }}
             >
               <ListItemIcon>
                 <span

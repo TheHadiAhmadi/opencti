@@ -23,7 +23,7 @@ import StixCoreObjectOrStixCoreRelationshipContainers from '../../common/contain
 import FileManager from '../../common/files/FileManager';
 import { useFormatter } from '../../../../components/i18n';
 import Breadcrumbs from '../../../../components/Breadcrumbs';
-import { getCurrentTab, getPaddingRight } from '../../../../utils/utils';
+import { getCurrentTab, getpaddingInlineEnd } from '../../../../utils/utils';
 
 const subscription = graphql`
   subscription RootStixCyberObservableSubscription($id: ID!) {
@@ -89,13 +89,13 @@ const RootStixCyberObservable = ({ observableId, queryRef }: RootStixCyberObserv
 
   const { forceUpdate } = useForceUpdate();
 
-  const paddingRight = getPaddingRight(location.pathname, observableId, '/dashboard/observations/observables', false);
+  const paddingInlineEnd = getpaddingInlineEnd(location.pathname, observableId, '/dashboard/observations/observables', false);
   const link = `/dashboard/observations/observables/${observableId}/knowledge`;
 
   return (
     <>
       {stixCyberObservable ? (
-        <div style={{ paddingRight }}>
+        <div style={{ paddingInlineEnd }}>
           <Breadcrumbs elements={[
             { label: t_i18n('Observations') },
             { label: t_i18n('Observables'), link: '/dashboard/observations/observables' },
@@ -251,7 +251,7 @@ const RootStixCyberObservable = ({ observableId, queryRef }: RootStixCyberObserv
               element={
                 <StixSightingRelationship
                   entityId={observableId}
-                  paddingRight
+                  paddingInlineEnd
                 />
               }
             />

@@ -21,7 +21,7 @@ class NarrativeKnowledgeComponent extends Component {
             element={
               <StixCoreRelationship
                 entityId={narrative.id}
-                paddingRight={true}
+                paddingInlineEnd={true}
               />
             }
           />
@@ -30,7 +30,7 @@ class NarrativeKnowledgeComponent extends Component {
             element={
               <StixSightingRelationship
                 entityId={narrative.id}
-                paddingRight={true}
+                paddingInlineEnd={true}
               />
             }
           />

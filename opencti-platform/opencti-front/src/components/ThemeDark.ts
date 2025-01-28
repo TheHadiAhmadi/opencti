@@ -27,6 +27,7 @@ const ThemeDark = (
   logo: logo || fileUri(LogoText),
   logo_collapsed: logo_collapsed || fileUri(LogoCollapsed),
   borderRadius: 4,
+  direction: 'rtl',
   palette: {
     mode: 'dark',
     common: { white: '#ffffff', grey: '#7A7C85', lightGrey: '#ffffffb3' },

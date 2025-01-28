@@ -27,7 +27,7 @@ const useStyles = makeStyles<Theme>(() => ({
     padding: '10px 4px',
   },
   tickValue: {
-    textAlign: 'left',
+    textAlign: 'start',
   },
 }));
 

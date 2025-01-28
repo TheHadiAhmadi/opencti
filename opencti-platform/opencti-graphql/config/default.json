@@ -107,10 +107,9 @@
     "python_execution_venv": "../../../.python-venv/lib/python3.12/site-packages",
     "artifact_zip_password": "infected",
     "admin": {
-      "email": "admin@opencti.io",
-      "password": "ChangeMe",
-      "token": "ChangeMe",
-      "externally_managed": false
+      "email": "thehadiahmadi@gmail.com",
+      "password": "1qaz!QAZ",
+      "token": "305d9d8c-9910-4c37-9611-336290ce4bc8"
     },
     "group_confidence_level": {
       "max_confidence_default": 100

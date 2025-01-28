@@ -6,16 +6,16 @@ const Tick = ({ tick, count, format }) => {
   const isFullHour = !getMinutes(tick.value);
 
   const tickLabelStyle = {
-    marginLeft: `${-(100 / count) / 2}%`,
+    marginInlineStart: `${-(100 / count) / 2}%`,
     width: `${100 / count}%`,
-    left: `${tick.percent}%`,
+    insetInlineStart: `${tick.percent}%`,
   };
 
   return (
     <>
       <div
         className={`react_time_range__tick_marker${isFullHour ? '__large' : ''}`}
-        style={{ left: `${tick.percent}%` }}
+        style={{ insetInlineStart: `${tick.percent}%` }}
       />
       {isFullHour && (
         <div className='react_time_range__tick_label' style={tickLabelStyle}>

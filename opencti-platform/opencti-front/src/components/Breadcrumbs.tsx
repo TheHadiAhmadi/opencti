@@ -21,7 +21,7 @@ const Breadcrumbs: FunctionComponent<BreadcrumbsProps> = ({ elements, isSensitiv
   const theme = useTheme<Theme>();
 
   const SplitDiv = ({ show = true }) => (
-    <div style={{ display: show ? 'none' : 'unset', marginLeft: theme.spacing(1), marginRight: theme.spacing(1) }}>/</div>
+    <div style={{ display: show ? 'none' : 'unset', marginInlineStart: theme.spacing(1), marginInlineEnd: theme.spacing(1) }}>/</div>
   );
 
   return (

@@ -93,11 +93,11 @@ const useStyles = makeStyles((theme) => ({
     marginTop: 0,
   },
   item: {
-    paddingLeft: 10,
+    paddingInlineStart: 10,
     height: 50,
   },
   itemHead: {
-    paddingLeft: 10,
+    paddingInlineStart: 10,
     textTransform: 'uppercase',
     cursor: 'pointer',
   },
@@ -110,10 +110,10 @@ const useStyles = makeStyles((theme) => ({
   },
   buttons: {
     marginTop: 20,
-    textAlign: 'right',
+    textAlign: 'end',
   },
   button: {
-    marginLeft: theme.spacing(2),
+    marginInlineStart: theme.spacing(2),
   },
   sortIcon: {
     position: 'absolute',
@@ -131,7 +131,7 @@ const inlineStylesHeaders = {
     whiteSpace: 'nowrap',
     overflow: 'hidden',
     textOverflow: 'ellipsis',
-    paddingRight: 10,
+    paddingInlineEnd: 10,
   },
   default_value: {
     float: 'left',
@@ -141,7 +141,7 @@ const inlineStylesHeaders = {
     whiteSpace: 'nowrap',
     overflow: 'hidden',
     textOverflow: 'ellipsis',
-    paddingRight: 10,
+    paddingInlineEnd: 10,
   },
   labels: {
     float: 'left',
@@ -151,7 +151,7 @@ const inlineStylesHeaders = {
     whiteSpace: 'nowrap',
     overflow: 'hidden',
     textOverflow: 'ellipsis',
-    paddingRight: 10,
+    paddingInlineEnd: 10,
     cursor: 'default',
   },
   markings: {
@@ -162,7 +162,7 @@ const inlineStylesHeaders = {
     whiteSpace: 'nowrap',
     overflow: 'hidden',
     textOverflow: 'ellipsis',
-    paddingRight: 10,
+    paddingInlineEnd: 10,
   },
   in_platform: {
     float: 'left',
@@ -172,7 +172,7 @@ const inlineStylesHeaders = {
     whiteSpace: 'nowrap',
     overflow: 'hidden',
     textOverflow: 'ellipsis',
-    paddingRight: 10,
+    paddingInlineEnd: 10,
     cursor: 'default',
   },
 };
@@ -185,7 +185,7 @@ const inlineStyles = {
     whiteSpace: 'nowrap',
     overflow: 'hidden',
     textOverflow: 'ellipsis',
-    paddingRight: 10,
+    paddingInlineEnd: 10,
   },
   default_value: {
     float: 'left',
@@ -194,7 +194,7 @@ const inlineStyles = {
     whiteSpace: 'nowrap',
     overflow: 'hidden',
     textOverflow: 'ellipsis',
-    paddingRight: 10,
+    paddingInlineEnd: 10,
   },
   labels: {
     float: 'left',
@@ -203,7 +203,7 @@ const inlineStyles = {
     whiteSpace: 'nowrap',
     overflow: 'hidden',
     textOverflow: 'ellipsis',
-    paddingRight: 10,
+    paddingInlineEnd: 10,
   },
   markings: {
     float: 'left',
@@ -212,7 +212,7 @@ const inlineStyles = {
     whiteSpace: 'nowrap',
     overflow: 'hidden',
     textOverflow: 'ellipsis',
-    paddingRight: 10,
+    paddingInlineEnd: 10,
   },
   in_platform: {
     float: 'left',
@@ -221,7 +221,7 @@ const inlineStyles = {
     whiteSpace: 'nowrap',
     overflow: 'hidden',
     textOverflow: 'ellipsis',
-    paddingRight: 10,
+    paddingInlineEnd: 10,
   },
 };
 

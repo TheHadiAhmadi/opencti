@@ -78,7 +78,7 @@ const styles = (theme) => ({
     marginBottom: 20,
   },
   nested: {
-    paddingLeft: theme.spacing(4),
+    paddingInlineStart: theme.spacing(4),
   },
   tooltip: {
     maxWidth: 600,

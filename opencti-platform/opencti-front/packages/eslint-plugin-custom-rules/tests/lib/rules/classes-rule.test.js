@@ -53,10 +53,10 @@ ruleTester.run("classes-rule", rule, {
             bottom: \`${0 + 30}px\`,
           }),
           withPanel: {
-            right: 230,
+            insetInlineEnd: 230,
           },
           noPanel: {
-            right: 30,
+            insetInlineEnd: 30,
           },
         }));
       `

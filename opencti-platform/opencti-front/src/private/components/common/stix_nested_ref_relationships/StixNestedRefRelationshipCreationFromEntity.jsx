@@ -141,16 +141,16 @@ const useStyles = makeStyles((theme) => ({
   },
   buttonBack: {
     marginTop: 20,
-    textAlign: 'left',
+    textAlign: 'start',
     float: 'left',
   },
   buttons: {
     marginTop: 20,
-    textAlign: 'right',
+    textAlign: 'end',
     float: 'right',
   },
   button: {
-    marginLeft: theme.spacing(2),
+    marginInlineStart: theme.spacing(2),
   },
   speedDial: {
     position: 'fixed',

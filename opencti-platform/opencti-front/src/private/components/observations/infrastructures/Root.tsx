@@ -87,7 +87,7 @@ const RootInfrastructureComponent = ({ queryRef, infrastructureId }) => {
   const data = usePreloadedQuery(infrastructureQuery, queryRef);
   const { infrastructure, connectorsForImport, connectorsForExport } = data;
   const { forceUpdate } = useForceUpdate();
-  const paddingRightValue = () => {
+  const paddingInlineEndValue = () => {
     if (location.pathname.includes(`/dashboard/observations/infrastructures/${infrastructure.id}/knowledge`)) return 200;
     if (location.pathname.includes(`/dashboard/observations/infrastructures/${infrastructure.id}/content`)) return 350;
     if (location.pathname.includes(`/dashboard/observations/infrastructures/${infrastructure.id}/content/mapping`)) return 0;
@@ -97,7 +97,7 @@ const RootInfrastructureComponent = ({ queryRef, infrastructureId }) => {
     <>
       {infrastructure ? (
         <div
-          style={{ paddingRight: paddingRightValue() }}
+          style={{ paddingInlineEnd: paddingInlineEndValue() }}
         >
           <Breadcrumbs elements={[
             { label: t_i18n('Observations') },

@@ -55,7 +55,7 @@ export const WeightFieldAdd: FunctionComponent<WeightFieldAddProps> = ({
               >
                 <div
                   style={{
-                    paddingRight: 50,
+                    paddingInlineEnd: 50,
                     display: 'grid',
                     gap: 20,
                     gridTemplateColumns: 'repeat(2, 1fr)',
@@ -147,7 +147,7 @@ export const WeightFieldEdit: FunctionComponent<WeightFieldEditProps> = ({
                 >
                   <div
                     style={{
-                      paddingRight: 50,
+                      paddingInlineEnd: 50,
                       display: 'grid',
                       gap: 20,
                       gridTemplateColumns: 'repeat(2, 1fr)',

@@ -71,7 +71,7 @@ const styles = (theme) => ({
   },
   date: {
     float: 'right',
-    textAlign: 'right',
+    textAlign: 'end',
     width: 180,
     paddingTop: 2,
   },

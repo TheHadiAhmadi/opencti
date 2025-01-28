@@ -25,7 +25,7 @@ Transition.displayName = 'TransitionSlide';
 
 const styles = (theme) => ({
   item: {
-    paddingLeft: 10,
+    paddingInlineStart: 10,
     height: 50,
   },
   itemIcon: {
@@ -40,14 +40,14 @@ const styles = (theme) => ({
     whiteSpace: 'nowrap',
     overflow: 'hidden',
     textOverflow: 'ellipsis',
-    paddingRight: 10,
+    paddingInlineEnd: 10,
   },
   filtersItem: {
     height: 40,
     display: 'flex',
     alignItems: 'center',
     float: 'left',
-    paddingRight: 10,
+    paddingInlineEnd: 10,
   },
   itemIconDisabled: {
     color: theme.palette.grey[700],

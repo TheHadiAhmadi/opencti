@@ -15,7 +15,7 @@ import ItemIcon from '../../../../components/ItemIcon';
 const styles = (theme) => ({
   item: {},
   itemNested: {
-    paddingLeft: theme.spacing(4),
+    paddingInlineStart: theme.spacing(4),
   },
   itemIcon: {
     color: theme.palette.primary.main,

@@ -309,7 +309,7 @@ export const PositionCreationForm: FunctionComponent<PositionFormProps> = ({
             />
             <div style={{
               marginTop: '20px',
-              textAlign: 'right',
+              textAlign: 'end',
             }}
             >
               <Button

@@ -81,7 +81,7 @@ const useStyles = makeStyles((theme) => ({
     float: 'right',
   },
   button: {
-    marginLeft: theme.spacing(2),
+    marginInlineStart: theme.spacing(2),
   },
 }));
 

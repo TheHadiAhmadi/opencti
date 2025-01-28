@@ -9,7 +9,7 @@ const KeyboardHandle = ({ domain: [min, max], handle: { id, value, percent = 0 }
     aria-valuenow={value}
     className='react_time_range__keyboard_handle'
     style={{
-      left: `${percent}%`,
+      insetInlineStart: `${percent}%`,
       backgroundColor: disabled ? '#666' : '#ffc400',
     }}
     {...getHandleProps(id)}

@@ -21,7 +21,7 @@ class SystemKnowledgeComponent extends Component {
             element={
               <StixCoreRelationship
                 entityId={system.id}
-                paddingRight={true}
+                paddingInlineEnd={true}
               />
             }
           />
@@ -30,7 +30,7 @@ class SystemKnowledgeComponent extends Component {
             element={
               <StixSightingRelationship
                 entityId={system.id}
-                paddingRight={true}
+                paddingInlineEnd={true}
               />
             }
           />

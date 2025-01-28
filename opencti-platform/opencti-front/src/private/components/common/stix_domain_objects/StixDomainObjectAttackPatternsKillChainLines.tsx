@@ -156,7 +156,7 @@ const StixDomainObjectAttackPatternsKillChainLines: FunctionComponent<StixDomain
                         <div key={attackPattern.id}>
                           <ListItemButton
                             style={{
-                              paddingLeft: theme.spacing(4),
+                              paddingInlineStart: theme.spacing(4),
                             }}
                             divider={true}
                             dense={true}
@@ -202,7 +202,7 @@ const StixDomainObjectAttackPatternsKillChainLines: FunctionComponent<StixDomain
                             />
                             <div
                               style={{
-                                paddingLeft: theme.spacing(4),
+                                paddingInlineStart: theme.spacing(4),
                               }}
                             >
                               <ListItemSecondaryAction>
@@ -237,7 +237,7 @@ const StixDomainObjectAttackPatternsKillChainLines: FunctionComponent<StixDomain
                                       <ListItem
                                         key={courseOfAction.id}
                                         style={{
-                                          paddingLeft: theme.spacing(8),
+                                          paddingInlineStart: theme.spacing(8),
                                         }}
                                         divider={true}
                                         button={true}

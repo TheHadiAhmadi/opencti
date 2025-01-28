@@ -47,7 +47,7 @@ const useStyles = makeStyles<Theme>((theme) => ({
     height: 50,
   },
   itemNested: {
-    paddingLeft: theme.spacing(4),
+    paddingInlineStart: theme.spacing(4),
     height: 50,
   },
   itemText: {

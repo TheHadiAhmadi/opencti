@@ -254,7 +254,7 @@ export const CountryCreationForm: FunctionComponent<CountryFormProps> = ({
             />
             <div style={{
               marginTop: '20px',
-              textAlign: 'right',
+              textAlign: 'end',
             }}
             >
               <Button

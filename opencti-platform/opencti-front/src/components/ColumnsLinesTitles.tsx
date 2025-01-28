@@ -13,7 +13,7 @@ import { DataColumns } from './list_lines';
 // Do not use it for new code.
 const useStyles = makeStyles(() => ({
   item: {
-    paddingLeft: 10,
+    paddingInlineStart: 10,
     textTransform: 'uppercase',
   },
   headerItem: {

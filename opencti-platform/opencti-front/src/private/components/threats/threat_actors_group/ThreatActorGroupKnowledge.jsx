@@ -24,7 +24,7 @@ class ThreatActorGroupKnowledgeComponent extends Component {
             element={
               <StixCoreRelationship
                 entityId={threatActorGroup.id}
-                paddingRight={true}
+                paddingInlineEnd={true}
               />
             }
           />
@@ -33,7 +33,7 @@ class ThreatActorGroupKnowledgeComponent extends Component {
             element={
               <StixSightingRelationship
                 entityId={threatActorGroup.id}
-                paddingRight={true}
+                paddingInlineEnd={true}
               />
             }
           />

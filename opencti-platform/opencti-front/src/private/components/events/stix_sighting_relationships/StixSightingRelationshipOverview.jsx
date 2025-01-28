@@ -210,7 +210,7 @@ class StixSightingRelationshipContainer extends Component {
       nsdt,
       classes,
       stixSightingRelationship,
-      paddingRight,
+      paddingInlineEnd,
       isFABReplaced = false,
     } = this.props;
     const { from } = stixSightingRelationship;
@@ -549,7 +549,7 @@ class StixSightingRelationshipContainer extends Component {
                     key={inference.rule.id}
                     inference={inference}
                     stixSightingRelationship={stixSightingRelationship}
-                    paddingRight={paddingRight}
+                    paddingInlineEnd={paddingInlineEnd}
                   />
                 ),
               )}
@@ -592,7 +592,7 @@ class StixSightingRelationshipContainer extends Component {
               color="secondary"
               aria-label="Edit"
               className={
-                paddingRight ? classes.editButtonWithPadding : classes.editButton
+                paddingInlineEnd ? classes.editButtonWithPadding : classes.editButton
               }
             >
               <Edit />
@@ -641,7 +641,7 @@ class StixSightingRelationshipContainer extends Component {
 
 StixSightingRelationshipContainer.propTypes = {
   stixSightingRelationship: PropTypes.object,
-  paddingRight: PropTypes.bool,
+  paddingInlineEnd: PropTypes.bool,
   classes: PropTypes.object,
   t: PropTypes.func,
   nsdt: PropTypes.func,

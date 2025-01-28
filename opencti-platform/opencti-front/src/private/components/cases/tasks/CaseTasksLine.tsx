@@ -24,7 +24,7 @@ import { CaseTasksLinesQuery$variables } from './__generated__/CaseTasksLinesQue
 // Do not use it for new code.
 const useStyles = makeStyles<Theme>((theme) => ({
   item: {
-    paddingLeft: 15,
+    paddingInlineStart: 15,
     height: 50,
   },
   itemIcon: {
@@ -38,7 +38,7 @@ const useStyles = makeStyles<Theme>((theme) => ({
     whiteSpace: 'nowrap',
     overflow: 'hidden',
     textOverflow: 'ellipsis',
-    paddingRight: 10,
+    paddingInlineEnd: 10,
   },
 }));
 

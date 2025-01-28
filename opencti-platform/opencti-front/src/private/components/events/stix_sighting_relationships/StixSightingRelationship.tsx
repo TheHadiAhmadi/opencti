@@ -24,12 +24,12 @@ const stixSightingRelationshipQuery = graphql`
 
 interface StixSightingRelationshipProps {
   entityId: string;
-  paddingRight: boolean;
+  paddingInlineEnd: boolean;
 }
 
 const StixSightingRelationship: FunctionComponent<
 StixSightingRelationshipProps
-> = ({ entityId, paddingRight }) => {
+> = ({ entityId, paddingInlineEnd }) => {
   const { t_i18n } = useFormatter();
   const navigate = useNavigate();
   const [editOpen, setEditOpen] = useState<boolean>(false);
@@ -95,7 +95,7 @@ StixSightingRelationshipProps
               <StixSightingRelationshipOverview
                 entityId={entityId}
                 stixSightingRelationship={result.props.stixSightingRelationship}
-                paddingRight={paddingRight}
+                paddingInlineEnd={paddingInlineEnd}
                 isFABReplaced={isFABReplaced}
               />
               {/* Edition Drawer, hidden by default */}

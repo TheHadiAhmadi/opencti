@@ -358,15 +358,16 @@ const RootComponent: FunctionComponent<RootComponentProps> = ({ queryRef }) => {
         schema,
       }}
     >
-      <StyledEngineProvider injectFirst={true}>
-        <ConnectedThemeProvider settings={settings}>
-          <ConnectedIntlProvider settings={settings}>
-            <AnalyticsProvider instance={Analytics(platformAnalyticsConfiguration)}>
-              <Index settings={settings} />
-            </AnalyticsProvider>
-          </ConnectedIntlProvider>
-        </ConnectedThemeProvider>
-      </StyledEngineProvider>
+
+        <StyledEngineProvider injectFirst={true}>
+          <ConnectedThemeProvider settings={settings}>
+            <ConnectedIntlProvider settings={settings}>
+              <AnalyticsProvider instance={Analytics(platformAnalyticsConfiguration)}>
+                <Index settings={settings} />
+              </AnalyticsProvider>
+            </ConnectedIntlProvider>
+          </ConnectedThemeProvider>
+        </StyledEngineProvider>
     </UserContext.Provider>
   );
 };

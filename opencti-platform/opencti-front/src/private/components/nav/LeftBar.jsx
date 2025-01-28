@@ -130,7 +130,7 @@ const useStyles = makeStyles((theme) => createStyles({
     color: theme.palette.text.primary,
   },
   menuItem: {
-    paddingRight: 2,
+    paddingInlineEnd: 2,
     height: 35,
     fontWeight: 500,
     fontSize: 14,
@@ -146,7 +146,7 @@ const useStyles = makeStyles((theme) => createStyles({
     fontSize: 12,
   },
   menuSubItemWithIcon: {
-    paddingLeft: 20,
+    paddingInlineStart: 20,
     height: 25,
     fontWeight: 600,
     fontSize: 12,

@@ -44,13 +44,13 @@ const useStyles = makeStyles<Theme>((theme) => ({
     height: 50,
     minHeight: 50,
     maxHeight: 50,
-    paddingRight: 0,
+    paddingInlineEnd: 0,
   },
   itemText: {
     whiteSpace: 'nowrap',
     overflow: 'hidden',
     textOverflow: 'ellipsis',
-    paddingRight: 10,
+    paddingInlineEnd: 10,
   },
   buttonExpand: {
     position: 'absolute',
@@ -93,7 +93,7 @@ const useStyles = makeStyles<Theme>((theme) => ({
   },
   itemMarking: {
     width: 110,
-    paddingRight: 20,
+    paddingInlineEnd: 20,
   },
   relatedContainers: {
     paddingTop: 0,

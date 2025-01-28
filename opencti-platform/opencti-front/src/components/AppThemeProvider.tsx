@@ -5,8 +5,17 @@ import { ThemeOptions } from '@mui/material/styles/createTheme';
 import { UserContext, UserContextType } from '../utils/hooks/useAuth';
 import themeDark from './ThemeDark';
 import themeLight from './ThemeLight';
-import { useDocumentFaviconModifier, useDocumentTitleModifier, useDocumentThemeModifier } from '../utils/hooks/useDocumentModifier';
+import { useDocumentFaviconModifier, useDocumentTitleModifier, useDocumentThemeModifier, useDocumentDirectionModifier } from '../utils/hooks/useDocumentModifier';
 import { AppThemeProvider_settings$data } from './__generated__/AppThemeProvider_settings.graphql';
+import rtlPlugin from 'stylis-plugin-rtl';
+import createCache from '@emotion/cache';
+import { CacheProvider } from '@emotion/react';
+import { prefixer } from 'stylis';
+
+const cacheRTL = createCache({
+  key: 'mui-style-rtl',
+  stylisPlugins: [prefixer, rtlPlugin],
+});
 
 interface AppThemeProviderProps {
   children: React.ReactNode;
@@ -72,8 +81,11 @@ const AppThemeProvider: FunctionComponent<AppThemeProviderProps> = ({
   const themeComponent = themeBuilder(settings, theme);
   const muiTheme = createTheme(themeComponent as ThemeOptions);
   useDocumentThemeModifier(theme);
+  useDocumentDirectionModifier('rtl');
   // endregion
-  return <ThemeProvider theme={muiTheme}>{children}</ThemeProvider>;
+  return       <CacheProvider value={cacheRTL}>
+      <ThemeProvider theme={muiTheme}>{children}</ThemeProvider>
+  </CacheProvider>;
 };
 
 export const ConnectedThemeProvider = createFragmentContainer(

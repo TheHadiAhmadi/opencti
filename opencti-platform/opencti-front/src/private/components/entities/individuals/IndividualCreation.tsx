@@ -279,7 +279,7 @@ export const IndividualCreationForm: FunctionComponent<IndividualFormProps> = ({
             />
             <div style={{
               marginTop: '20px',
-              textAlign: 'right',
+              textAlign: 'end',
             }}
             >
               <Button

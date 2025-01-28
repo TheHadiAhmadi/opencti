@@ -79,10 +79,10 @@ export const feedCreationAllTypesQuery = graphql`
 const useStyles = makeStyles((theme: Theme) => ({
   buttons: {
     marginTop: 20,
-    textAlign: 'right',
+    textAlign: 'end',
   },
   button: {
-    marginLeft: theme.spacing(2),
+    marginInlineStart: theme.spacing(2),
   },
   container: {
     padding: '10px 20px 20px 20px',

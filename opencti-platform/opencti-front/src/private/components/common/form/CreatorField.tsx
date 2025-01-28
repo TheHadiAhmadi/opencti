@@ -158,7 +158,7 @@ const CreatorField: FunctionComponent<CreatorFieldProps> = ({
                 sx={{
                   flexGrow: 1,
                   marginLeft: 1,
-                  textAlign: 'right',
+                  textAlign: 'end',
                   color: 'text.disabled',
                 }}
               >

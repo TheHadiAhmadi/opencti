@@ -59,7 +59,7 @@ const SightingCreationComponent: FunctionComponent<SightingCreationComponentProp
           'Indicator',
         ]}
         targetStixCyberObservableTypes={['Stix-Cyber-Observable']}
-        paddingRight={noPadding ? null : 220}
+        paddingInlineEnd={noPadding ? null : 220}
         paginationOptions={paginationOptions}
         variant={variant}
         onCreate={undefined}
@@ -70,7 +70,7 @@ const SightingCreationComponent: FunctionComponent<SightingCreationComponentProp
         isTo={false}
         stixCoreObjectTypes={stixCoreObjectTypes}
         targetStixCyberObservableTypes={undefined}
-        paddingRight={noPadding ? null : 220}
+        paddingInlineEnd={noPadding ? null : 220}
         paginationOptions={paginationOptions}
         variant={variant}
         onCreate={undefined}

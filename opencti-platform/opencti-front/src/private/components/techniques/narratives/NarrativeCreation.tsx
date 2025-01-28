@@ -283,7 +283,7 @@ export const NarrativeCreationForm: FunctionComponent<NarrativeFormProps> = ({
             />
             <div style={{
               marginTop: '20px',
-              textAlign: 'right',
+              textAlign: 'end',
             }}
             >
               <Button

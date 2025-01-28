@@ -35,8 +35,8 @@
 
 .react_time_range__track__disabled {
     z-index: 1;
-    border-left: 1px solid #c8cacc;
-    border-right: 1px solid #c8cacc;
+    border-inline-start: 1px solid #c8cacc;
+    border-inline-end: 1px solid #c8cacc;
     background: repeating-linear-gradient(-45deg, transparent, transparent 3px, #d0d3d7 4px, #d0d3d7 2px);
 }
 

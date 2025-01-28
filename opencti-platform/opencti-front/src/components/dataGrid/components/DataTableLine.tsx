@@ -26,8 +26,8 @@ const useStyles = makeStyles<Theme, { cell?: DataTableColumn, clickable?: boolea
   }),
   cellPadding: {
     display: 'flex',
-    paddingLeft: theme.spacing(1),
-    paddingRight: theme.spacing(1),
+    paddingInlineStart: theme.spacing(1),
+    paddingInlineEnd: theme.spacing(1),
     width: 'fill-available',
     alignItems: 'center',
     gap: 3,

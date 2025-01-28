@@ -30,7 +30,7 @@ const interval$ = interval(FIVE_SECONDS);
 const styles = (theme) => ({
   item: {},
   itemNested: {
-    paddingLeft: theme.spacing(4),
+    paddingInlineStart: theme.spacing(4),
   },
   name: {
     width: '20%',

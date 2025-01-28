@@ -18,7 +18,7 @@ const styles = (theme) => ({
     borderRadius: 4,
   },
   item: {
-    paddingLeft: 10,
+    paddingInlineStart: 10,
     transition: 'background-color 0.1s ease',
     '&:hover': {
       background: 'rgba(0, 0, 0, 0.1)',

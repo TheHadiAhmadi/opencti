@@ -50,7 +50,7 @@ const RootDashboard = () => {
       style={{
         overflow: 'auto',
         marginRight: -20,
-        paddingRight: 20,
+        paddingInlineEnd: 20,
         paddingTop: 5,
       }}
     >

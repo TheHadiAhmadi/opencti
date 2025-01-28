@@ -13,7 +13,7 @@ import { DataColumns } from '../../../../../components/list_lines';
 // Do not use it for new code.
 const useStyles = makeStyles<Theme>((theme) => ({
   item: {
-    paddingLeft: theme.spacing(1.5),
+    paddingInlineStart: theme.spacing(1.5),
     height: 50,
   },
   itemIcon: {
@@ -26,7 +26,7 @@ const useStyles = makeStyles<Theme>((theme) => ({
     whiteSpace: 'nowrap',
     overflow: 'hidden',
     textOverflow: 'ellipsis',
-    paddingRight: theme.spacing(1.5),
+    paddingInlineEnd: theme.spacing(1.5),
   },
   goIcon: {
     position: 'absolute',

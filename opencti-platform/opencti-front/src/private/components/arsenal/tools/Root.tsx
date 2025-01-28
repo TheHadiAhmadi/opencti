@@ -19,7 +19,7 @@ import StixCoreObjectKnowledgeBar from '../../common/stix_core_objects/StixCoreO
 import ErrorNotFound from '../../../../components/ErrorNotFound';
 import { useFormatter } from '../../../../components/i18n';
 import Breadcrumbs from '../../../../components/Breadcrumbs';
-import { getCurrentTab, getPaddingRight } from '../../../../utils/utils';
+import { getCurrentTab, getpaddingInlineEnd } from '../../../../utils/utils';
 import { RootToolQuery } from './__generated__/RootToolQuery.graphql';
 import { RootToolSubscription } from './__generated__/RootToolSubscription.graphql';
 import useHelper from '../../../../utils/hooks/useHelper';
@@ -99,7 +99,7 @@ const RootTool = ({ queryRef, toolId }: RootToolProps) => {
 
   const { forceUpdate } = useForceUpdate();
 
-  const paddingRight = getPaddingRight(location.pathname, toolId, '/dashboard/arsenal/tools');
+  const paddingInlineEnd = getpaddingInlineEnd(location.pathname, toolId, '/dashboard/arsenal/tools');
   const link = `/dashboard/arsenal/tools/${toolId}/knowledge`;
   return (
     <>
@@ -129,7 +129,7 @@ const RootTool = ({ queryRef, toolId }: RootToolProps) => {
               }
             />
           </Routes>
-          <div style={{ paddingRight }}>
+          <div style={{ paddingInlineEnd }}>
             <Breadcrumbs elements={[
               { label: t_i18n('Arsenal') },
               { label: t_i18n('Tools'), link: '/dashboard/arsenal/tools' },

@@ -72,7 +72,7 @@ const styles = () => ({
   },
   date: {
     float: 'right',
-    textAlign: 'right',
+    textAlign: 'end',
     width: 180,
     paddingTop: 4,
     fontSize: 11,

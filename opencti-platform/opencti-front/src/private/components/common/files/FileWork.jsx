@@ -29,10 +29,10 @@ Transition.displayName = 'TransitionSlide';
 
 const styles = (theme) => ({
   nested: {
-    paddingLeft: theme.spacing(4),
+    paddingInlineStart: theme.spacing(4),
   },
   nestedNested: {
-    paddingLeft: theme.spacing(8),
+    paddingInlineStart: theme.spacing(8),
   },
   tooltip: {
     maxWidth: 600,

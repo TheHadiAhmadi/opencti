@@ -162,7 +162,7 @@ const StixCyberObservableIndicatorsComponent = ({ stixCyberObservable }) => {
           <ListItem
             aria-label={'stix cyber observable indicators item'}
             key={indicatorEdge.node.id}
-            classes={{ root: { paddingLeft: 10, height: 50 } }}
+            classes={{ root: { paddingInlineStart: 10, height: 50 } }}
             divider={true}
             button={true}
             component={Link}

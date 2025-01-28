@@ -52,8 +52,8 @@ export const getCurrentTab = (locationPath: string, entityId: string, entityType
   return locationPath;
 };
 
-export const getPaddingRight = (locationPath: string, entityId: string, entityTypePath: string, applyKnowledgePadding = true) => {
-  let paddingRight = 0;
+export const getpaddingInlineEnd = (locationPath: string, entityId: string, entityTypePath: string, applyKnowledgePadding = true) => {
+  let paddingInlineEnd = 0;
   if (entityId) {
     if (
       locationPath.includes(
@@ -63,21 +63,21 @@ export const getPaddingRight = (locationPath: string, entityId: string, entityTy
         `${entityTypePath}/${entityId}/observables`,
       )
     ) {
-      paddingRight = 250;
+      paddingInlineEnd = 250;
     }
     if (
       applyKnowledgePadding && locationPath.includes(
         `${entityTypePath}/${entityId}/knowledge`,
       )
     ) {
-      paddingRight = 200;
+      paddingInlineEnd = 200;
     }
     if (
       locationPath.includes(
         `${entityTypePath}/${entityId}/content`,
       )
     ) {
-      paddingRight = 350;
+      paddingInlineEnd = 350;
     }
     if (
       locationPath.includes(
@@ -87,10 +87,10 @@ export const getPaddingRight = (locationPath: string, entityId: string, entityTy
         `${entityTypePath}/${entityId}/content/suggested_mapping`,
       )
     ) {
-      paddingRight = 0;
+      paddingInlineEnd = 0;
     }
   }
-  return paddingRight;
+  return paddingInlineEnd;
 };
 
 export const throttle = (callback: (...a: unknown[]) => unknown, wait: number) => {

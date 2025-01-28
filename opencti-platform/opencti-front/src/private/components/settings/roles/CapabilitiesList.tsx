@@ -38,7 +38,7 @@ const CapabilitiesList: FunctionComponent<CapabilitiesListProps> = ({
           key="sensitive"
           dense={true}
           divider={true}
-          style={{ paddingLeft: 0 }}
+          style={{ paddingInlineStart: 0 }}
         >
           <ListItemIcon style={{ minWidth: 32 }}>
             <ItemIcon type="Capability" />
@@ -56,7 +56,7 @@ const CapabilitiesList: FunctionComponent<CapabilitiesListProps> = ({
       {capabilities?.edges?.map((edge, i) => {
         const capability = edge?.node;
         if (capability) {
-          const paddingLeft = (capability.name.split('_').length ?? -20) * 20 - 20;
+          const paddingInlineStart = (capability.name.split('_').length ?? -20) * 20 - 20;
           const roleCapability = roleCapabilities.find(
             (r) => r.name === capability.name,
           );
@@ -73,7 +73,7 @@ const CapabilitiesList: FunctionComponent<CapabilitiesListProps> = ({
                 key={capability.name}
                 dense={true}
                 divider={true}
-                style={{ paddingLeft }}
+                style={{ paddingInlineStart }}
               >
                 <ListItemIcon style={{ minWidth: 32 }}>
                   <ItemIcon type="Capability" />

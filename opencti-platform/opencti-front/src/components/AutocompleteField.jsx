@@ -109,7 +109,7 @@ const AutocompleteField = (props) => {
           disabled={fieldProps.disabled}
           onClick={() => openCreate()}
           edge="end"
-          style={{ position: 'absolute', top: 5, right: 35 }}
+          style={{ position: 'absolute', top: 5, end: 35 }}
           size="large"
           title={t_i18n('Add')}
         >

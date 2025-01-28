@@ -57,10 +57,10 @@ const styles = (theme) => ({
   },
   buttons: {
     marginTop: 20,
-    textAlign: 'right',
+    textAlign: 'end',
   },
   button: {
-    marginLeft: theme.spacing(2),
+    marginInlineStart: theme.spacing(2),
   },
   importButton: {
     position: 'absolute',
@@ -93,16 +93,16 @@ const styles = (theme) => ({
   },
   stepType: {
     margin: 0,
-    paddingRight: 20,
+    paddingInlineEnd: 20,
     width: '30%',
   },
   stepField: {
     margin: 0,
-    paddingRight: 20,
+    paddingInlineEnd: 20,
     width: '30%',
   },
   stepValues: {
-    paddingRight: 20,
+    paddingInlineEnd: 20,
     margin: 0,
   },
   stepCloseButton: {

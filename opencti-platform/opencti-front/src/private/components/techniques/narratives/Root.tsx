@@ -22,7 +22,7 @@ import StixCoreObjectKnowledgeBar from '../../common/stix_core_objects/StixCoreO
 import ErrorNotFound from '../../../../components/ErrorNotFound';
 import { useFormatter } from '../../../../components/i18n';
 import Breadcrumbs from '../../../../components/Breadcrumbs';
-import { getCurrentTab, getPaddingRight } from '../../../../utils/utils';
+import { getCurrentTab, getpaddingInlineEnd } from '../../../../utils/utils';
 import Security from '../../../../utils/Security';
 import { KNOWLEDGE_KNUPDATE } from '../../../../utils/hooks/useGranted';
 import NarrativeEdition from './NarrativeEdition';
@@ -97,7 +97,7 @@ const RootNarrative = ({ narrativeId, queryRef }: RootNarrativeProps) => {
 
   const { forceUpdate } = useForceUpdate();
 
-  const paddingRight = getPaddingRight(location.pathname, narrativeId, '/dashboard/techniques/narratives');
+  const paddingInlineEnd = getpaddingInlineEnd(location.pathname, narrativeId, '/dashboard/techniques/narratives');
   const link = `/dashboard/techniques/narratives/${narrativeId}/knowledge`;
   return (
     <>
@@ -123,7 +123,7 @@ const RootNarrative = ({ narrativeId, queryRef }: RootNarrativeProps) => {
               }
             />
           </Routes>
-          <div style={{ paddingRight }} >
+          <div style={{ paddingInlineEnd }} >
             <Breadcrumbs elements={[
               { label: t_i18n('Techniques') },
               { label: t_i18n('Narratives'), link: '/dashboard/techniques/narratives' },

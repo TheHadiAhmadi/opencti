@@ -87,7 +87,7 @@ const AutocompleteFreeSoloField = (props) => {
         <IconButton
           onClick={() => openCreate()}
           edge="end"
-          style={{ position: 'absolute', top: 5, right: 35 }}
+          style={{ position: 'absolute', top: 5, end: 35 }}
           size="large"
         >
           <Add />

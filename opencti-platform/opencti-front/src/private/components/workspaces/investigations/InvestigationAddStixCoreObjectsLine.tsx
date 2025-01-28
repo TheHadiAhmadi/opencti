@@ -19,7 +19,7 @@ import ItemEntityType from '../../../../components/ItemEntityType';
 // Do not use it for new code.
 const useStyles = makeStyles<Theme>((theme) => ({
   item: {
-    paddingLeft: 10,
+    paddingInlineStart: 10,
     height: 50,
   },
   itemIcon: {
@@ -32,7 +32,7 @@ const useStyles = makeStyles<Theme>((theme) => ({
     whiteSpace: 'nowrap',
     overflow: 'hidden',
     textOverflow: 'ellipsis',
-    paddingRight: 10,
+    paddingInlineEnd: 10,
   },
   itemIconDisabled: {
     color: theme.palette.grey?.[700],
@@ -72,7 +72,7 @@ const InvestigationAddStixCoreObjectsLineComponent = ({
       button={true}
       onClick={(event) => onToggleEntity(node, event)}
     >
-      <ListItemIcon style={{ paddingLeft: 10 }}>
+      <ListItemIcon style={{ paddingInlineStart: 10 }}>
         {node.id in (addedElements || {}) ? (
           <CheckCircleOutlined
             classes={{ root: classes.icon }}

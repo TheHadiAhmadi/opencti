@@ -26,7 +26,7 @@ interface EntityStixCoreRelationshipsEntitiesViewProps {
   currentView: string;
   enableNestedView?: boolean;
   enableContextualView: boolean;
-  paddingRightButtonAdd?: number;
+  paddingInlineEndButtonAdd?: number;
   handleChangeView?: (viewMode: string) => void;
 }
 
@@ -43,7 +43,7 @@ EntityStixCoreRelationshipsEntitiesViewProps
   currentView,
   enableNestedView,
   enableContextualView,
-  paddingRightButtonAdd = null,
+  paddingInlineEndButtonAdd = null,
   handleChangeView,
 }) => {
   const { t_i18n } = useFormatter();
@@ -255,7 +255,7 @@ EntityStixCoreRelationshipsEntitiesViewProps
           defaultStopTime={defaultStopTime}
           paginationOptions={paginationOptions}
           connectionKey="Pagination_stixCoreObjects"
-          paddingRight={paddingRightButtonAdd ?? 220}
+          paddingInlineEnd={paddingInlineEndButtonAdd ?? 220}
         />
       </Security>
     </>

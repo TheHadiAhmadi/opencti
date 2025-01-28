@@ -31,10 +31,10 @@ const useStyles = makeStyles((theme) => ({
   },
   buttons: {
     marginTop: 20,
-    textAlign: 'right',
+    textAlign: 'end',
   },
   button: {
-    marginLeft: theme.spacing(2),
+    marginInlineStart: theme.spacing(2),
   },
   speedDialButton: {
     backgroundColor: theme.palette.primary.main,
@@ -130,7 +130,7 @@ const WorkspaceCreation = ({ paginationOptions, type }) => {
         size="small"
         disableElevation
         onClick={() => inputRef.current?.click()}
-        sx={{ marginLeft: theme.spacing(1) }}
+        sx={{ marginInlineStart: theme.spacing(1) }}
         data-testid='ImportDashboard'
       >
         {t_i18n('Import dashboard')}

@@ -26,7 +26,7 @@ import Loader, { LoaderVariant } from '../../../../components/Loader';
 import { useFormatter } from '../../../../components/i18n';
 import CountryPopover from './CountryPopover';
 import Breadcrumbs from '../../../../components/Breadcrumbs';
-import { getCurrentTab, getPaddingRight } from '../../../../utils/utils';
+import { getCurrentTab, getpaddingInlineEnd } from '../../../../utils/utils';
 import CountryEdition from './CountryEdition';
 import Security from '../../../../utils/Security';
 import { KNOWLEDGE_KNUPDATE } from '../../../../utils/hooks/useGranted';
@@ -94,7 +94,7 @@ const RootCountryComponent = ({ queryRef, countryId }) => {
   const { forceUpdate } = useForceUpdate();
   const { country, connectorsForImport, connectorsForExport } = data;
   const link = `/dashboard/locations/countries/${countryId}/knowledge`;
-  const paddingRight = getPaddingRight(location.pathname, country?.id, '/dashboard/locations/countries');
+  const paddingInlineEnd = getpaddingInlineEnd(location.pathname, country?.id, '/dashboard/locations/countries');
   return (
     <>
       {country ? (
@@ -125,7 +125,7 @@ const RootCountryComponent = ({ queryRef, countryId }) => {
               }
             />
           </Routes>
-          <div style={{ paddingRight }}>
+          <div style={{ paddingInlineEnd }}>
             <Breadcrumbs elements={[
               { label: t_i18n('Locations') },
               { label: t_i18n('Countries'), link: '/dashboard/locations/countries' },

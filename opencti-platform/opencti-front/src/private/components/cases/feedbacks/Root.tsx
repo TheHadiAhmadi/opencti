@@ -27,7 +27,7 @@ import { useFormatter } from '../../../../components/i18n';
 import Breadcrumbs from '../../../../components/Breadcrumbs';
 import { useIsEnforceReference } from '../../../../utils/hooks/useEntitySettings';
 import useGranted, { KNOWLEDGE_KNUPDATE_KNBYPASSREFERENCE } from '../../../../utils/hooks/useGranted';
-import { getCurrentTab, getPaddingRight } from '../../../../utils/utils';
+import { getCurrentTab, getpaddingInlineEnd } from '../../../../utils/utils';
 import FeedbackEdition from './FeedbackEdition';
 import { useGetCurrentUserAccessRight } from '../../../../utils/authorizedMembers';
 import useHelper from '../../../../utils/hooks/useHelper';
@@ -106,10 +106,10 @@ const RootFeedbackComponent = ({ queryRef, caseId }) => {
   if (!feedbackData) {
     return <ErrorNotFound />;
   }
-  const paddingRight = getPaddingRight(location.pathname, feedbackData.id, '/dashboard/cases/feedbacks');
+  const paddingInlineEnd = getpaddingInlineEnd(location.pathname, feedbackData.id, '/dashboard/cases/feedbacks');
   const { canEdit } = useGetCurrentUserAccessRight(feedbackData.currentUserAccessRight);
   return (
-    <div style={{ paddingRight }}>
+    <div style={{ paddingInlineEnd }}>
       <Breadcrumbs elements={[
         { label: t_i18n('Cases') },
         { label: t_i18n('Feedbacks'), link: '/dashboard/cases/feedbacks' },

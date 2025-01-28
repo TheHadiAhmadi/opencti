@@ -164,7 +164,7 @@ const StixSightingRelationshipCreationFromEntity = ({
   stixCoreObjectTypes,
   variant,
   targetStixCyberObservableTypes,
-  paddingRight,
+  paddingInlineEnd,
 }) => {
   const classes = useStyles();
   const { t_i18n } = useFormatter();
@@ -486,7 +486,7 @@ const StixSightingRelationshipCreationFromEntity = ({
             color="secondary"
             aria-label="Add"
             className={classes.createButton}
-            style={{ right: paddingRight || 30 }}
+            style={{ right: paddingInlineEnd || 30 }}
           >
             <Add />
           </Fab>

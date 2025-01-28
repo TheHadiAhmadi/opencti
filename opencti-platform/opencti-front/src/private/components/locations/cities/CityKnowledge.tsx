@@ -33,7 +33,7 @@ const CityKnowledge = ({ cityData }: { cityData: CityKnowledge_city$key }) => {
           element={
             <StixCoreRelationship
               entityId={city.id}
-              paddingRight={true}
+              paddingInlineEnd={true}
             />
           }
         />
@@ -42,7 +42,7 @@ const CityKnowledge = ({ cityData }: { cityData: CityKnowledge_city$key }) => {
           element={
             <StixSightingRelationship
               entityId={city.id}
-              paddingRight={true}
+              paddingInlineEnd={true}
             />
           }
         />

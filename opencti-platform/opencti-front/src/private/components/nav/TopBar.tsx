@@ -58,7 +58,7 @@ const useStyles = makeStyles<Theme>((theme) => ({
   },
   logoContainer: {
     marginTop: theme.spacing(0.2),
-    paddingLeft: theme.spacing(1),
+    paddingInlineStart: theme.spacing(1),
     minWidth: SMALL_BAR_WIDTH,
   },
   logo: {
@@ -259,7 +259,7 @@ const TopBarComponent: FunctionComponent<TopBarProps> = ({
           </Link>
         </div>
         {hasKnowledgeAccess && (
-          <div className={classes.menuContainer} style={{ flex: 1, marginLeft: theme.spacing(3) }}>
+          <div className={classes.menuContainer} style={{ flex: 1, marginInlineStart: theme.spacing(3) }}>
             <SearchInput
               onSubmit={handleSearch}
               keyword={keyword}

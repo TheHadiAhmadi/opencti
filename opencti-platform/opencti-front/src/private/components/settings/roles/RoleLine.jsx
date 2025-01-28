@@ -19,7 +19,7 @@ import DangerZoneChip from '../../common/danger_zone/DangerZoneChip';
 
 const styles = (theme) => ({
   item: {
-    paddingLeft: 10,
+    paddingInlineStart: 10,
     height: 50,
   },
   bodyItem: {
@@ -29,7 +29,7 @@ const styles = (theme) => ({
     whiteSpace: 'nowrap',
     overflow: 'hidden',
     textOverflow: 'ellipsis',
-    paddingRight: 10,
+    paddingInlineEnd: 10,
   },
   goIcon: {
     position: 'absolute',

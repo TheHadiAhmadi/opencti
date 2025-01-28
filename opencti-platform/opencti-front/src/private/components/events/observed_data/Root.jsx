@@ -94,7 +94,7 @@ class RootObservedData extends Component {
           render={({ props }) => {
             if (props && props.observedData) {
               const { observedData } = props;
-              let paddingRight = 0;
+              let paddingInlineEnd = 0;
               if (
                 location.pathname.includes(
                   `/dashboard/events/observed_data/${observedData.id}/entities`,
@@ -103,17 +103,17 @@ class RootObservedData extends Component {
                     `/dashboard/events/observed_data/${observedData.id}/observables`,
                   )
               ) {
-                paddingRight = 250;
+                paddingInlineEnd = 250;
               }
               if (
                 location.pathname.includes(
                   `/dashboard/events/observed_data/${observedData.id}/content`,
                 )
               ) {
-                paddingRight = 350;
+                paddingInlineEnd = 350;
               }
               return (
-                <div style={{ paddingRight }}>
+                <div style={{ paddingInlineEnd }}>
                   <Breadcrumbs elements={[
                     { label: t('Events') },
                     { label: t('Observed datas'), link: '/dashboard/events/observed_data' },

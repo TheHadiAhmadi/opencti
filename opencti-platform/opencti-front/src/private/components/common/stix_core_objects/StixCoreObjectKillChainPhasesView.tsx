@@ -13,7 +13,7 @@ import FieldOrEmpty from '../../../../components/FieldOrEmpty';
 // Do not use it for new code.
 const useStyles = makeStyles(() => ({
   killChainPhaseItem: {
-    paddingLeft: 10,
+    paddingInlineStart: 10,
     transition: 'background-color 0.1s ease',
     '&:hover': {
       background: 'rgba(0, 0, 0, 0.1)',

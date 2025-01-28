@@ -118,10 +118,10 @@ const styles = (theme) => ({
   },
   buttons: {
     marginTop: 20,
-    textAlign: 'right',
+    textAlign: 'end',
   },
   button: {
-    marginLeft: theme.spacing(2),
+    marginInlineStart: theme.spacing(2),
   },
   buttonAdd: {
     width: '100%',
@@ -164,16 +164,16 @@ const styles = (theme) => ({
   },
   stepType: {
     margin: 0,
-    paddingRight: 20,
+    paddingInlineEnd: 20,
     width: '30%',
   },
   stepField: {
     margin: 0,
-    paddingRight: 20,
+    paddingInlineEnd: 20,
     width: '30%',
   },
   stepValues: {
-    paddingRight: 20,
+    paddingInlineEnd: 20,
     margin: 0,
   },
   stepCloseButton: {
@@ -1707,7 +1707,7 @@ class DataTableToolBar extends Component {
           // endregion
           return (
             <>
-              <Toolbar style={{ minHeight: 40, display: 'flex', justifyContent: 'space-between', height: '100%', paddingRight: 12, paddingLeft: 8 }} data-testid='opencti-toolbar'>
+              <Toolbar style={{ minHeight: 40, display: 'flex', justifyContent: 'space-between', height: '100%', paddingInlineEnd: 12, paddingInlineStart: 8 }} data-testid='opencti-toolbar'>
                 <div style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
                   <Typography
                     className={classes.title}

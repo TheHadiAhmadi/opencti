@@ -24,7 +24,7 @@ class IntrusionSetKnowledgeComponent extends Component {
             element={
               <StixCoreRelationship
                 entityId={intrusionSet.id}
-                paddingRight={true}
+                paddingInlineEnd={true}
               />
             }
           />
@@ -33,7 +33,7 @@ class IntrusionSetKnowledgeComponent extends Component {
             element={
               <StixSightingRelationship
                 entityId={intrusionSet.id}
-                paddingRight={true}
+                paddingInlineEnd={true}
               />
             }
           />

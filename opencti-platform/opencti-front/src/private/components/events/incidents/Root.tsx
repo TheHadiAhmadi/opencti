@@ -96,7 +96,7 @@ const RootIncidentComponent = ({ queryRef }) => {
   const { incident, connectorsForImport, connectorsForExport } = data;
   const link = `/dashboard/events/incidents/${incidentId}/knowledge`;
   const isOverview = location.pathname === `/dashboard/events/incidents/${incident?.id}`;
-  const paddingRightValue = () => {
+  const paddingInlineEndValue = () => {
     if (location.pathname.includes(`/dashboard/events/incidents/${incident.id}/knowledge`)) return 200;
     if (location.pathname.includes(`/dashboard/events/incidents/${incident.id}/content`)) return 350;
     if (location.pathname.includes(`/dashboard/events/incidents/${incident.id}/content/mapping`)) return 0;
@@ -129,7 +129,7 @@ const RootIncidentComponent = ({ queryRef }) => {
             />
           </Routes>
           <div
-            style={{ paddingRight: paddingRightValue() }}
+            style={{ paddingInlineEnd: paddingInlineEndValue() }}
           >
             <Breadcrumbs elements={[
               { label: t_i18n('Events') },

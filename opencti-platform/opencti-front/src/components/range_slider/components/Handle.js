@@ -8,18 +8,18 @@ const Handle = ({
   disabled,
   getHandleProps,
 }) => {
-  const leftPosition = `${percent}%`;
+  const startPosition = `${percent}%`;
 
   return (
     <>
-      <div className='react_time_range__handle_wrapper' style={{ left: leftPosition }} {...getHandleProps(id)} />
+      <div className='react_time_range__handle_wrapper' style={{ insetInlineStart: startPosition }} {...getHandleProps(id)} />
       <div
         role='slider'
         aria-valuemin={min}
         aria-valuemax={max}
         aria-valuenow={value}
         className={`react_time_range__handle_container${disabled ? '__disabled' : ''}`}
-        style={{ left: leftPosition }}
+        style={{ insetInlineStart: startPosition }}
       >
         <div className={`react_time_range__handle_marker${error ? '__error' : ''}`} />
       </div>

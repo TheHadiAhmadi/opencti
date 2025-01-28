@@ -26,7 +26,7 @@ import Loader, { LoaderVariant } from '../../../../components/Loader';
 import { useFormatter } from '../../../../components/i18n';
 import CityPopover from './CityPopover';
 import Breadcrumbs from '../../../../components/Breadcrumbs';
-import { getCurrentTab, getPaddingRight } from '../../../../utils/utils';
+import { getCurrentTab, getpaddingInlineEnd } from '../../../../utils/utils';
 import CityEdition from './CityEdition';
 import Security from '../../../../utils/Security';
 import { KNOWLEDGE_KNUPDATE } from '../../../../utils/hooks/useGranted';
@@ -92,7 +92,7 @@ const RootCityComponent = ({ queryRef, cityId }) => {
   const { forceUpdate } = useForceUpdate();
   const { city, connectorsForImport, connectorsForExport } = data;
   const link = `/dashboard/locations/cities/${cityId}/knowledge`;
-  const paddingRight = getPaddingRight(location.pathname, city?.id, '/dashboard/locations/cities');
+  const paddingInlineEnd = getpaddingInlineEnd(location.pathname, city?.id, '/dashboard/locations/cities');
   return (
     <>
       {city ? (
@@ -123,7 +123,7 @@ const RootCityComponent = ({ queryRef, cityId }) => {
               }
             />
           </Routes>
-          <div style={{ paddingRight }}>
+          <div style={{ paddingInlineEnd }}>
             <Breadcrumbs elements={[
               { label: t_i18n('Locations') },
               { label: t_i18n('Cities'), link: '/dashboard/locations/cities' },

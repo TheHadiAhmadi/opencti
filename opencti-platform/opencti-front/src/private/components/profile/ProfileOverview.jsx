@@ -45,7 +45,7 @@ const styles = () => ({
     margin: '0 auto',
     marginBottom: 30,
     padding: 20,
-    textAlign: 'left',
+    textAlign: 'start',
     borderRadius: 4,
     position: 'relative',
   },

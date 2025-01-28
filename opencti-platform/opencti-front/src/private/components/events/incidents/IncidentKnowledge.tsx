@@ -41,7 +41,7 @@ const IncidentKnowledge = ({
           element={ (
             <StixCoreRelationship
               entityId={incident.id}
-              paddingRight={true}
+              paddingInlineEnd={true}
             />
           )}
         />
@@ -50,7 +50,7 @@ const IncidentKnowledge = ({
           element={ (
             <StixSightingRelationship
               entityId={incident.id}
-              paddingRight={true}
+              paddingInlineEnd={true}
             />
           )}
         />

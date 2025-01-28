@@ -56,10 +56,10 @@ const styles = (theme) => ({
   },
   buttons: {
     marginTop: 20,
-    textAlign: 'right',
+    textAlign: 'end',
   },
   button: {
-    marginLeft: theme.spacing(2),
+    marginInlineStart: theme.spacing(2),
   },
   buttonAdd: {
     width: '100%',
@@ -174,7 +174,7 @@ class WorkbenchFileToolbar extends Component {
               variant: 'elevation',
               elevation: 1,
               style: {
-                paddingLeft: navOpen ? 185 : 60,
+                paddingInlineStart: navOpen ? 185 : 60,
                 bottom: bannerSettings.bannerHeightNumber,
               },
             }}

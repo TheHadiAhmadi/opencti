@@ -290,7 +290,7 @@ export const ToolCreationForm: FunctionComponent<ToolFormProps> = ({
             />
             <div style={{
               marginTop: '20px',
-              textAlign: 'right',
+              textAlign: 'end',
             }}
             >
               <Button

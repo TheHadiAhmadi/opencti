@@ -460,7 +460,7 @@ interface StixCoreRelationshipCreationFromEntityProps {
   defaultStopTime: string;
   paginationOptions: Record<string, unknown>;
   connectionKey?: string;
-  paddingRight: number;
+  paddingInlineEnd: number;
   variant?: string;
   targetEntities?: TargetEntity[];
   onCreate?: () => void;
@@ -490,7 +490,7 @@ const StixCoreRelationshipCreationFromEntity: FunctionComponent<StixCoreRelation
   const {
     targetEntities: targetEntitiesProps = [],
     entityId,
-    paddingRight,
+    paddingInlineEnd,
     paginationOptions,
     isRelationReversed,
     connectionKey,
@@ -1001,7 +1001,7 @@ const StixCoreRelationshipCreationFromEntity: FunctionComponent<StixCoreRelation
           color="primary"
           aria-label="Add"
           className={classes.createButton}
-          style={{ right: paddingRight || 30 }}
+          style={{ right: paddingInlineEnd || 30 }}
         >
           <Add />
         </Fab>

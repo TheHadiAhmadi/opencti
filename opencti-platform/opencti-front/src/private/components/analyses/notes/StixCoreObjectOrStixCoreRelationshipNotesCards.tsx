@@ -55,7 +55,7 @@ const useStyles = makeStyles<Theme>((theme) => ({
   },
   buttonAction: {
     float: 'right',
-    marginLeft: theme.spacing(2),
+    marginInlineStart: theme.spacing(2),
   },
   createButton: {
     float: 'left',

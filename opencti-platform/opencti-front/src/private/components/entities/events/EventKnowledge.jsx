@@ -19,7 +19,7 @@ class EventKnowledgeComponent extends Component {
             element={
               <StixCoreRelationship
                 entityId={event.id}
-                paddingRight={true}
+                paddingInlineEnd={true}
               />
             }
           />
@@ -28,7 +28,7 @@ class EventKnowledgeComponent extends Component {
             element={
               <StixSightingRelationship
                 entityId={event.id}
-                paddingRight={true}
+                paddingInlineEnd={true}
               />
             }
           />

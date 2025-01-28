@@ -23,7 +23,7 @@ export const DraftChip = ({ style }: { style?: React.CSSProperties }) => {
         justifyContent: 'center',
         alignItems: 'center',
         marginTop: theme.spacing(0.25),
-        marginLeft: theme.spacing(0.5),
+        marginInlineStart: theme.spacing(0.5),
         padding: `${theme.spacing(1)} ${theme.spacing(0.5)}`,
         borderRadius: theme.borderRadius,
         border: `1px solid ${draftColor}`,

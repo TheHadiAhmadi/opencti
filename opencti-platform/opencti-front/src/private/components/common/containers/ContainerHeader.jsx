@@ -32,7 +32,7 @@ import StixCoreObjectEnrichment from '../stix_core_objects/StixCoreObjectEnrichm
 // Do not use it for new code.
 const useStyles = makeStyles((theme) => ({
   modes: {
-    marginLeft: theme.spacing(2),
+    marginInlineStart: theme.spacing(2),
   },
   actionButtons: {
     display: 'flex',

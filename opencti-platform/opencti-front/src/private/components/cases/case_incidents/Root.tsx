@@ -29,7 +29,7 @@ import { useFormatter } from '../../../../components/i18n';
 import Breadcrumbs from '../../../../components/Breadcrumbs';
 import { useIsEnforceReference } from '../../../../utils/hooks/useEntitySettings';
 import useGranted, { KNOWLEDGE_KNUPDATE_KNBYPASSREFERENCE, KNOWLEDGE_KNUPDATE } from '../../../../utils/hooks/useGranted';
-import { getCurrentTab, getPaddingRight } from '../../../../utils/utils';
+import { getCurrentTab, getpaddingInlineEnd } from '../../../../utils/utils';
 import CaseIncidentEdition from './CaseIncidentEdition';
 import { useGetCurrentUserAccessRight } from '../../../../utils/authorizedMembers';
 import useHelper from '../../../../utils/hooks/useHelper';
@@ -105,11 +105,11 @@ const RootCaseIncidentComponent = ({ queryRef, caseId }) => {
     return <ErrorNotFound />;
   }
   const isOverview = location.pathname === `/dashboard/cases/incidents/${caseData.id}`;
-  const paddingRight = getPaddingRight(location.pathname, caseData.id, '/dashboard/cases/incidents', false);
+  const paddingInlineEnd = getpaddingInlineEnd(location.pathname, caseData.id, '/dashboard/cases/incidents', false);
 
   const currentAccessRight = useGetCurrentUserAccessRight(caseData.currentUserAccessRight);
   return (
-    <div style={{ paddingRight }} data-testid="incident-details-page">
+    <div style={{ paddingInlineEnd }} data-testid="incident-details-page">
       <Breadcrumbs elements={[
         { label: t_i18n('Cases') },
         { label: t_i18n('Incident responses'), link: '/dashboard/cases/incidents' },

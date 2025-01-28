@@ -44,3 +44,10 @@ export const useDocumentThemeModifier = (theme: string) => {
     document.body.setAttribute('data-theme', theme);
   }, []);
 };
+
+
+export const useDocumentDirectionModifier = (direction: string) => {
+  useEffect(() => {
+    document.body.setAttribute('dir', direction);
+  }, []);
+};

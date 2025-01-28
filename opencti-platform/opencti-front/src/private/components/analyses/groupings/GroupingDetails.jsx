@@ -41,13 +41,13 @@ const styles = (theme) => ({
     height: 50,
     minHeight: 50,
     maxHeight: 50,
-    paddingRight: 0,
+    paddingInlineEnd: 0,
   },
   itemText: {
     whiteSpace: 'nowrap',
     overflow: 'hidden',
     textOverflow: 'ellipsis',
-    paddingRight: 10,
+    paddingInlineEnd: 10,
   },
   itemIcon: {
     marginRight: 0,
@@ -208,7 +208,7 @@ const GroupingDetailsComponent = (props) => {
                   <div style={inlineStyles.itemDate}>
                     {fsd(relatedContainer.published)}
                   </div>
-                  <div style={{ width: 110, paddingRight: 20 }}>
+                  <div style={{ width: 110, paddingInlineEnd: 20 }}>
                     <ItemMarkings
                       variant="inList"
                       markingDefinitions={relatedContainer.objectMarking}

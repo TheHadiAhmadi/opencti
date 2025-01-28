@@ -28,7 +28,7 @@ import { useFormatter } from '../../../../components/i18n';
 import Breadcrumbs from '../../../../components/Breadcrumbs';
 import { useIsEnforceReference } from '../../../../utils/hooks/useEntitySettings';
 import useGranted, { KNOWLEDGE_KNUPDATE_KNBYPASSREFERENCE, KNOWLEDGE_KNUPDATE } from '../../../../utils/hooks/useGranted';
-import { getCurrentTab, getPaddingRight } from '../../../../utils/utils';
+import { getCurrentTab, getpaddingInlineEnd } from '../../../../utils/utils';
 import CaseRfiEdition from './CaseRfiEdition';
 import { useGetCurrentUserAccessRight } from '../../../../utils/authorizedMembers';
 import useHelper from '../../../../utils/hooks/useHelper';
@@ -101,10 +101,10 @@ const RootCaseRfiComponent = ({ queryRef, caseId }) => {
   if (!caseData) {
     return <ErrorNotFound />;
   }
-  const paddingRight = getPaddingRight(location.pathname, caseData.id, '/dashboard/cases/rfis', false);
+  const paddingInlineEnd = getpaddingInlineEnd(location.pathname, caseData.id, '/dashboard/cases/rfis', false);
   const currentAccessRight = useGetCurrentUserAccessRight(caseData.currentUserAccessRight);
   return (
-    <div style={{ paddingRight }}>
+    <div style={{ paddingInlineEnd }}>
       <Breadcrumbs elements={[
         { label: t_i18n('Cases') },
         { label: t_i18n('Requests for information'), link: '/dashboard/cases/rfis' },

@@ -40,10 +40,10 @@ const styles = (theme) => ({
     color: theme.palette.primary.main,
   },
   nested: {
-    paddingLeft: theme.spacing(4),
+    paddingInlineStart: theme.spacing(4),
   },
   subnested: {
-    paddingLeft: theme.spacing(8),
+    paddingInlineStart: theme.spacing(8),
   },
   export: {
     float: 'right',
@@ -657,7 +657,7 @@ class StixDomainObjectVictimologySectorsComponent extends Component {
           <StixCoreRelationshipCreationFromEntity
             entityId={stixDomainObjectId}
             isRelationReversed={false}
-            paddingRight={220}
+            paddingInlineEnd={220}
             onCreate={this.props.relay.refetch.bind(this)}
             targetStixDomainObjectTypes={['Sector', 'Organization']}
             allowedRelationshipTypes={['targets']}

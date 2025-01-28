@@ -202,7 +202,7 @@ class StixDomainObjectsExportCreationComponent extends Component {
                       <DialogTitle>
                         {t('Generate an export')}
                         <Tooltip title={t('Your max shareable markings will be applied to the content max markings')}>
-                          <InfoOutlined sx={{ paddingLeft: 1 }} fontSize="small" />
+                          <InfoOutlined sx={{ paddingInlineStart: 1 }} fontSize="small" />
                         </Tooltip>
                       </DialogTitle>
                       <DialogContent>

@@ -559,7 +559,7 @@ class StixCoreRelationshipCreationFromRelation extends Component {
   }
 
   render() {
-    const { classes, entityId, variant, paddingRight } = this.props;
+    const { classes, entityId, variant, paddingInlineEnd } = this.props;
     const { open, step } = this.state;
     return (
       <div>
@@ -579,7 +579,7 @@ class StixCoreRelationshipCreationFromRelation extends Component {
             color="primary"
             aria-label="Add"
             className={
-              paddingRight
+              paddingInlineEnd
                 ? classes.createButtonWithPadding
                 : classes.createButton
             }
@@ -630,7 +630,7 @@ StixCoreRelationshipCreationFromRelation.propTypes = {
   fsd: PropTypes.func,
   variant: PropTypes.string,
   onCreate: PropTypes.func,
-  paddingRight: PropTypes.bool,
+  paddingInlineEnd: PropTypes.bool,
 };
 
 export default R.compose(

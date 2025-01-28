@@ -25,14 +25,14 @@ const styles = (theme) => ({
     borderRadius: 4,
   },
   item: {
-    paddingLeft: 10,
+    paddingInlineStart: 10,
     height: 50,
   },
   itemIcon: {
     color: theme.palette.primary.main,
   },
   itemHead: {
-    paddingLeft: 10,
+    paddingInlineStart: 10,
     textTransform: 'uppercase',
   },
   bodyItem: {
@@ -42,7 +42,7 @@ const styles = (theme) => ({
     whiteSpace: 'nowrap',
     overflow: 'hidden',
     textOverflow: 'ellipsis',
-    paddingRight: 10,
+    paddingInlineEnd: 10,
   },
   goIcon: {
     position: 'absolute',
@@ -74,7 +74,7 @@ const inlineStylesHeaders = {
     whiteSpace: 'nowrap',
     overflow: 'hidden',
     textOverflow: 'ellipsis',
-    paddingRight: 10,
+    paddingInlineEnd: 10,
   },
   entity_tyoe: {
     float: 'left',
@@ -84,7 +84,7 @@ const inlineStylesHeaders = {
     whiteSpace: 'nowrap',
     overflow: 'hidden',
     textOverflow: 'ellipsis',
-    paddingRight: 10,
+    paddingInlineEnd: 10,
   },
   name: {
     float: 'left',
@@ -94,7 +94,7 @@ const inlineStylesHeaders = {
     whiteSpace: 'nowrap',
     overflow: 'hidden',
     textOverflow: 'ellipsis',
-    paddingRight: 10,
+    paddingInlineEnd: 10,
   },
   createdBy: {
     float: 'left',
@@ -104,7 +104,7 @@ const inlineStylesHeaders = {
     whiteSpace: 'nowrap',
     overflow: 'hidden',
     textOverflow: 'ellipsis',
-    paddingRight: 10,
+    paddingInlineEnd: 10,
   },
   creator: {
     float: 'left',
@@ -114,7 +114,7 @@ const inlineStylesHeaders = {
     whiteSpace: 'nowrap',
     overflow: 'hidden',
     textOverflow: 'ellipsis',
-    paddingRight: 10,
+    paddingInlineEnd: 10,
   },
   start_time: {
     float: 'left',
@@ -125,7 +125,7 @@ const inlineStylesHeaders = {
     whiteSpace: 'nowrap',
     overflow: 'hidden',
     textOverflow: 'ellipsis',
-    paddingRight: 10,
+    paddingInlineEnd: 10,
   },
   stop_time: {
     float: 'left',
@@ -136,7 +136,7 @@ const inlineStylesHeaders = {
     whiteSpace: 'nowrap',
     overflow: 'hidden',
     textOverflow: 'ellipsis',
-    paddingRight: 10,
+    paddingInlineEnd: 10,
   },
   confidence: {
     float: 'left',
@@ -147,7 +147,7 @@ const inlineStylesHeaders = {
     whiteSpace: 'nowrap',
     overflow: 'hidden',
     textOverflow: 'ellipsis',
-    paddingRight: 10,
+    paddingInlineEnd: 10,
   },
 };
 

@@ -244,7 +244,7 @@ const IndicatorAddObservablesLinesContainer = (props) => {
               );
             })
           ) : (
-            <div style={{ paddingLeft: 20 }}>
+            <div style={{ paddingInlineStart: 20 }}>
               {t_i18n('No entities were found for this search.')}
             </div>
           )}

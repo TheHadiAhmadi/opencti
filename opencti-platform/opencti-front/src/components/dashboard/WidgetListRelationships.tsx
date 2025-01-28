@@ -20,7 +20,7 @@ const bodyItemStyle = (width: string): CSSProperties => ({
   whiteSpace: 'nowrap',
   overflow: 'hidden',
   textOverflow: 'ellipsis',
-  paddingRight: 2,
+  paddingInlineEnd: 2,
   width,
 });
 
@@ -80,7 +80,7 @@ const WidgetListRelationships = ({
                 height: 50,
                 minHeight: 50,
                 maxHeight: 50,
-                paddingRight: 0,
+                paddingInlineEnd: 0,
               }}
             >
               <ListItemIcon

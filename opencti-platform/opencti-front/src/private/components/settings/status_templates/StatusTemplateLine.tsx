@@ -13,7 +13,7 @@ import { StatusTemplateLine_node$key } from './__generated__/StatusTemplateLine_
 // Do not use it for new code.
 const useStyles = makeStyles({
   item: {
-    paddingLeft: 10,
+    paddingInlineStart: 10,
     height: 50,
     cursor: 'default',
   },
@@ -24,7 +24,7 @@ const useStyles = makeStyles({
     whiteSpace: 'nowrap',
     overflow: 'hidden',
     textOverflow: 'ellipsis',
-    paddingRight: 10,
+    paddingInlineEnd: 10,
   },
 });
 

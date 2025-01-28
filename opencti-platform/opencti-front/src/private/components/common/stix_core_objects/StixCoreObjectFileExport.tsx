@@ -187,7 +187,7 @@ const StixCoreObjectFileExportComponent = ({
               <DialogTitle>
                 {t_i18n('Generate an export')}
                 <Tooltip title={t_i18n('Your max shareable markings will be applied to the content max markings')}>
-                  <InfoOutlined sx={{ paddingLeft: 1 }} fontSize="small" />
+                  <InfoOutlined sx={{ paddingInlineStart: 1 }} fontSize="small" />
                 </Tooltip>
               </DialogTitle>
               {/* Duplicate code for displaying list of marking in select input. TODO a component */}

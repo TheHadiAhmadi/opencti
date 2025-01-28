@@ -62,7 +62,7 @@ const InfrastructureKnowledge = ({ infrastructure }: { infrastructure: Infrastru
           element={
             <StixCoreRelationship
               entityId={infrastructureData.id}
-              paddingRight={true}
+              paddingInlineEnd={true}
             />
           }
         />
@@ -71,7 +71,7 @@ const InfrastructureKnowledge = ({ infrastructure }: { infrastructure: Infrastru
           element={
             <StixSightingRelationship
               entityId={infrastructureData.id}
-              paddingRight={true}
+              paddingInlineEnd={true}
             />
           }
         />

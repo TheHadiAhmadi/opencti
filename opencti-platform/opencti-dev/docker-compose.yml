@@ -16,12 +16,14 @@ services:
     container_name: opencti-dev-elasticsearch
     image: docker.elastic.co/elasticsearch/elasticsearch:8.17.0
     volumes:
-      - esdata:/usr/share/elasticsearch/data
-      - essnapshots:/usr/share/elasticsearch/snapshots
+      - esdata:/usr/share/elastic/data
+      - essnapshots:/usr/share/elastic/snapshots
     environment:
       - discovery.type=single-node
       - xpack.ml.enabled=false
       - xpack.security.enabled=false
+      - thread_pool.search.queue_size=10000  # add queue_size (default 1000)
+      - thread_pool.search.size=30  # add size (default 13)
       - "ES_JAVA_OPTS=-Xms2G -Xmx2G"
     restart: unless-stopped
     ulimits:

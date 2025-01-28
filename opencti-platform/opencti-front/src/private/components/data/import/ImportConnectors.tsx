@@ -24,7 +24,7 @@ const useStyles = makeStyles(() => ({
     marginTop: 2,
   },
   item: {
-    paddingLeft: 10,
+    paddingInlineStart: 10,
     height: 50,
   },
 }));

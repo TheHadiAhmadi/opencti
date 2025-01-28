@@ -289,7 +289,7 @@ export const DataSourceCreationForm: FunctionComponent<DataSourceFormProps> = ({
             />
             <div style={{
               marginTop: '20px',
-              textAlign: 'right',
+              textAlign: 'end',
             }}
             >
               <Button

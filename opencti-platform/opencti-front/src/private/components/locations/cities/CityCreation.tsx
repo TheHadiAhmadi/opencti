@@ -277,7 +277,7 @@ export const CityCreationForm: FunctionComponent<CityFormProps> = ({
             />
             <div style={{
               marginTop: '20px',
-              textAlign: 'right',
+              textAlign: 'end',
             }}
             >
               <Button

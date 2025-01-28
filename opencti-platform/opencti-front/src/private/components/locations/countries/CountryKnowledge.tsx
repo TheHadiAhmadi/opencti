@@ -37,7 +37,7 @@ const CountryKnowledgeComponent = ({
           element={
             <StixCoreRelationship
               entityId={country.id}
-              paddingRight={20}
+              paddingInlineEnd={20}
             />
           }
         />
@@ -46,7 +46,7 @@ const CountryKnowledgeComponent = ({
           element={
             <StixSightingRelationship
               entityId={country.id}
-              paddingRight={true}
+              paddingInlineEnd={true}
             />
           }
         />

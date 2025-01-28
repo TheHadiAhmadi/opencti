@@ -28,7 +28,7 @@ import Breadcrumbs from '../../../../components/Breadcrumbs';
 import { useFormatter } from '../../../../components/i18n';
 import { useIsEnforceReference } from '../../../../utils/hooks/useEntitySettings';
 import useGranted, { KNOWLEDGE_KNUPDATE_KNBYPASSREFERENCE, KNOWLEDGE_KNUPDATE } from '../../../../utils/hooks/useGranted';
-import { getCurrentTab, getPaddingRight } from '../../../../utils/utils';
+import { getCurrentTab, getpaddingInlineEnd } from '../../../../utils/utils';
 import ReportEdition from './ReportEdition';
 import useHelper from '../../../../utils/hooks/useHelper';
 import { useGetCurrentUserAccessRight } from '../../../../utils/authorizedMembers';
@@ -105,10 +105,10 @@ const RootReport = () => {
             if (props.report) {
               const { report } = props;
               const isOverview = location.pathname === `/dashboard/analyses/reports/${report.id}`;
-              const paddingRight = getPaddingRight(location.pathname, reportId, '/dashboard/analyses/reports', false);
+              const paddingInlineEnd = getpaddingInlineEnd(location.pathname, reportId, '/dashboard/analyses/reports', false);
               const currentAccessRight = useGetCurrentUserAccessRight(report.currentUserAccessRight);
               return (
-                <div style={{ paddingRight }} data-testid="report-details-page">
+                <div style={{ paddingInlineEnd }} data-testid="report-details-page">
                   <Breadcrumbs elements={[
                     { label: t_i18n('Analyses') },
                     { label: t_i18n('Reports'), link: '/dashboard/analyses/reports' },

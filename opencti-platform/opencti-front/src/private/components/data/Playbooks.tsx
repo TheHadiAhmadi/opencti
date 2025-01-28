@@ -180,7 +180,7 @@ const Playbooks: FunctionComponent = () => {
     },
   };
   return (
-    <div style={{ paddingRight: '200px' }}>
+    <div style={{ paddingInlineEnd: '200px' }}>
       <Breadcrumbs elements={[
         { label: t_i18n('Data') },
         { label: t_i18n('Processing') },

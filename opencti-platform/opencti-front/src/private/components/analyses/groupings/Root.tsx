@@ -27,7 +27,7 @@ import { useFormatter } from '../../../../components/i18n';
 import Breadcrumbs from '../../../../components/Breadcrumbs';
 import { useIsEnforceReference } from '../../../../utils/hooks/useEntitySettings';
 import useGranted, { KNOWLEDGE_KNUPDATE_KNBYPASSREFERENCE, KNOWLEDGE_KNUPDATE } from '../../../../utils/hooks/useGranted';
-import { getCurrentTab, getPaddingRight } from '../../../../utils/utils';
+import { getCurrentTab, getpaddingInlineEnd } from '../../../../utils/utils';
 import GroupingEdition from './GroupingEdition';
 import { useGetCurrentUserAccessRight } from '../../../../utils/authorizedMembers';
 import useHelper from '../../../../utils/hooks/useHelper';
@@ -106,10 +106,10 @@ const RootGrouping = () => {
             if (props.grouping) {
               const { grouping } = props;
               const isOverview = location.pathname === `/dashboard/analyses/groupings/${grouping.id}`;
-              const paddingRight = getPaddingRight(location.pathname, grouping.id, '/dashboard/analyses/groupings', false);
+              const paddingInlineEnd = getpaddingInlineEnd(location.pathname, grouping.id, '/dashboard/analyses/groupings', false);
               const currentAccessRight = useGetCurrentUserAccessRight(grouping.currentUserAccessRight);
               return (
-                <div style={{ paddingRight }}>
+                <div style={{ paddingInlineEnd }}>
                   <Breadcrumbs elements={[
                     { label: t_i18n('Analyses') },
                     { label: t_i18n('Groupings'), link: '/dashboard/analyses/groupings' },

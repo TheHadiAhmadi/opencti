@@ -25,7 +25,7 @@ import StixCoreObjectKnowledgeBar from '../../common/stix_core_objects/StixCoreO
 import EntityStixSightingRelationships from '../../events/stix_sighting_relationships/EntityStixSightingRelationships';
 import { useFormatter } from '../../../../components/i18n';
 import Breadcrumbs from '../../../../components/Breadcrumbs';
-import { getCurrentTab, getPaddingRight } from '../../../../utils/utils';
+import { getCurrentTab, getpaddingInlineEnd } from '../../../../utils/utils';
 import IndividualEdition from './IndividualEdition';
 import Security from '../../../../utils/Security';
 import { KNOWLEDGE_KNUPDATE } from '../../../../utils/hooks/useGranted';
@@ -127,9 +127,9 @@ const RootIndividual = ({ individualId, queryRef }: RootIndividualProps) => {
   const { forceUpdate } = useForceUpdate();
 
   const link = `/dashboard/entities/individuals/${individualId}/knowledge`;
-  let paddingRight = 0;
+  let paddingInlineEnd = 0;
   if (viewAs === 'knowledge') {
-    paddingRight = getPaddingRight(location.pathname, individualId, '/dashboard/entities/individuals');
+    paddingInlineEnd = getpaddingInlineEnd(location.pathname, individualId, '/dashboard/entities/individuals');
   }
 
   return (
@@ -160,7 +160,7 @@ const RootIndividual = ({ individualId, queryRef }: RootIndividualProps) => {
               )}
             />
           </Routes>
-          <div style={{ paddingRight }}>
+          <div style={{ paddingInlineEnd }}>
             <Breadcrumbs elements={[
               { label: t_i18n('Entities') },
               { label: t_i18n('Individuals'), link: '/dashboard/entities/individuals' },

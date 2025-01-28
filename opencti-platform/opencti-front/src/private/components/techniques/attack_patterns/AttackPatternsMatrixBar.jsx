@@ -50,7 +50,7 @@ class AttackPatternsMatrixBar extends Component {
               variant: 'elevation',
               elevation: 1,
               style: {
-                paddingLeft: navOpen ? 190 : 70,
+                paddingInlineStart: navOpen ? 190 : 70,
                 bottom: bannerSettings.bannerHeightNumber,
               },
             }}

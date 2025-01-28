@@ -24,7 +24,7 @@ import IndicatorPopover from './IndicatorPopover';
 import StixCoreObjectOrStixCoreRelationshipContainers from '../../common/containers/StixCoreObjectOrStixCoreRelationshipContainers';
 import { useFormatter } from '../../../../components/i18n';
 import Breadcrumbs from '../../../../components/Breadcrumbs';
-import { getCurrentTab, getPaddingRight } from '../../../../utils/utils';
+import { getCurrentTab, getpaddingInlineEnd } from '../../../../utils/utils';
 import Security from '../../../../utils/Security';
 import { KNOWLEDGE_KNUPDATE } from '../../../../utils/hooks/useGranted';
 import IndicatorEdition from './IndicatorEdition';
@@ -95,11 +95,11 @@ const RootIndicator = ({ indicatorId, queryRef }: RootIndicatorProps) => {
 
   const { forceUpdate } = useForceUpdate();
   const link = `/dashboard/observations/indicators/${indicatorId}/knowledge`;
-  const paddingRight = getPaddingRight(location.pathname, indicatorId, '/dashboard/observations/indicators', false);
+  const paddingInlineEnd = getpaddingInlineEnd(location.pathname, indicatorId, '/dashboard/observations/indicators', false);
   return (
     <>
       {indicator ? (
-        <div style={{ paddingRight }}>
+        <div style={{ paddingInlineEnd }}>
           <Breadcrumbs elements={[
             { label: t_i18n('Observations') },
             { label: t_i18n('Indicators'), link: '/dashboard/observations/indicators' },
@@ -257,7 +257,7 @@ const RootIndicator = ({ indicatorId, queryRef }: RootIndicatorProps) => {
               element={(
                 <StixSightingRelationship
                   entityId={indicatorId}
-                  paddingRight
+                  paddingInlineEnd
                 />
               )}
             />

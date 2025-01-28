@@ -21,7 +21,7 @@ import FileManager from '../../common/files/FileManager';
 import StixSightingRelationship from '../../events/stix_sighting_relationships/StixSightingRelationship';
 import inject18n from '../../../../components/i18n';
 import Breadcrumbs from '../../../../components/Breadcrumbs';
-import { getCurrentTab, getPaddingRight } from '../../../../utils/utils';
+import { getCurrentTab, getpaddingInlineEnd } from '../../../../utils/utils';
 
 const subscription = graphql`
   subscription RootArtifactSubscription($id: ID!) {
@@ -96,9 +96,9 @@ class RootArtifact extends Component {
             if (props) {
               if (props.stixCyberObservable) {
                 const { stixCyberObservable } = props;
-                const paddingRight = getPaddingRight(location.pathname, stixCyberObservable.id, '/dashboard/observations/artifacts', false);
+                const paddingInlineEnd = getpaddingInlineEnd(location.pathname, stixCyberObservable.id, '/dashboard/observations/artifacts', false);
                 return (
-                  <div style={{ paddingRight }}>
+                  <div style={{ paddingInlineEnd }}>
                     <Breadcrumbs elements={[
                       { label: t('Observations') },
                       { label: t('Artifacts'), link: '/dashboard/observations/artifacts' },
@@ -244,7 +244,7 @@ class RootArtifact extends Component {
                         element={(
                           <StixSightingRelationship
                             entityId={observableId}
-                            paddingRight
+                            paddingInlineEnd
                           />
                                 )}
                       />

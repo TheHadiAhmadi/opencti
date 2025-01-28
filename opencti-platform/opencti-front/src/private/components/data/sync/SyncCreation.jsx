@@ -36,10 +36,10 @@ const useStyles = makeStyles((theme) => ({
   buttons: {
     width: '100%',
     marginTop: 20,
-    textAlign: 'right',
+    textAlign: 'end',
   },
   button: {
-    marginLeft: theme.spacing(2),
+    marginInlineStart: theme.spacing(2),
   },
   alert: {
     width: '100%',

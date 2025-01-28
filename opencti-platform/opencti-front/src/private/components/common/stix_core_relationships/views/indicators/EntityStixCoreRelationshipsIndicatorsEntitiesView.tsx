@@ -210,7 +210,7 @@ const EntityStixCoreRelationshipsIndicatorsEntitiesView: FunctionComponent<Entit
           allowedRelationshipTypes={relationshipTypes}
           paginationOptions={paginationOptions}
           openExports={openExports}
-          paddingRight={220}
+          paddingInlineEnd={220}
           connectionKey="Pagination_indicators"
           defaultStartTime={defaultStartTime}
           defaultStopTime={defaultStopTime}

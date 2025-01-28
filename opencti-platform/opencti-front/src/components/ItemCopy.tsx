@@ -21,18 +21,18 @@ const useStyles = makeStyles<Theme>((theme) => ({
   },
   containerWrap: {
     position: 'relative',
-    paddingRight: 18,
+    paddingInlineEnd: 18,
   },
   container: {
     position: 'relative',
-    paddingRight: 18,
+    paddingInlineEnd: 18,
     whiteSpace: 'nowrap',
     overflow: 'hidden',
     textOverflow: 'ellipsis',
   },
   icon: {
     position: 'absolute',
-    right: 0,
+    insetInlineEnd: 0,
     top: 0,
     cursor: 'pointer',
     '&:hover': {
@@ -41,7 +41,7 @@ const useStyles = makeStyles<Theme>((theme) => ({
   },
   iconInline: {
     position: 'absolute',
-    right: 5,
+    insetInlineEnd: 5,
     top: 4,
     cursor: 'pointer',
     '&:hover': {

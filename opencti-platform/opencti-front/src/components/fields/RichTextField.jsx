@@ -28,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
   closeButton: {
     position: 'absolute',
     top: 12,
-    left: 5,
+    insetInlineStart: 5,
     color: 'inherit',
   },
 }));
@@ -169,7 +169,7 @@ const RichTextField = (props) => {
         />
       )}
       {handleDownloadPdf && (
-        <div style={{ position: 'absolute', top: -7, right: askAi ? 57 : 30 }}>
+        <div style={{ position: 'absolute', top: -7, insetInlineEnd: askAi ? 57 : 30 }}>
           <Tooltip title={t_i18n('Download in pdf')}>
             <IconButton
               color="primary"

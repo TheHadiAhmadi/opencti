@@ -24,7 +24,7 @@ class CampaignKnowledgeComponent extends Component {
             element={
               <StixCoreRelationship
                 entityId={campaign.id}
-                paddingRight={true}
+                paddingInlineEnd={true}
               />
             }
           />
@@ -33,7 +33,7 @@ class CampaignKnowledgeComponent extends Component {
             element={
               <StixSightingRelationship
                 entityId={campaign.id}
-                paddingRight={true}
+                paddingInlineEnd={true}
               />
             }
           />

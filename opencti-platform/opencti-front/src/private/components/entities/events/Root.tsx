@@ -23,7 +23,7 @@ import ErrorNotFound from '../../../../components/ErrorNotFound';
 import EntityStixSightingRelationships from '../../events/stix_sighting_relationships/EntityStixSightingRelationships';
 import { useFormatter } from '../../../../components/i18n';
 import Breadcrumbs from '../../../../components/Breadcrumbs';
-import { getCurrentTab, getPaddingRight } from '../../../../utils/utils';
+import { getCurrentTab, getpaddingInlineEnd } from '../../../../utils/utils';
 import Security from '../../../../utils/Security';
 import { KNOWLEDGE_KNUPDATE } from '../../../../utils/hooks/useGranted';
 import EventEdition from './EventEdition';
@@ -98,7 +98,7 @@ const RootEvent = ({ eventId, queryRef }: RootEventProps) => {
   const { forceUpdate } = useForceUpdate();
 
   const link = `/dashboard/entities/events/${eventId}/knowledge`;
-  const paddingRight = getPaddingRight(location.pathname, eventId, '/dashboard/entities/events');
+  const paddingInlineEnd = getpaddingInlineEnd(location.pathname, eventId, '/dashboard/entities/events');
   return (
     <>
       {event ? (
@@ -126,7 +126,7 @@ const RootEvent = ({ eventId, queryRef }: RootEventProps) => {
               }
             />
           </Routes>
-          <div style={{ paddingRight }}>
+          <div style={{ paddingInlineEnd }}>
             <Breadcrumbs elements={[
               { label: t_i18n('Entities') },
               { label: t_i18n('Events'), link: '/dashboard/entities/events' },

@@ -35,7 +35,7 @@ import useConnectedDocumentModifier from '../../utils/hooks/useConnectedDocument
 const useStyles = makeStyles((theme) => ({
   root: {
     marginRight: -20,
-    paddingRight: 20,
+    paddingInlineEnd: 20,
     paddingBottom: 30,
   },
   card: {
@@ -59,7 +59,7 @@ const useStyles = makeStyles((theme) => ({
     position: 'absolute',
     color: theme.palette.primary.main,
     top: 35,
-    right: 20,
+    insetInlineEnd: 20,
   },
 }));
 // endregion

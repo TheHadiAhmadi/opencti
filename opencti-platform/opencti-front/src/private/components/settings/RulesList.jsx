@@ -89,8 +89,8 @@ const useStyles = makeStyles((theme) => ({
   },
   middle: {
     textAlign: 'center',
-    paddingLeft: 30,
-    paddingRight: 30,
+    paddingInlineStart: 30,
+    paddingInlineEnd: 30,
   },
   right: {
     width: '100%',

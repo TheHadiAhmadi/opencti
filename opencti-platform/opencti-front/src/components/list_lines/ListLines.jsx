@@ -87,7 +87,7 @@ const styles = (theme) => ({
     padding: 0,
   },
   item: {
-    paddingLeft: 10,
+    paddingInlineStart: 10,
     textTransform: 'uppercase',
   },
   headerItem: {
@@ -101,7 +101,7 @@ const styles = (theme) => ({
     fontSize: 12,
     fontWeight: '700',
     cursor: 'pointer',
-    paddingRight: 10,
+    paddingInlineEnd: 10,
     alignItems: 'center',
   },
   headerItemText: {

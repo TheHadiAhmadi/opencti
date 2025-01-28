@@ -27,7 +27,7 @@ Transition.displayName = 'TransitionSlide';
 
 const styles = (theme) => ({
   item: {
-    paddingLeft: 10,
+    paddingInlineStart: 10,
     height: 50,
   },
   itemIcon: {
@@ -42,14 +42,14 @@ const styles = (theme) => ({
     whiteSpace: 'nowrap',
     overflow: 'hidden',
     textOverflow: 'ellipsis',
-    paddingRight: 10,
+    paddingInlineEnd: 10,
   },
   filtersItem: {
     height: 40,
     display: 'flex',
     alignItems: 'center',
     float: 'left',
-    paddingRight: 10,
+    paddingInlineEnd: 10,
   },
   goIcon: {
     position: 'absolute',
@@ -111,7 +111,7 @@ class TaxiiLineLineComponent extends Component {
               </div>
               <div
                 className={classes.bodyItem}
-                style={{ width: dataColumns.id.width, paddingRight: 10 }}
+                style={{ width: dataColumns.id.width, paddingInlineEnd: 10 }}
               >
                 <ItemCopy content={node.id} variant="inLine" />
               </div>

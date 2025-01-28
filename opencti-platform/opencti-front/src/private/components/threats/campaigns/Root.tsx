@@ -22,7 +22,7 @@ import ErrorNotFound from '../../../../components/ErrorNotFound';
 import StixCoreObjectKnowledgeBar from '../../common/stix_core_objects/StixCoreObjectKnowledgeBar';
 import { useFormatter } from '../../../../components/i18n';
 import Breadcrumbs from '../../../../components/Breadcrumbs';
-import { getCurrentTab, getPaddingRight } from '../../../../utils/utils';
+import { getCurrentTab, getpaddingInlineEnd } from '../../../../utils/utils';
 import { RootCampaignQuery } from './__generated__/RootCampaignQuery.graphql';
 import useHelper from '../../../../utils/hooks/useHelper';
 import Security from '../../../../utils/Security';
@@ -101,7 +101,7 @@ const RootCampaign = ({ campaignId, queryRef }: RootCampaignProps) => {
 
   const link = `/dashboard/threats/campaigns/${campaignId}/knowledge`;
   const isOverview = location.pathname === `/dashboard/threats/campaigns/${campaignId}`;
-  const paddingRight = getPaddingRight(location.pathname, campaignId, '/dashboard/threats/campaigns');
+  const paddingInlineEnd = getpaddingInlineEnd(location.pathname, campaignId, '/dashboard/threats/campaigns');
   return (
     <>
       {campaign ? (
@@ -133,7 +133,7 @@ const RootCampaign = ({ campaignId, queryRef }: RootCampaignProps) => {
               }
             />
           </Routes>
-          <div style={{ paddingRight }}>
+          <div style={{ paddingInlineEnd }}>
             <Breadcrumbs elements={[
               { label: t_i18n('Threats') },
               { label: t_i18n('Campaigns'), link: '/dashboard/threats/campaigns' },

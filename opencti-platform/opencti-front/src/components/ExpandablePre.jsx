@@ -15,7 +15,7 @@ const ExpandablePre = (props) => {
   return (
     <div style={{ position: 'relative' }}>
       {shouldBeTruncated && (
-        <div style={{ position: 'absolute', top: -32, right: 0 }}>
+        <div style={{ position: 'absolute', top: -32, insetInlineEnd: 0 }}>
           <IconButton onClick={onClick} size="large">
             {expand ? <ExpandLess /> : <ExpandMore />}
           </IconButton>

@@ -35,7 +35,7 @@ const CreateEntityControlledDial: FunctionComponent<CreateEntityControlledDialPr
       variant={variant}
       aria-label={buttonValue}
       title={buttonValue}
-      sx={style ?? { marginLeft: theme.spacing(1) }}
+      sx={style ?? { marginInlineStart: theme.spacing(1) }}
     >
       <div style={{ display: 'flex' }}>
         {buttonValue}

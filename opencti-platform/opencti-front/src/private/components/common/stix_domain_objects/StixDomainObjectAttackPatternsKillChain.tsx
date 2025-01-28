@@ -430,7 +430,7 @@ const StixDomainObjectAttackPatternsKillChain: FunctionComponent<StixDomainObjec
           <StixCoreRelationshipCreationFromEntity
             entityId={stixDomainObjectId}
             isRelationReversed={false}
-            paddingRight={220}
+            paddingInlineEnd={220}
             onCreate={refetch}
             targetStixDomainObjectTypes={['Attack-Pattern']}
             paginationOptions={paginationOptions}

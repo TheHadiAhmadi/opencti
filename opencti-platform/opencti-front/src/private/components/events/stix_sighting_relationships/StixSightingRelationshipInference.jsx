@@ -74,9 +74,9 @@ class StixSightingRelationshipInference extends Component {
       inference,
       theme,
       stixSightingRelationship,
-      paddingRight,
+      paddingInlineEnd,
     } = this.props;
-    const width = window.innerWidth - (paddingRight ? 450 : 250);
+    const width = window.innerWidth - (paddingInlineEnd ? 450 : 250);
     const stixRelationship = { ...stixSightingRelationship };
     // Complete the relationship if needed
     if (isEmptyField(stixRelationship.from)) {
@@ -185,7 +185,7 @@ class StixSightingRelationshipInference extends Component {
 
 StixSightingRelationshipInference.propTypes = {
   inference: PropTypes.object,
-  paddingRight: PropTypes.bool,
+  paddingInlineEnd: PropTypes.bool,
   stixSightingRelationship: PropTypes.object,
 };
 

@@ -21,7 +21,7 @@ import ErrorNotFound from '../../../../components/ErrorNotFound';
 import StixCoreObjectKnowledgeBar from '../../common/stix_core_objects/StixCoreObjectKnowledgeBar';
 import { useFormatter } from '../../../../components/i18n';
 import Breadcrumbs from '../../../../components/Breadcrumbs';
-import { getCurrentTab, getPaddingRight } from '../../../../utils/utils';
+import { getCurrentTab, getpaddingInlineEnd } from '../../../../utils/utils';
 import { RootIntrusionSetQuery } from './__generated__/RootIntrusionSetQuery.graphql';
 import { RootIntrusionSetSubscription } from './__generated__/RootIntrusionSetSubscription.graphql';
 import useHelper from '../../../../utils/hooks/useHelper';
@@ -105,7 +105,7 @@ const RootIntrusionSet = ({ intrusionSetId, queryRef }: RootIntrusionSetProps) =
   const { forceUpdate } = useForceUpdate();
 
   const isOverview = location.pathname === `/dashboard/threats/intrusion_sets/${intrusionSetId}`;
-  const paddingRight = getPaddingRight(location.pathname, intrusionSetId, '/dashboard/threats/intrusion_sets');
+  const paddingInlineEnd = getpaddingInlineEnd(location.pathname, intrusionSetId, '/dashboard/threats/intrusion_sets');
   const link = `/dashboard/threats/intrusion_sets/${intrusionSetId}/knowledge`;
   return (
     <>
@@ -139,7 +139,7 @@ const RootIntrusionSet = ({ intrusionSetId, queryRef }: RootIntrusionSetProps) =
               }
             />
           </Routes>
-          <div style={{ paddingRight }} data-testid="intrusionSet-details-page">
+          <div style={{ paddingInlineEnd }} data-testid="intrusionSet-details-page">
             <Breadcrumbs elements={[
               { label: t_i18n('Threats') },
               { label: t_i18n('Intrusion sets'), link: '/dashboard/threats/intrusion_sets' },

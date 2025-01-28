@@ -28,14 +28,14 @@ import { toB64 } from '../../../../../utils/String';
 
 const styles = (theme) => ({
   itemNested: {
-    paddingLeft: theme.spacing(4),
+    paddingInlineStart: theme.spacing(4),
     height: 50,
   },
   itemText: {
     whiteSpace: 'nowrap',
     overflow: 'hidden',
     textOverflow: 'ellipsis',
-    paddingRight: 10,
+    paddingInlineEnd: 10,
   },
   chipInList: {
     fontSize: 12,
@@ -47,12 +47,12 @@ const styles = (theme) => ({
     marginTop: 10,
   },
   itemHead: {
-    paddingLeft: 10,
+    paddingInlineStart: 10,
     textTransform: 'uppercase',
     cursor: 'pointer',
   },
   item: {
-    paddingLeft: 10,
+    paddingInlineStart: 10,
     height: 50,
   },
   bodyItem: {
@@ -62,7 +62,7 @@ const styles = (theme) => ({
     whiteSpace: 'nowrap',
     overflow: 'hidden',
     textOverflow: 'ellipsis',
-    paddingRight: 10,
+    paddingInlineEnd: 10,
   },
   itemIcon: {
     color: theme.palette.primary.main,
@@ -192,7 +192,7 @@ class WorkbenchFileLineComponent extends Component {
             )}
           </ListItemIcon>
           <ListItemText
-            style={{ paddingRight: 10 }}
+            style={{ paddingInlineEnd: 10 }}
             primary={
               <>
                 <div className={classes.bodyItem} style={inlineStyles.name}>

@@ -60,7 +60,7 @@ export const HeightFieldEdit: FunctionComponent<HeightFieldEditProps> = ({
                 >
                   <div
                     style={{
-                      paddingRight: 50,
+                      paddingInlineEnd: 50,
                       display: 'grid',
                       gap: 20,
                       gridTemplateColumns: 'repeat(2, 1fr)',
@@ -213,7 +213,7 @@ export const HeightFieldAdd: FunctionComponent<HeightFieldAddProps> = ({
                 >
                   <div
                     style={{
-                      paddingRight: 50,
+                      paddingInlineEnd: 50,
                       display: 'grid',
                       gap: 20,
                       gridTemplateColumns: 'repeat(2, 1fr)',

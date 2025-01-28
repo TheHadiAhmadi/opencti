@@ -282,7 +282,7 @@ export const SystemCreationForm: FunctionComponent<SystemFormProps> = ({
             />
             <div style={{
               marginTop: '20px',
-              textAlign: 'right',
+              textAlign: 'end',
             }}
             >
               <Button

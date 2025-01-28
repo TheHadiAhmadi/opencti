@@ -59,21 +59,21 @@ const styles = (theme) => ({
     marginTop: 2,
   },
   item: {
-    paddingLeft: 10,
+    paddingInlineStart: 10,
     height: 50,
   },
   buttons: {
     marginTop: 20,
-    textAlign: 'right',
+    textAlign: 'end',
   },
   button: {
-    marginLeft: theme.spacing(2),
+    marginInlineStart: theme.spacing(2),
   },
   linesContainer: {
     marginTop: 10,
   },
   itemHead: {
-    paddingLeft: 10,
+    paddingInlineStart: 10,
     textTransform: 'uppercase',
   },
   bodyItem: {
@@ -343,7 +343,7 @@ class ImportContentComponent extends Component {
     const invalidCsvMapper = this.state.selectedConnector?.name === 'ImportCsv'
       && this.state.selectedConnector?.configurations?.length === 0;
     return (
-      <div style={{ paddingRight: isNewImportScreensEnabled ? 200 : 0 }}>
+      <div style={{ paddingInlineEnd: isNewImportScreensEnabled ? 200 : 0 }}>
         <Breadcrumbs elements={[{ label: t('Data') }, { label: t('Import'), current: true }]} />
         {isNewImportScreensEnabled && <ImportMenu/>}
         <Grid

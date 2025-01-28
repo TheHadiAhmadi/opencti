@@ -261,7 +261,7 @@ export const CampaignCreationForm: FunctionComponent<CampaignFormProps> = ({
             />
             <div style={{
               marginTop: '20px',
-              textAlign: 'right',
+              textAlign: 'end',
             }}
             >
               <Button
