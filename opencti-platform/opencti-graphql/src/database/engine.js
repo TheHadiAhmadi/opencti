@@ -48,7 +48,7 @@ import {
   waitInSec,
   WRITE_PLATFORM_INDICES
 } from './utils';
-import conf, { booleanConf, extendedErrors, loadCert, logApp } from '../config/conf';
+import conf, { booleanConf, extendedErrors, loadCert, logApp, logMigration } from '../config/conf';
 import { ComplexSearchError, ConfigurationError, DatabaseError, EngineShardsError, FunctionalError, UnsupportedError } from '../config/errors';
 import {
   isStixRefRelationship,
@@ -87,15 +87,26 @@ import {
   ATTRIBUTE_EXPLANATION,
   ATTRIBUTE_NAME,
   ENTITY_TYPE_IDENTITY_INDIVIDUAL,
+  ENTITY_TYPE_IDENTITY_SECTOR,
   ENTITY_TYPE_IDENTITY_SYSTEM,
+  ENTITY_TYPE_LOCATION_CITY,
   ENTITY_TYPE_LOCATION_COUNTRY,
+  ENTITY_TYPE_LOCATION_REGION,
   isStixDomainObject,
   STIX_ORGANIZATIONS_RESTRICTED,
   STIX_ORGANIZATIONS_UNRESTRICTED
 } from '../schema/stixDomainObject';
 import { isBasicObject, isStixCoreObject, isStixObject } from '../schema/stixCoreObject';
 import { isBasicRelationship, isStixRelationship } from '../schema/stixRelationship';
-import { isStixCoreRelationship, RELATION_INDICATES, RELATION_PUBLISHES, RELATION_RELATED_TO, STIX_CORE_RELATIONSHIPS } from '../schema/stixCoreRelationship';
+import {
+  isStixCoreRelationship,
+  RELATION_INDICATES,
+  RELATION_LOCATED_AT,
+  RELATION_PUBLISHES,
+  RELATION_RELATED_TO,
+  RELATION_TARGETS,
+  STIX_CORE_RELATIONSHIPS
+} from '../schema/stixCoreRelationship';
 import { generateInternalId, INTERNAL_FROM_FIELD, INTERNAL_TO_FIELD } from '../schema/identifier';
 import {
   BYPASS,
@@ -170,12 +181,12 @@ import { rule_definitions } from '../rules/rules-definition';
 import { buildElasticSortingForAttributeCriteria } from '../utils/sorting';
 import { ENTITY_TYPE_DELETE_OPERATION } from '../modules/deleteOperation/deleteOperation-types';
 import { buildEntityData } from './data-builder';
-import { buildDraftFilter, DRAFT_OPERATION_CREATE, DRAFT_OPERATION_DELETE_LINKED, DRAFT_OPERATION_DELETE, DRAFT_OPERATION_UPDATE, isDraftSupportedEntity } from './draft-utils';
+import { buildDraftFilter, DRAFT_OPERATION_CREATE, DRAFT_OPERATION_DELETE, DRAFT_OPERATION_DELETE_LINKED, DRAFT_OPERATION_UPDATE, isDraftSupportedEntity } from './draft-utils';
 import { controlUserConfidenceAgainstElement } from '../utils/confidence-level';
 import { getDraftContext } from '../utils/draftContext';
 import { enrichWithRemoteCredentials } from '../config/credentials';
 import { ENTITY_TYPE_DRAFT_WORKSPACE } from '../modules/draftWorkspace/draftWorkspace-types';
-import { isStixCyberObservable } from '../schema/stixCyberObservable';
+import { ENTITY_IPV4_ADDR, ENTITY_IPV6_ADDR, isStixCyberObservable } from '../schema/stixCyberObservable';
 
 const ELK_ENGINE = 'elk';
 const OPENSEARCH_ENGINE = 'opensearch';
@@ -222,10 +233,39 @@ export const UNIMPACTED_ENTITIES_ROLE = [
   // RELATION_EXTERNAL_REFERENCE
   `${RELATION_INDICATES}_${ROLE_TO}`,
 ];
-export const isImpactedTypeAndSide = (type, side) => {
+const LOCATED_AT_CLEANED = [ENTITY_TYPE_LOCATION_REGION, ENTITY_TYPE_LOCATION_COUNTRY];
+const UNSUPPORTED_LOCATED_AT = [ENTITY_IPV4_ADDR, ENTITY_IPV6_ADDR, ENTITY_TYPE_LOCATION_CITY];
+export const isSpecialNonImpactedCases = (relationshipType, fromType, toType, side) => {
+  // The relationship is a related-to from an observable to "something" (generally, it is an intrusion set, a malware, etc.)
+  // This is to avoid for instance Emotet having 200K related-to.
+  // As a consequence, no entities view on the observable side.
+  if (side === ROLE_TO && relationshipType === RELATION_RELATED_TO && isStixCyberObservable(fromType)) {
+    return true;
+  }
+  // This relationship is a located-at from IPv4 / IPv6 / City to a country or a region
+  // This is to avoid having too big region entities
+  // As a consequence, no entities view in city / knowledge / regions,
+  if (side === ROLE_TO && relationshipType === RELATION_LOCATED_AT && UNSUPPORTED_LOCATED_AT.includes(fromType) && LOCATED_AT_CLEANED.includes(toType)) {
+    return true;
+  }
+  // Rel on the "to" side with targets from any threat to region / country / sector
+  if (side === ROLE_TO && relationshipType === RELATION_TARGETS && [ENTITY_TYPE_LOCATION_REGION, ENTITY_TYPE_LOCATION_COUNTRY, ENTITY_TYPE_IDENTITY_SECTOR].includes(toType)) {
+    return true;
+  }
+  return false;
+};
+export const isImpactedTypeAndSide = (type, fromType, toType, side) => {
+  if (isSpecialNonImpactedCases(type, fromType, toType, side)) {
+    return false;
+  }
   return !UNIMPACTED_ENTITIES_ROLE.includes(`${type}_${side}`);
 };
-export const isImpactedRole = (role) => !UNIMPACTED_ENTITIES_ROLE.includes(role);
+export const isImpactedRole = (type, fromType, toType, role) => {
+  if (isSpecialNonImpactedCases(type, fromType, toType, role.split('_').at(1))) {
+    return false;
+  }
+  return !UNIMPACTED_ENTITIES_ROLE.includes(role);
+};
 
 let engine;
 let isRuntimeSortingEnable = false;
@@ -379,7 +419,7 @@ const elOperationForMigration = (operation) => {
   const elGetTask = (taskId) => engine.tasks.get({ task_id: taskId }).then((r) => oebp(r));
 
   return async (message, index, body) => {
-    logApp.info(`${message} > started`);
+    logMigration.info(`${message} > started`);
     // Execute the update by query in async mode
     const queryAsync = await operation({
       ...(index ? { index } : {}),
@@ -389,19 +429,19 @@ const elOperationForMigration = (operation) => {
     }).catch((err) => {
       throw DatabaseError('Async engine bulk migration fail', { migration: message, cause: err });
     });
-    logApp.info(`${message} > elastic running task ${queryAsync.task}`);
+    logMigration.info(`${message} > elastic running task ${queryAsync.task}`);
     // Wait 10 seconds for task to initialize
     await waitInSec(10);
     // Monitor the task until completion
     let taskStatus = await elGetTask(queryAsync.task);
     while (!taskStatus.completed) {
       const { total, updated } = taskStatus.task.status;
-      logApp.info(`${message} > in progress - ${updated}/${total}`);
+      logMigration.info(`${message} > in progress - ${updated}/${total}`);
       await waitInSec(5);
       taskStatus = await elGetTask(queryAsync.task);
     }
     const timeSec = Math.round(taskStatus.task.running_time_in_nanos / 1e9);
-    logApp.info(`${message} > done in ${timeSec} seconds`);
+    logMigration.info(`${message} > done in ${timeSec} seconds`);
   };
 };
 
@@ -3617,7 +3657,7 @@ const computeDeleteElementsImpacts = async (cleanupRelations, toBeRemovedIds, re
   for (let i = 0; i < cleanupRelations.length; i += 1) {
     const relation = cleanupRelations[i];
     const fromWillNotBeRemoved = !relationsToRemoveMap.has(relation.fromId) && !toBeRemovedIds.includes(relation.fromId);
-    const isFromCleanup = fromWillNotBeRemoved && isImpactedTypeAndSide(relation.entity_type, ROLE_FROM);
+    const isFromCleanup = fromWillNotBeRemoved && isImpactedTypeAndSide(relation.entity_type, relation.fromType, relation.toType, ROLE_FROM);
     const cleanKey = `${relation.entity_type}|${relation._index}`;
     if (isFromCleanup) {
       if (isEmptyField(elementsImpact[relation.fromId])) {
@@ -3632,7 +3672,7 @@ const computeDeleteElementsImpacts = async (cleanupRelations, toBeRemovedIds, re
       }
     }
     const toWillNotBeRemoved = !relationsToRemoveMap.has(relation.toId) && !toBeRemovedIds.includes(relation.toId);
-    const isToCleanup = toWillNotBeRemoved && isImpactedTypeAndSide(relation.entity_type, ROLE_TO);
+    const isToCleanup = toWillNotBeRemoved && isImpactedTypeAndSide(relation.entity_type, relation.fromType, relation.toType, ROLE_TO);
     if (isToCleanup) {
       if (isEmptyField(elementsImpact[relation.toId])) {
         elementsImpact[relation.toId] = { [cleanKey]: [relation.fromId] };
@@ -4015,7 +4055,7 @@ export const elIndexElements = async (context, user, indexingType, elements) => 
     const body = transformedElements.flatMap((elementDoc) => {
       const doc = elementDoc;
       return [
-        { index: { _index: doc._index, _id: doc.internal_id, retry_on_conflict: ES_RETRY_ON_CONFLICT } },
+        { index: { _index: doc._index, _id: doc._id ?? doc.internal_id, retry_on_conflict: ES_RETRY_ON_CONFLICT } },
         R.pipe(R.dissoc('_index'))(doc),
       ];
     });
@@ -4028,7 +4068,7 @@ export const elIndexElements = async (context, user, indexingType, elements) => 
     const impactedEntities = R.pipe(
       R.filter((e) => e.base_type === BASE_TYPE_RELATION),
       R.map((e) => {
-        const { fromType, fromRole, toRole } = e;
+        const { fromType, fromRole, toType, toRole } = e;
         const impacts = [];
         // We impact target entities of the relation only if not global entities like
         // MarkingDefinition (marking) / KillChainPhase (kill_chain_phase) / Label (tagging)
@@ -4036,13 +4076,10 @@ export const elIndexElements = async (context, user, indexingType, elements) => 
         cache[e.toId] = e.to;
         const refField = isStixRefRelationship(e.entity_type) && isInferredIndex(e._index) ? ID_INFERRED : ID_INTERNAL;
         const relationshipType = e.entity_type;
-        const isRelatedToFromObservable = isStixCyberObservable(fromType) && relationshipType === RELATION_RELATED_TO;
-        if (isImpactedRole(fromRole)) {
+        if (isImpactedRole(relationshipType, fromType, toType, fromRole)) {
           impacts.push({ refField, from: e.fromId, relationshipType, to: e.to, type: e.to.entity_type, side: 'from' });
         }
-        // Waiting for JRI work, we need to avoid impact rel on very large entities
-        // Slowing down the performances due to original misconception
-        if (isImpactedRole(toRole) && !isRelatedToFromObservable) {
+        if (isImpactedRole(relationshipType, fromType, toType, toRole)) {
           impacts.push({ refField, from: e.toId, relationshipType, to: e.from, type: e.from.entity_type, side: 'to' });
         }
         return impacts;
@@ -4109,7 +4146,7 @@ export const elUpdateRelationConnections = async (elements) => {
     const source = 'def conn = ctx._source.connections.find(c -> c.internal_id == params.id); '
       + 'for (change in params.changes.entrySet()) { conn[change.getKey()] = change.getValue() }';
     const bodyUpdate = elements.flatMap((doc) => [
-      { update: { _index: doc._index, _id: doc.id, retry_on_conflict: ES_RETRY_ON_CONFLICT } },
+      { update: { _index: doc._index, _id: doc._id ?? doc.id, retry_on_conflict: ES_RETRY_ON_CONFLICT } },
       { script: { source, params: { id: doc.toReplace, changes: doc.data } } },
     ]);
     const bulkPromise = elBulk({ refresh: true, timeout: BULK_TIMEOUT, body: bodyUpdate });
@@ -4137,7 +4174,7 @@ export const elUpdateEntityConnections = async (elements) => {
     const bodyUpdate = elements.flatMap((doc) => {
       const refField = isStixRefRelationship(doc.relationType) && isInferredIndex(doc._index) ? ID_INFERRED : ID_INTERNAL;
       return [
-        { update: { _index: doc._index, _id: doc.id, retry_on_conflict: ES_RETRY_ON_CONFLICT } },
+        { update: { _index: doc._index, _id: doc._id ?? doc.id, retry_on_conflict: ES_RETRY_ON_CONFLICT } },
         {
           script: {
             source,

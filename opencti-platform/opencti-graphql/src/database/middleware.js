@@ -1213,7 +1213,7 @@ const mergeEntitiesRaw = async (context, user, targetEntity, sourceEntities, tar
     };
     updateConnections.push(relUpdate);
     // Update the side that will remain (RELATED_ELEMENT)
-    if (isImpactedTypeAndSide(entity.i_relation.entity_type, ROLE_TO)) {
+    if (isImpactedTypeAndSide(entity.i_relation.entity_type, entity.i_relation.fromType, entity.i_relation.toType, ROLE_TO)) {
       updateEntities.push({
         _index: entity._index,
         id: sideToKeep,
@@ -1224,7 +1224,7 @@ const mergeEntitiesRaw = async (context, user, targetEntity, sourceEntities, tar
       });
     }
     // Update the MERGED TARGET (Need to add the relation side)
-    if (isImpactedTypeAndSide(entity.i_relation.entity_type, ROLE_FROM)) {
+    if (isImpactedTypeAndSide(entity.i_relation.entity_type, entity.i_relation.fromType, entity.i_relation.toType, ROLE_FROM)) {
       updateEntities.push({
         _index: targetEntity._index,
         id: sideTarget,
@@ -1255,7 +1255,7 @@ const mergeEntitiesRaw = async (context, user, targetEntity, sourceEntities, tar
     };
     updateConnections.push(relUpdate);
     // Update the side that will remain (RELATED_ELEMENT)
-    if (isImpactedTypeAndSide(entity.i_relation.entity_type, ROLE_FROM)) {
+    if (isImpactedTypeAndSide(entity.i_relation.entity_type, entity.i_relation.fromType, entity.i_relation.toType, ROLE_FROM)) {
       updateEntities.push({
         _index: entity._index,
         id: sideToKeep,
@@ -1266,7 +1266,7 @@ const mergeEntitiesRaw = async (context, user, targetEntity, sourceEntities, tar
       });
     }
     // Update the MERGED TARGET (Need to add the relation side)
-    if (isImpactedTypeAndSide(entity.i_relation.entity_type, ROLE_TO)) {
+    if (isImpactedTypeAndSide(entity.i_relation.entity_type, entity.i_relation.fromType, entity.i_relation.toType, ROLE_TO)) {
       updateEntities.push({
         _index: targetEntity._index,
         id: sideTarget,
@@ -2786,8 +2786,8 @@ export const createRelationRaw = async (context, user, rawInput, opts = {}) => {
 
   // Build lock ids
   const inputIds = getInputIds(relationshipType, resolvedInput, fromRule);
-  if (isImpactedTypeAndSide(relationshipType, ROLE_FROM)) inputIds.push(from.internal_id);
-  if (isImpactedTypeAndSide(relationshipType, ROLE_TO)) inputIds.push(to.internal_id);
+  if (isImpactedTypeAndSide(relationshipType, from.entity_type, to.entity_type, ROLE_FROM)) inputIds.push(from.internal_id);
+  if (isImpactedTypeAndSide(relationshipType, from.entity_type, to.entity_type, ROLE_TO)) inputIds.push(to.internal_id);
   const participantIds = inputIds.filter((e) => !locks.includes(e));
   try {
     // Try to get the lock in redis
@@ -2951,14 +2951,10 @@ const createEntityRaw = async (context, user, rawInput, type, opts = {}) => {
   const { confidenceLevelToApply } = controlCreateInputWithUserConfidence(user, input, type);
   input.confidence = confidenceLevelToApply; // confidence of new entity will be capped to user's confidence
   // endregion
-  // region - Pre-Check
   const entitySetting = await getEntitySettingFromCache(context, type);
-  const filledInput = fillDefaultValues(user, input, entitySetting);
-  await validateEntityAndRelationCreation(context, user, filledInput, type, entitySetting, opts);
-  // endregion
   const { fromRule } = opts;
   // We need to check existing dependencies
-  const resolvedInput = await inputResolveRefs(context, user, filledInput, type, entitySetting);
+  let resolvedInput = await inputResolveRefs(context, user, input, type, entitySetting);
   // Generate all the possibles ids
   // For marking def, we need to force the standard_id
   const participantIds = getInputIds(type, resolvedInput, fromRule);
@@ -2985,6 +2981,12 @@ const createEntityRaw = async (context, user, rawInput, type, opts = {}) => {
     // Resolve the existing entity
     const [existingByIds, existingByHashed] = await Promise.all([existingByIdsPromise, existingByHashedPromise]);
     existingEntities.push(...R.uniqBy((e) => e.internal_id, [...existingByIds, ...existingByHashed]));
+    // region - Pre-Check
+    if (existingEntities.length === 0) { // We do not use default values on upsert.
+      resolvedInput = fillDefaultValues(user, resolvedInput, entitySetting);
+    }
+    await validateEntityAndRelationCreation(context, user, resolvedInput, type, entitySetting, opts);
+    // endregion
     // If existing entities have been found and type is a STIX Core Object
     let dataMessage;
     if (existingEntities.length > 0) {
@@ -3124,6 +3126,7 @@ export const createEntity = async (context, user, input, type, opts = {}) => {
   }
   return isCompleteResult ? data : data.element;
 };
+
 export const createInferredEntity = async (context, input, ruleContent, type) => {
   const opts = {
     fromRule: ruleContent.field,
