@@ -198,7 +198,7 @@ const DataTableLine = ({
             <Checkbox
               onClick={handleSelectLine}
               sx={{
-                marginRight: 1,
+                marginInlineEnd: 1,
                 width: 24,
                 '&:hover': {
                   background: 'transparent',

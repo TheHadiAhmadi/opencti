@@ -40,7 +40,7 @@ const useStyles = makeStyles<Theme>((theme) => ({
   },
   goIcon: {
     position: 'absolute',
-    right: -10,
+    insetInlineEnd: 10,
   },
   itemIconDisabled: {
     color: theme.palette.grey?.[700],
@@ -50,7 +50,7 @@ const useStyles = makeStyles<Theme>((theme) => ({
     height: 20,
     float: 'left',
     width: 100,
-    marginRight: 10,
+    marginInlineEnd: 10,
   },
   chipInList2: {
     fontSize: 12,
@@ -64,7 +64,7 @@ const useStyles = makeStyles<Theme>((theme) => ({
     fontSize: 12,
     height: 20,
     float: 'left',
-    marginRight: 10,
+    marginInlineEnd: 10,
   },
 }));
 

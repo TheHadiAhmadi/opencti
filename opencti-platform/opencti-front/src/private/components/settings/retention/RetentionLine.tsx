@@ -145,7 +145,7 @@ export const RetentionLine: FunctionComponent<RetentionLineProps> = ({ dataColum
                     <InformationOutline
                       fontSize="small"
                       color="primary"
-                      style={{ position: 'absolute', marginLeft: 10 }}
+                      style={{ position: 'absolute', marginInlineStart: 10 }}
                     />
                   </Tooltip>
                 }

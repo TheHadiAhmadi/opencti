@@ -21,7 +21,7 @@ const MaxConfidenceSource: React.FC<UserConfidenceLevelProps> = ({ user }) => {
       // a group or orga
       return (
         <Tooltip
-          sx={{ marginLeft: 1 }}
+          sx={{ marginInlineStart: 1 }}
           title={
             <>
               {t_i18n('', {
@@ -46,7 +46,7 @@ const MaxConfidenceSource: React.FC<UserConfidenceLevelProps> = ({ user }) => {
     if (source.type === 'User') {
       return (
         <Tooltip
-          sx={{ marginLeft: 1 }}
+          sx={{ marginInlineStart: 1 }}
           title={
             <div>
               {t_i18n('The Max Confidence Level is currently defined at the user level. It overrides Max Confidence Level from user\'s groups.')}
@@ -62,7 +62,7 @@ const MaxConfidenceSource: React.FC<UserConfidenceLevelProps> = ({ user }) => {
     if (source.type === 'Bypass') {
       return (
         <Tooltip
-          sx={{ marginLeft: 1 }}
+          sx={{ marginInlineStart: 1 }}
           title={t_i18n('The user has BYPASS capability, their max confidence level is set to 100.')}
         >
           <InformationOutline fontSize={'small'} color={'info'} />

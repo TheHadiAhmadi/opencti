@@ -14,7 +14,7 @@ const styles = () => ({
   editButton: {
     position: 'fixed',
     bottom: 30,
-    right: 30,
+    insetInlineEnd: 30,
   },
 });
 

@@ -115,7 +115,7 @@ class StixCoreRelationshipStixCoreRelationshipsLinesContainer extends Component 
                         >
                           <AutoFix
                             fontSize="small"
-                            style={{ marginLeft: -30 }}
+                            style={{ marginInlineStart: -30 }}
                             color="secondary"
                           />
                         </Tooltip>

@@ -70,7 +70,7 @@ const FormAuthorizedMembersDialog = ({
           onClick={() => isEnterpriseEdition && setOpen(true)}
           value="manage-access"
           size="small"
-          style={{ marginRight: 3 }}
+          style={{ marginInlineEnd: 3 }}
         >
           <LockPersonOutlined
             fontSize="small"

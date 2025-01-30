@@ -47,7 +47,7 @@ const styles = (theme) => ({
     position: 'absolute',
     color: theme.palette.primary.main,
     top: 35,
-    right: 20,
+    insetInlineEnd: 20,
   },
   paper: {
     margin: '10px 0 70px 0',

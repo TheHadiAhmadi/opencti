@@ -72,7 +72,7 @@ StixCoreObjectContentBarProps
         <div
           style={{
             float: 'left',
-            marginLeft: navOpen ? 195 : 70,
+            marginInlineStart: navOpen ? 195 : 70,
             height: '100%',
             display: 'flex',
           }}

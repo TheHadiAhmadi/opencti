@@ -126,7 +126,7 @@ const DecayRuleComponent = ({ queryRef }: DecayRuleComponentProps) => {
           variant="h1"
           gutterBottom={true}
           classes={{ root: classes.title }}
-          style={decayRule.built_in ? { marginRight: 20 } : {}}
+          style={decayRule.built_in ? { marginInlineEnd: 20 } : {}}
         >
           {decayRule.name}
         </Typography>

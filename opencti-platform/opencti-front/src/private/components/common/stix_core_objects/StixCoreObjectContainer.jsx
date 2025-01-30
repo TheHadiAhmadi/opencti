@@ -32,7 +32,7 @@ const useStyles = makeStyles(() => ({
   text: {
     display: 'inline-block',
     flexGrow: 1,
-    marginLeft: 10,
+    marginInlineStart: 10,
   },
 }));
 
@@ -252,7 +252,7 @@ const StixCoreObjectContainer = ({ elementId }) => {
           <IconButton
             onClick={() => setContainerCreation(true)}
             edge="end"
-            style={{ position: 'absolute', top: 68, right: 48 }}
+            style={{ position: 'absolute', top: 68, insetInlineEnd48 }}
             size="large"
           >
             <AddOutlined />

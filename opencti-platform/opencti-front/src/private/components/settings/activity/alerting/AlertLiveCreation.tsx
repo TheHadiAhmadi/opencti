@@ -63,7 +63,7 @@ const useStyles = makeStyles<Theme>((theme) => ({
   closeButton: {
     position: 'absolute',
     top: 12,
-    left: 5,
+    insetInlineStart: 5,
     color: 'inherit',
   },
   container: {

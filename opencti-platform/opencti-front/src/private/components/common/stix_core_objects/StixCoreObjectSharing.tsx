@@ -181,7 +181,7 @@ const StixCoreObjectSharing: FunctionComponent<ContainerHeaderSharedProps> = ({
               value="shared"
               onClick={isEnterpriseEdition ? handleOpenSharing : () => {}}
               size="small"
-              style={{ marginRight: 3 }}
+              style={{ marginInlineEnd: 3 }}
               disabled={disabled}
             >
               <BankPlus

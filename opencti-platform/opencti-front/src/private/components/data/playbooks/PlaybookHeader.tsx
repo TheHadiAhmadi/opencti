@@ -150,7 +150,7 @@ const PlaybookHeaderComponent = ({
             <div>
               <Chip
                 classes={{ root: classes.chip }}
-                style={{ marginRight: 14 }}
+                style={{ marginInlineEnd: 14 }}
                 label={`${n(playbook.queue_messages)} ${t_i18n('messages in queue')}`}
               />
             </div>

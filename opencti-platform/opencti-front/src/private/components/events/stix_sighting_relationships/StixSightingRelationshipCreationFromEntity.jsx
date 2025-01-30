@@ -47,7 +47,7 @@ const useStyles = makeStyles((theme) => ({
   createButton: {
     position: 'fixed',
     bottom: 30,
-    right: 30,
+    insetInlineEnd: 30,
     zIndex: 1001,
   },
   title: {
@@ -63,7 +63,7 @@ const useStyles = makeStyles((theme) => ({
   closeButton: {
     position: 'absolute',
     top: 12,
-    left: 5,
+    insetInlineStart: 5,
     color: 'inherit',
   },
   container: {
@@ -486,7 +486,7 @@ const StixSightingRelationshipCreationFromEntity = ({
             color="secondary"
             aria-label="Add"
             className={classes.createButton}
-            style={{ right: paddingInlineEnd || 30 }}
+            style={{ insetInlineEnd: paddingInlineEnd || 30 }}
           >
             <Add />
           </Fab>

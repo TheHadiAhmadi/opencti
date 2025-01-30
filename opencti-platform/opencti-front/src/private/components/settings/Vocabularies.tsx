@@ -30,7 +30,7 @@ const useStyles = makeStyles(() => ({
     fontSize: 12,
     height: 20,
     float: 'left',
-    marginRight: 7,
+    marginInlineEnd: 7,
   },
 }));
 

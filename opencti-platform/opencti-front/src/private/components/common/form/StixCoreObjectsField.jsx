@@ -201,7 +201,7 @@ const useStyles = makeStyles(() => ({
   text: {
     display: 'inline-block',
     flexGrow: 1,
-    marginLeft: 10,
+    marginInlineStart: 10,
   },
   autoCompleteIndicator: {
     display: 'none',
@@ -271,7 +271,7 @@ const StixCoreObjectsField = (props) => {
           onFocus: searchStixCoreObjects,
         }}
         endAdornment={(
-          <InputAdornment position="end" style={{ position: 'absolute', right: 0 }}>
+          <InputAdornment position="end" style={{ position: 'absolute', insetInlineEnd: 0 }}>
             <IconButton onClick={handleOpenSearchScope} size="small" edge="end">
               <PaletteOutlined
                 fontSize="small"

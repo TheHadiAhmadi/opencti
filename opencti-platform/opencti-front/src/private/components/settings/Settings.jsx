@@ -436,7 +436,7 @@ const Settings = () => {
                           type={'ce_ee_toggle'}
                           sx={{
                             root: { border: 'none', padding: 0, margin: 0 },
-                            title: { position: 'absolute', zIndex: 2, left: 4, top: 9, fontSize: 8 },
+                            title: { position: 'absolute', zIndex: 2, insetInlineStart: 4, top: 9, fontSize: 8 },
                           }}
                         >
                           {({ disabled }) => (

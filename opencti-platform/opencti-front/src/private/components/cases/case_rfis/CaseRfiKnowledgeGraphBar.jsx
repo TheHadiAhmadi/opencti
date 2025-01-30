@@ -493,7 +493,7 @@ class CaseRfiKnowledgeGraphBar extends Component {
                 <div
                   style={{
                     float: 'left',
-                    marginLeft: navOpen ? 185 : 60,
+                    marginInlineStart: navOpen ? 185 : 60,
                     height: '100%',
                     display: 'flex',
                   }}
@@ -1180,7 +1180,7 @@ class CaseRfiKnowledgeGraphBar extends Component {
                       width: '100%',
                       height: '100%',
                       bottom: -50,
-                      left: navOpen ? 120 : 0,
+                      insetInlineStart: navOpen ? 120 : 0,
                     }}
                   >
                     <ResponsiveContainer width="100%" height={60}>
@@ -1189,9 +1189,9 @@ class CaseRfiKnowledgeGraphBar extends Component {
                         height={60}
                         margin={{
                           top: 32,
-                          right: navOpen ? 150 : 20,
+                          insetInlineEnd: navOpen ? 150 : 20,
                           bottom: 0,
-                          left: 0,
+                          insetInlineStart: 0,
                         }}
                       >
                         <YAxis

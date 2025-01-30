@@ -93,7 +93,7 @@ const useStyles = makeStyles((theme) => ({
   stepCloseButton: {
     position: 'absolute',
     top: -18,
-    right: -18,
+    insetInlineEnd: 18,
   },
 }));
 

@@ -9,7 +9,7 @@ import AttackPatternsMatrixColumns, { attackPatternsMatrixColumnsQuery } from '.
 import { AttackPatternsMatrixColumnsQuery } from './__generated__/AttackPatternsMatrixColumnsQuery.graphql';
 
 interface AttackPatternsMatrixProps {
-  marginRight?: boolean;
+  marginInlineEnd?: boolean;
   attackPatterns: NonNullable<NonNullable<StixDomainObjectAttackPatternsKillChainContainer_data$data>['attackPatterns']>['edges'][0]['node'][];
   searchTerm?: string;
   handleToggleColorsReversed: () => void;
@@ -20,7 +20,7 @@ interface AttackPatternsMatrixProps {
 }
 const AttackPatternsMatrix: FunctionComponent<AttackPatternsMatrixProps> = ({
   attackPatterns,
-  marginRight,
+  marginInlineEnd,
   searchTerm,
   handleToggleColorsReversed,
   currentColorsReversed,
@@ -44,7 +44,7 @@ const AttackPatternsMatrix: FunctionComponent<AttackPatternsMatrixProps> = ({
               <AttackPatternsMatrixColumns
                 data={props}
                 attackPatterns={attackPatterns}
-                marginRight={marginRight}
+                marginInlineEnd={marginInlineEnd}
                 searchTerm={searchTerm ?? ''}
                 handleToggleColorsReversed={handleToggleColorsReversed}
                 currentColorsReversed={currentColorsReversed}

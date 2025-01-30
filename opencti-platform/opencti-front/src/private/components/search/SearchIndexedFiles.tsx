@@ -188,7 +188,7 @@ const SearchIndexedFilesComponent = () => {
                   to="/dashboard/settings/file_indexing"
                   color="warning"
                   variant="outlined"
-                  style={{ marginLeft: 20 }}
+                  style={{ marginInlineStart: 20 }}
                 >
                   {t_i18n('Configure file indexing')}
                 </Button>

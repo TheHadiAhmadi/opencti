@@ -469,7 +469,7 @@ class StixDomainObjectVictimologySectorsComponent extends Component {
                               >
                                 <AutoFix
                                   fontSize="small"
-                                  style={{ marginLeft: -30 }}
+                                  style={{ marginInlineStart: -30 }}
                                 />
                               </Tooltip>
                             ) : (
@@ -608,7 +608,7 @@ class StixDomainObjectVictimologySectorsComponent extends Component {
                                           >
                                             <AutoFix
                                               fontSize="small"
-                                              style={{ marginLeft: -30 }}
+                                              style={{ marginInlineStart: -30 }}
                                             />
                                           </Tooltip>
                                         ) : (

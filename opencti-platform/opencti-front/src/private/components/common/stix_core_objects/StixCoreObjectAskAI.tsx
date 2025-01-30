@@ -306,7 +306,7 @@ const StixCoreObjectAskAI: FunctionComponent<StixCoreObjectAskAiProps> = ({ inst
           onClick={(event) => ((isEnterpriseEdition && enabled && configured) ? handleOpenMenu(event) : null)}
           value="ask-ai"
           size="small"
-          style={{ marginRight: 3 }}
+          style={{ marginInlineEnd: 3 }}
         >
           <AutoAwesomeOutlined fontSize="small" color="secondary" />
         </ToggleButton>

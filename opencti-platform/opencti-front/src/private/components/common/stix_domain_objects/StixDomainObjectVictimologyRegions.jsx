@@ -30,7 +30,7 @@ const styles = (theme) => ({
   },
   export: {
     float: 'right',
-    marginLeft: 5,
+    marginInlineStart: 5,
   },
 });
 

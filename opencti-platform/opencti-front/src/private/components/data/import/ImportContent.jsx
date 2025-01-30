@@ -632,7 +632,7 @@ class ImportContentComponent extends Component {
           color="primary"
           aria-label="Add"
           className={classes.createButton}
-          style={{ right: isNewImportScreensEnabled ? 230 : 30 }}
+          style={{ insetInlineEnd: isNewImportScreensEnabled ? 230 : 30 }}
         >
           <Add />
         </Fab>

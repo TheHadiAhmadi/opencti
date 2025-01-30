@@ -30,7 +30,7 @@ const styles = (theme) => ({
     float: 'left',
   },
   search: {
-    marginLeft: 'auto',
+    marginInlineStart: 'auto',
     marginRight: ' 20px',
   },
   header: {
@@ -40,7 +40,7 @@ const styles = (theme) => ({
   closeButton: {
     position: 'absolute',
     top: 12,
-    left: 5,
+    insetInlineStart: 5,
     color: 'inherit',
   },
   container: {
@@ -98,7 +98,7 @@ class AddSubAttackPattern extends Component {
           header={(
             <div
               style={{
-                marginLeft: 'auto',
+                marginInlineStart: 'auto',
                 marginRight: '20px',
                 display: 'flex',
                 flexDirection: 'column',

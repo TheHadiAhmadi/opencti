@@ -174,7 +174,7 @@ const TaxiiCollectionEditionContainer: FunctionComponent<{ taxiiCollection: Taxi
             </AlertTitle>
             <FormControlLabel
               control={<Switch defaultChecked={!!initialValues.taxii_public}/>}
-              style={{ marginLeft: 1 }}
+              style={{ marginInlineStart: 1 }}
               onChange={(_, checked) => handleSubmitField('taxii_public', checked.toString())}
               label={t_i18n('Public collection')}
             />
@@ -192,7 +192,7 @@ const TaxiiCollectionEditionContainer: FunctionComponent<{ taxiiCollection: Taxi
           <Box sx={{ display: 'flex', alignItems: 'center', marginTop: '20px' }}>
             <FormControlLabel
               control={<Switch defaultChecked={!!initialValues.include_inferences}/>}
-              style={{ marginLeft: 1 }}
+              style={{ marginInlineStart: 1 }}
               onChange={(_, checked) => handleSubmitField('include_inferences', checked.toString())}
               label={t_i18n('Include inferences')}
             />
@@ -200,7 +200,7 @@ const TaxiiCollectionEditionContainer: FunctionComponent<{ taxiiCollection: Taxi
           <Box sx={{ display: 'flex', alignItems: 'center', marginTop: '20px' }}>
             <FormControlLabel
               control={<Switch defaultChecked={!!initialValues.score_to_confidence}/>}
-              style={{ marginLeft: 1 }}
+              style={{ marginInlineStart: 1 }}
               onChange={(_, checked) => handleSubmitField('score_to_confidence', checked.toString())}
               label={t_i18n('Copy OpenCTI scores to confidence level for indicators')}
             />

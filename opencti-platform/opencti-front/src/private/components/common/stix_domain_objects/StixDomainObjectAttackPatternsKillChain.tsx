@@ -195,8 +195,8 @@ const StixDomainObjectAttackPatternsKillChain: FunctionComponent<StixDomainObjec
             float: 'left',
             alignItems: 'center',
             flexWrap: 'wrap',
-            marginRight: 20,
-            marginLeft: 8,
+            marginInlineEnd: 20,
+            marginInlineStart: 8,
             gap: 10,
           }}
         >
@@ -266,7 +266,7 @@ const StixDomainObjectAttackPatternsKillChain: FunctionComponent<StixDomainObjec
           >
             <span
               style={{
-                marginRight: 10,
+                marginInlineEnd: 10,
               }}
             >
               <IconButton

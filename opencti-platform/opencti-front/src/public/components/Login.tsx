@@ -85,7 +85,7 @@ const useStyles = makeStyles<Theme>((theme) => ({
     },
   },
   iconSmall: {
-    marginRight: theme.spacing(1),
+    marginInlineEnd: theme.spacing(1),
     fontSize: 20,
   },
   paper: {
@@ -104,7 +104,7 @@ const useStyles = makeStyles<Theme>((theme) => ({
   },
   filigranLogo: {
     width: 20,
-    marginRight: 10,
+    marginInlineEnd: 10,
   },
   byFiligranText: {
     margin: 'auto 0',

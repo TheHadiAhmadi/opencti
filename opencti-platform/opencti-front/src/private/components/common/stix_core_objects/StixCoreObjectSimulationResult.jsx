@@ -56,13 +56,13 @@ const useStyles = makeStyles((theme) => ({
   chart: {
     position: 'absolute',
     top: -5,
-    left: -5,
+    insetInlineStart: -5,
   },
   iconOverlay: {
     fontSize: 18,
     position: 'absolute',
     top: 16,
-    left: 16,
+    insetInlineStart: 16,
   },
   buttons: {
     marginTop: 20,
@@ -419,9 +419,9 @@ const StixCoreObjectSimulationResult = ({ id, type }) => {
           <Box
             sx={{
               top: 0,
-              left: 0,
+              insetInlineStart: 0,
               bottom: 0,
-              right: 0,
+              insetInlineEnd: 0,
               position: 'absolute',
               display: 'flex',
               alignItems: 'center',

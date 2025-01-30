@@ -149,7 +149,7 @@ CsvMapperConditionalEntityMappingProps
           />
         )}
       />
-      <div style={{ marginBottom: '10px', marginRight: '10px' }}>
+      <div style={{ marginBottom: '10px', marginInlineEnd: '10px' }}>
         <Field
           component={TextField}
           label={t_i18n('Value')}

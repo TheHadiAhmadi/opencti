@@ -65,7 +65,7 @@ const useStyles = makeStyles((theme) => ({
   createButton: {
     position: 'fixed',
     bottom: 30,
-    right: 30,
+    insetInlineEnd: 30,
     transition: theme.transitions.create('right', {
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.enteringScreen,
@@ -74,7 +74,7 @@ const useStyles = makeStyles((theme) => ({
   createButtonContextual: {
     position: 'fixed',
     bottom: 30,
-    right: 30,
+    insetInlineEnd: 30,
     zIndex: 2000,
   },
   buttons: {

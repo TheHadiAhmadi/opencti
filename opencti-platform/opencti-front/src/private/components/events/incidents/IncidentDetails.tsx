@@ -32,7 +32,7 @@ const useStyles = makeStyles<Theme>((theme) => ({
   chip2: {
     fontSize: 12,
     height: 25,
-    marginRight: 7,
+    marginInlineEnd: 7,
     textTransform: 'uppercase',
     borderRadius: 4,
     width: 150,

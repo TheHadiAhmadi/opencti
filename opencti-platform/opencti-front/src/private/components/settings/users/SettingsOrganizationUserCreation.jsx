@@ -42,7 +42,7 @@ const useStyles = makeStyles((theme) => ({
   createButtonFab: {
     position: 'fixed',
     bottom: 30,
-    right: 230,
+    insetInlineEnd: 230,
   },
 }));
 

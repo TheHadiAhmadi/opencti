@@ -172,7 +172,7 @@ const StreamCollectionCreation: FunctionComponent<StreamCollectionCreationProps>
                 </AlertTitle>
                 <FormControlLabel
                   control={<Switch />}
-                  style={{ marginLeft: 1 }}
+                  style={{ marginInlineStart: 1 }}
                   name="stream_public"
                   onChange={(_, checked) => setFieldValue('stream_public', checked)}
                   label={t_i18n('Public stream')}

@@ -167,7 +167,7 @@ const ConfidenceOverrideField: FunctionComponent<UserConfidenceOverridesFieldCom
                   <div style={{
                     display: 'inline-block',
                     flexGrow: 1,
-                    marginLeft: 10,
+                    marginInlineStart: 10,
                   }}
                   >
                     {t_i18n(`entity_${option.label}`)}

@@ -42,7 +42,7 @@ const useStyles = makeStyles((theme) => ({
   icon: {
     position: 'absolute',
     top: 8,
-    left: 5,
+    insetInlineStart: 5,
     fontSize: 8,
   },
   type: {
@@ -172,7 +172,7 @@ const StixCoreRelationshipCreationForm = ({
                 style={{
                   border: `2px solid ${itemColor(fromEntity.entity_type)}`,
                   top: 10,
-                  left: 0,
+                  insetInlineStart: 0,
                 }}
               >
                 <div
@@ -221,7 +221,7 @@ const StixCoreRelationshipCreationForm = ({
                 style={{
                   border: `2px solid ${itemColor(toEntity.entity_type)}`,
                   top: 10,
-                  right: 0,
+                  insetInlineEnd: 0,
                 }}
               >
                 <div

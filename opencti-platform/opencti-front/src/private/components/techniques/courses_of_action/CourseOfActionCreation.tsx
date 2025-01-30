@@ -40,12 +40,12 @@ const useStyles = makeStyles<Theme>((theme) => ({
   createButton: {
     position: 'fixed',
     bottom: 30,
-    right: 30,
+    insetInlineEnd: 30,
   },
   createButtonContextual: {
     position: 'fixed',
     bottom: 30,
-    right: 30,
+    insetInlineEnd: 30,
     zIndex: 2000,
   },
   buttons: {

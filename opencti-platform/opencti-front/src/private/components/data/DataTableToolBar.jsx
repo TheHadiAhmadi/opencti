@@ -113,7 +113,7 @@ const styles = (theme) => ({
   closeButton: {
     position: 'absolute',
     top: 12,
-    left: 5,
+    insetInlineStart: 5,
     color: 'inherit',
   },
   buttons: {
@@ -179,7 +179,7 @@ const styles = (theme) => ({
   stepCloseButton: {
     position: 'absolute',
     top: -20,
-    right: -20,
+    insetInlineEnd: 20,
   },
   icon: {
     paddingTop: 4,
@@ -188,7 +188,7 @@ const styles = (theme) => ({
   text: {
     display: 'inline-block',
     flexGrow: 1,
-    marginLeft: 10,
+    marginInlineStart: 10,
   },
   autoCompleteIndicator: {
     display: 'none',
@@ -1196,7 +1196,7 @@ class DataTableToolBar extends Component {
             <IconButton
               onClick={() => this.setState({ containerCreation: true })}
               edge="end"
-              style={{ position: 'absolute', top: 22, right: 48 }}
+              style={{ position: 'absolute', top: 22, insetInlineEnd48 }}
               size="large"
             >
               <AddOutlined />
@@ -2609,7 +2609,7 @@ class DataTableToolBar extends Component {
                   <IconButton
                     onClick={() => this.setState({ containerCreation: true })}
                     edge="end"
-                    style={{ position: 'absolute', top: 68, right: 48 }}
+                    style={{ position: 'absolute', top: 68, insetInlineEnd48 }}
                     size="large"
                   >
                     <AddOutlined />
@@ -2710,7 +2710,7 @@ class DataTableToolBar extends Component {
                   <IconButton
                     onClick={() => this.setState({ organizationCreation: true })}
                     edge="end"
-                    style={{ position: 'absolute', top: 68, right: 48 }}
+                    style={{ position: 'absolute', top: 68, insetInlineEnd48 }}
                     size="large"
                   >
                     <AddOutlined />

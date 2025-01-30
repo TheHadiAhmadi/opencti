@@ -174,7 +174,7 @@ const TaxiiCollectionCreation: FunctionComponent<TaxiiCollectionCreationProps> =
                 </AlertTitle>
                 <FormControlLabel
                   control={<Switch />}
-                  style={{ marginLeft: 1 }}
+                  style={{ marginInlineStart: 1 }}
                   name="taxii_public"
                   onChange={(_, checked) => setFieldValue('taxii_public', checked)}
                   label={t_i18n('Public collection')}
@@ -192,7 +192,7 @@ const TaxiiCollectionCreation: FunctionComponent<TaxiiCollectionCreationProps> =
               <Box sx={{ display: 'flex', alignItems: 'center', marginTop: '20px' }}>
                 <FormControlLabel
                   control={<Switch />}
-                  style={{ marginLeft: 1 }}
+                  style={{ marginInlineStart: 1 }}
                   checked={values.include_inferences}
                   name="include_inferences"
                   onChange={(_, checked) => setFieldValue('include_inferences', checked)}
@@ -202,7 +202,7 @@ const TaxiiCollectionCreation: FunctionComponent<TaxiiCollectionCreationProps> =
               <Box sx={{ display: 'flex', alignItems: 'center', marginTop: '20px' }}>
                 <FormControlLabel
                   control={<Switch />}
-                  style={{ marginLeft: 1 }}
+                  style={{ marginInlineStart: 1 }}
                   checked={values.score_to_confidence}
                   name="score_to_confidence"
                   onChange={(_, checked) => setFieldValue('score_to_confidence', checked)}

@@ -31,7 +31,7 @@ const useStyles = makeStyles(() => ({
   },
   redStar: {
     color: 'rgb(244, 67, 54)',
-    marginLeft: '5px',
+    marginInlineStart: '5px',
   },
 }));
 

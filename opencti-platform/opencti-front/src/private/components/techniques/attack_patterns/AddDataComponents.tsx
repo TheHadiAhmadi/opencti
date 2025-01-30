@@ -60,8 +60,8 @@ const AddDataComponents: FunctionComponent<{
         header={(
           <div
             style={{
-              marginLeft: 'auto',
-              marginRight: '20px',
+              marginInlineStart: 'auto',
+              marginInlineEnd: '20px',
               display: 'flex',
               flexDirection: 'column',
               alignItems: 'flex-end',

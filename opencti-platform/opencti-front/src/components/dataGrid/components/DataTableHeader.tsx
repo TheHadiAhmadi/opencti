@@ -120,7 +120,7 @@ const DataTableHeader: FunctionComponent<DataTableHeaderProps> = ({
                 visibility: isActive ? 'visible' : undefined,
               }}
               sx={{
-                marginRight: 1,
+                marginInlineEnd: 1,
                 opacity: 0.5,
                 width: 24,
                 '&:hover': {
@@ -138,7 +138,10 @@ const DataTableHeader: FunctionComponent<DataTableHeaderProps> = ({
             position={{ x: 3, y: 0 }}
             axis="x"
             onStop={(e, { lastX }) => {
-              const newSize = (column?.size ?? 0) + lastX;
+              const dir = document.body.getAttribute('dir') ?? 'ltr'
+              const adjustedLastX = dir === 'rtl' ? -lastX : lastX;
+
+              const newSize = (column?.size ?? 0) + adjustedLastX;
 
               const effectiveColumns = columns.filter(({ id }) => !['select', 'navigate'].includes(id));
               const currentSize = effectiveColumns.reduce((acc, col) => acc + (col.size ?? 0), 0);
@@ -163,7 +166,7 @@ const DataTableHeader: FunctionComponent<DataTableHeaderProps> = ({
 
               if (clientDiff > 0) {
                 if (otherColumn) {
-                  otherColumn.size = (otherColumn.size ?? 0) - lastX - currentSize + clientWidth;
+                  otherColumn.size = (otherColumn.size ?? 0) - adjustedLastX - currentSize + clientWidth;
                 }
               }
 

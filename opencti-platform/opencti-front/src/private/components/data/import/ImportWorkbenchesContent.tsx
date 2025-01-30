@@ -253,7 +253,7 @@ const ImportWorkbenchesContent = () => {
             const { id, metaData, uploadStatus } = file;
             const isProgress = uploadStatus === 'progress' || uploadStatus === 'wait';
             return (
-              <div style={{ marginLeft: -10 }}>
+              <div style={{ marginInlineStart: -10 }}>
                 {!(metaData?.errors && metaData?.errors.length > 0) && (
                   <Tooltip title={t_i18n('Download this file')}>
                     <IconButton

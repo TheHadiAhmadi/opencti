@@ -51,13 +51,13 @@ const useStyles = makeStyles<Theme, { bannerHeightNumber: number }>((theme) => c
     bottom: `${bannerHeightNumber + 30}px`,
   }),
   withLargePanel: {
-    right: 280,
+    insetInlineEnd: 280,
   },
   withPanel: {
-    right: 230,
+    insetInlineEnd: 230,
   },
   noPanel: {
-    right: 30,
+    insetInlineEnd: 30,
   },
 }));
 

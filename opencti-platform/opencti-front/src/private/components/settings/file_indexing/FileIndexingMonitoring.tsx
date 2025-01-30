@@ -77,7 +77,7 @@ const useStyles = makeStyles<Theme>((theme) => ({
   icon: {
     position: 'absolute',
     top: 25,
-    right: 15,
+    insetInlineEnd: 15,
   },
   number: {
     fontSize: 30,

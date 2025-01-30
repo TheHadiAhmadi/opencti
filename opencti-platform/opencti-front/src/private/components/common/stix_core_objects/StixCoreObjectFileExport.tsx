@@ -153,7 +153,7 @@ const StixCoreObjectFileExportComponent = ({
             aria-haspopup="true"
             color="primary"
             size="small"
-            style={{ marginRight: 3 }}
+            style={{ marginInlineEnd: 3 }}
             data-testid="StixCoreObjectFileExportQuickExportButton"
           >
             <FileExportOutline
@@ -300,7 +300,7 @@ const StixCoreObjectFileExport = ({
             <ToggleButton
               value="quick-export"
               size="small"
-              style={{ marginRight: 3 }}
+              style={{ marginInlineEnd: 3 }}
               disabled={true}
             >
               <FileExportOutline fontSize="small" />

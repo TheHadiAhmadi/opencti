@@ -39,7 +39,7 @@ const useStyles = makeStyles((theme) => ({
   createButton: {
     position: 'fixed',
     bottom: 30,
-    right: 30,
+    insetInlineEnd: 30,
     transition: theme.transitions.create('right', {
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.enteringScreen,
@@ -59,7 +59,7 @@ const useStyles = makeStyles((theme) => ({
   closeButton: {
     position: 'absolute',
     top: 12,
-    left: 5,
+    insetInlineStart: 5,
     color: 'inherit',
   },
   container: {

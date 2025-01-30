@@ -34,7 +34,7 @@ const useStyles = makeStyles<Theme>((theme) => ({
   },
   buttonExpand: {
     position: 'relative',
-    left: 0,
+    insetInlineStart: 0,
     bottom: 0,
     width: '100%',
     height: 25,

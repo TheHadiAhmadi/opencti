@@ -236,7 +236,7 @@ const SyncCreation = ({ paginationOptions }) => {
                     <InformationOutline
                       fontSize="small"
                       color="primary"
-                      style={{ position: 'absolute', top: 10, right: 18 }}
+                      style={{ position: 'absolute', top: 10, insetInlineEnd: 18 }}
                     />
                   </Tooltip>
                   <Field
@@ -399,7 +399,7 @@ const SyncCreation = ({ paginationOptions }) => {
                     <Field
                       component={SwitchField}
                       type="checkbox"
-                      containerstyle={{ marginLeft: 2 }}
+                      containerstyle={{ marginInlineStart: 2 }}
                       name="synchronized"
                       label={t_i18n('Use perfect synchronization')}
                     />

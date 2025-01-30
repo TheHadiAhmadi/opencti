@@ -81,7 +81,7 @@ const useStyles = makeStyles((theme) => ({
   createButton: {
     position: 'fixed',
     bottom: 30,
-    right: 30,
+    insetInlineEnd: 30,
     zIndex: 1100,
   },
   button: {
@@ -110,7 +110,7 @@ const useStyles = makeStyles((theme) => ({
   stepCloseButton: {
     position: 'absolute',
     top: -20,
-    right: -20,
+    insetInlineEnd: 20,
   },
   add: {
     display: 'flex',

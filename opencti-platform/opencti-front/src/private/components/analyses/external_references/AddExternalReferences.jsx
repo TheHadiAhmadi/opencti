@@ -70,7 +70,7 @@ const AddExternalReferences = ({
         onClose={handleClose}
         header={(
           <div style={{
-            marginLeft: 'auto',
+            marginInlineStart: 'auto',
             marginRight: '20px',
             display: 'flex',
             flexWrap: 'wrap',

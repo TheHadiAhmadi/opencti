@@ -478,7 +478,7 @@ StixCoreObjectQuickSubscriptionContentProps
           onClick={triggerUpdate ? handleOpen : createInstanceTrigger}
           value="quick-subscription"
           size="small"
-          style={{ marginRight: 3 }}
+          style={{ marginInlineEnd: 3 }}
         >
           <NotificationsOutlined
             fontSize="small"

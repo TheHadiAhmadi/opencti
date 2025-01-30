@@ -22,8 +22,8 @@ const useStyles = makeStyles(() => ({
     marginTop: -15,
   },
   search: {
-    marginLeft: 'auto',
-    marginRight: ' 20px',
+    marginInlineStart: 'auto',
+    marginInlineEnd: ' 20px',
   },
 }));
 

@@ -329,20 +329,20 @@ const TextFieldAskAI: FunctionComponent<TextFieldAskAiProps> = ({
   };
   if (variant === 'markdown') {
     return (
-      <div style={style || { position: 'absolute', top: 17, right: 0 }}>
+      <div style={style || { position: 'absolute', top: 17, insetInlineEnd: 0 }}>
         {renderButton()}
       </div>
     );
   }
   if (variant === 'html') {
     return (
-      <div style={style || { position: 'absolute', top: -12, right: 30 }}>
+      <div style={style || { position: 'absolute', top: -12, insetInlineEnd: 30 }}>
         {renderButton()}
       </div>
     );
   }
   return (
-    <InputAdornment position="end" style={{ position: 'absolute', top: 7, right: 0 }}>
+    <InputAdornment position="end" style={{ position: 'absolute', top: 7, insetInlineEnd: 0 }}>
       {renderButton()}
     </InputAdornment>
   );

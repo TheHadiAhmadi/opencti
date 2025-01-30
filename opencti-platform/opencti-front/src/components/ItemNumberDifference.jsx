@@ -2,14 +2,14 @@ import React from 'react';
 import { compose } from 'ramda';
 import * as PropTypes from 'prop-types';
 import withStyles from '@mui/styles/withStyles';
-import { ArrowUpward, ArrowDownward, ArrowForward } from '@mui/icons-material';
+import { ArrowUpward, ArrowDownward, ArrowForward, ArrowBack } from '@mui/icons-material';
 
 import inject18n from './i18n';
+import { useTheme } from '@mui/styles';
 
 const styles = (theme) => ({
   diff: {
     float: 'left',
-    margin: '23px 0 0 10px',
     padding: '2px 5px 2px 5px',
     fontSize: 12,
   },
@@ -46,6 +46,8 @@ const inlineStyles = {
 
 const ItemNumberDifference = (props) => {
   const { t, difference, classes, description } = props;
+  const dir = dcument.body.getAttribute('dir') ?? 'ltr'
+  
   if (difference < 0) {
     return (
       <div className={classes.diff} style={inlineStyles.red}>
@@ -62,7 +64,11 @@ const ItemNumberDifference = (props) => {
   if (difference === 0) {
     return (
       <div className={classes.diff} style={inlineStyles.blueGrey}>
-        <ArrowForward color="inherit" classes={{ root: classes.diffIcon }} />
+        {dir === 'rtl' ? (
+          <ArrowBack color="inherit" classes={{ root: classes.diffIcon }} />
+        ) : (
+          <ArrowForward color="inherit" classes={{ root: classes.diffIcon }} />
+        )}
         <div className={classes.diffNumber}>{difference}</div>
         {description ? (
           <div className={classes.diffDescription}>({t(description)})</div>

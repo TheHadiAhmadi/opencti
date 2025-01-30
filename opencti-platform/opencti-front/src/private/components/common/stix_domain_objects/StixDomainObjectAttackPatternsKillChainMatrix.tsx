@@ -28,7 +28,7 @@ const StixDomainObjectAttackPatternsKillChainMatrix: FunctionComponent<StixDomai
     <AttackPatternsMatrix
       attackPatterns={attackPatterns}
       searchTerm={searchTerm}
-      marginRight={true}
+      marginInlineEnd={true}
       handleToggleColorsReversed={handleToggleColorsReversed}
       currentColorsReversed={currentColorsReversed}
       noBottomBar={true}

@@ -96,7 +96,7 @@ class ToolBar extends Component {
               variant: 'elevation',
               elevation: 1,
               style: {
-                marginLeft: navOpen ? 180 : 55,
+                marginInlineStart: navOpen ? 180 : 55,
                 bottom: bannerSettings.bannerHeightNumber,
               },
             }}

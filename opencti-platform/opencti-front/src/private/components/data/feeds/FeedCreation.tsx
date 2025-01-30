@@ -103,7 +103,7 @@ const useStyles = makeStyles((theme: Theme) => ({
   stepCloseButton: {
     position: 'absolute',
     top: -20,
-    right: -20,
+    insetInlineEnd: 20,
   },
   buttonAdd: {
     width: '100%',
@@ -407,7 +407,7 @@ const FeedCreation: FunctionComponent<FeedCreationFormProps> = (props) => {
                         </AlertTitle>
                         <FormControlLabel
                           control={<Switch />}
-                          style={{ marginLeft: 1 }}
+                          style={{ marginInlineStart: 1 }}
                           name="feed_public"
                           onChange={(_, checked) => setFieldValue('feed_public', checked)}
                           label={t_i18n('Public feed')}

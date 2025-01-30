@@ -44,13 +44,13 @@ const styles = (theme) => ({
   createButton: {
     position: 'fixed',
     bottom: 30,
-    right: 30,
+    insetInlineEnd: 30,
     zIndex: 1001,
   },
   createButtonWithPadding: {
     position: 'fixed',
     bottom: 30,
-    right: 240,
+    insetInlineEnd: 240,
     zIndex: 1001,
   },
   title: {
@@ -66,7 +66,7 @@ const styles = (theme) => ({
   closeButton: {
     position: 'absolute',
     top: 12,
-    left: 5,
+    insetInlineStart: 5,
     color: 'inherit',
   },
 });

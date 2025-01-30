@@ -84,7 +84,7 @@ const DataTableHeaders: FunctionComponent<DataTableHeadersProps> = ({
           <Checkbox
             checked={selectAll}
             sx={{
-              marginRight: 1,
+              marginInlineEnd: 1,
               width: 24,
               '&:hover': {
                 background: 'transparent',

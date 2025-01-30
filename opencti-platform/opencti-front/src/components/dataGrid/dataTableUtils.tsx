@@ -31,7 +31,7 @@ const chipStyle = {
   fontSize: '12px',
   lineHeight: '12px',
   height: '20px',
-  marginRight: '7px',
+  marginInlineEnd: '7px',
   borderRadius: '10px',
 };
 
@@ -195,7 +195,7 @@ const defaultColumns: DataTableProps['dataColumns'] = {
               width: 20,
               display: 'inline-flex',
               borderRadius: 20,
-              marginRight: 5,
+              marginInlineEnd: 5,
             }}
           />
           {truncate(color, size * MAGICAL_SIZE)}

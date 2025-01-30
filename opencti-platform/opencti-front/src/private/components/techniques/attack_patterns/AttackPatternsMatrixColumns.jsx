@@ -121,7 +121,7 @@ const styles = (theme) => ({
   },
   switchKillChain: {
     position: 'fixed',
-    left: 75,
+    insetInlineStart: 75,
     bottom: 60,
     backgroundColor: theme.palette.background.paper,
     padding: '0 10px 2px 10px',
@@ -131,7 +131,7 @@ const styles = (theme) => ({
   },
   switchKillChainNavOpen: {
     position: 'fixed',
-    left: 200,
+    insetInlineStart: 200,
     bottom: 60,
     backgroundColor: theme.palette.background.paper,
     padding: '0 10px 2px 10px',

@@ -25,13 +25,13 @@ const styles = (theme) => ({
   closeButton: {
     position: 'absolute',
     top: 12,
-    left: 5,
+    insetInlineStart: 5,
     color: 'inherit',
   },
   importButton: {
     position: 'absolute',
     top: 15,
-    right: 20,
+    insetInlineEnd: 20,
   },
   container: {
     padding: '10px 20px 20px 20px',

@@ -61,7 +61,7 @@ const EntitySettingCustomOverview: React.FC<EntitySettingCustomOverviewProps> = 
             <IconButton
               onClick={() => resetLayout()}
               aria-haspopup="true"
-              sx={{ marginLeft: 1 }}
+              sx={{ marginInlineStart: 1 }}
               size="small"
               color="primary"
             >

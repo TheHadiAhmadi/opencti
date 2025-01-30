@@ -25,7 +25,7 @@ const styles = () => ({
   chip: {
     fontSize: 10,
     height: 20,
-    marginLeft: 10,
+    marginInlineStart: 10,
   },
 });
 

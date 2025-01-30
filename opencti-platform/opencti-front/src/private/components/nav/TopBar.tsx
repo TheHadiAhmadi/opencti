@@ -64,18 +64,18 @@ const useStyles = makeStyles<Theme>((theme) => ({
   logo: {
     cursor: 'pointer',
     height: 35,
-    marginRight: 3,
+    marginInlineEnd: 3,
   },
   logoCollapsed: {
     cursor: 'pointer',
     height: 35,
-    marginRight: 4,
+    marginInlineEnd: 4,
   },
   menuContainer: {
     width: '30%',
   },
   barRight: {
-    marginRight: theme.spacing(2),
+    marginInlineEnd: theme.spacing(2),
     height: '100%',
     display: 'flex',
     alignItems: 'center',

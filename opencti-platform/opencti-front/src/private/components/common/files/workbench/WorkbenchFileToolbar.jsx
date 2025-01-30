@@ -51,7 +51,7 @@ const styles = (theme) => ({
   closeButton: {
     position: 'absolute',
     top: 12,
-    left: 5,
+    insetInlineStart: 5,
     color: 'inherit',
   },
   buttons: {
@@ -91,7 +91,7 @@ const styles = (theme) => ({
   text: {
     display: 'inline-block',
     flexGrow: 1,
-    marginLeft: 10,
+    marginInlineStart: 10,
   },
   autoCompleteIndicator: {
     display: 'none',

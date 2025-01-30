@@ -67,8 +67,8 @@ const externalReferenceEnrichmentLinesAskJob = graphql`
 const styles = (theme) => ({
   noResult: {
     top: 10,
-    left: 16,
-    right: 0,
+    insetInlineStart: 16,
+    insetInlineEnd: 0,
     position: 'absolute',
     color: theme.palette.text.primary,
     fontSize: 15,
@@ -176,7 +176,7 @@ const ExternalReferenceEnrichment = (props) => {
                 </Tooltip>
                 <ListItemText primary={connector.name} />
                 <Security needs={[KNOWLEDGE_KNENRICHMENT]}>
-                  <ListItemSecondaryAction style={{ right: 0 }}>
+                  <ListItemSecondaryAction style={{ insetInlineEnd: 0 }}>
                     <Tooltip
                       title={t('Refresh the knowledge using this connector')}
                     >
@@ -249,12 +249,12 @@ const ExternalReferenceEnrichment = (props) => {
                             <CircularProgress
                               size={20}
                               thickness={2}
-                              style={{ marginRight: 10 }}
+                              style={{ marginInlineEnd: 10 }}
                             />
                           )}
                         </ListItemIcon>
                         <ListItemText primary={nsdt(work.timestamp)} />
-                        <ListItemSecondaryAction style={{ right: 0 }}>
+                        <ListItemSecondaryAction style={{ insetInlineEnd: 0 }}>
                           <IconButton
                             onClick={() => deleteWork(work.id)}
                             size="large"

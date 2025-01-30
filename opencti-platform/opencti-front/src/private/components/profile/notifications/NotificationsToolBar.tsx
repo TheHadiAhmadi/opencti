@@ -50,13 +50,13 @@ const useStyles = makeStyles<Theme>((theme) => ({
   },
   selectedElementsNumber: {
     padding: '2px 5px 2px 5px',
-    marginRight: 5,
+    marginInlineEnd: 5,
     backgroundColor: theme.palette.secondary.main,
     color: '#ffffff',
   },
   filtersNumber: {
     padding: '2px 5px 2px 5px',
-    marginRight: 5,
+    marginInlineEnd: 5,
     color: theme.palette.mode === 'dark' ? '#000000' : '#ffffff',
     backgroundColor: theme.palette.primary.main,
   },

@@ -51,12 +51,12 @@ const styles = (theme) => ({
   editButton: {
     position: 'fixed',
     bottom: 30,
-    right: 30,
+    insetInlineEnd: 30,
   },
   editButtonWithPadding: {
     position: 'fixed',
     bottom: 30,
-    right: 220,
+    insetInlineEnd: 220,
   },
   item: {
     position: 'absolute',
@@ -70,7 +70,7 @@ const styles = (theme) => ({
   icon: {
     position: 'absolute',
     top: 8,
-    left: 5,
+    insetInlineStart: 5,
     fontSize: 8,
   },
   type: {
@@ -258,7 +258,7 @@ class StixSightingRelationshipContainer extends Component {
                       !fromRestricted ? from.entity_type : 'Restricted',
                     )}`,
                     top: 20,
-                    left: 20,
+                    insetInlineStart: 20,
                   }}
                 >
                   <div
@@ -321,7 +321,7 @@ class StixSightingRelationshipContainer extends Component {
                       !toRestricted ? to.entity_type : 'Restricted',
                     )}`,
                     top: 20,
-                    right: 20,
+                    insetInlineEnd: 20,
                   }}
                 >
                   <div

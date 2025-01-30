@@ -18,7 +18,7 @@ const useStyles = makeStyles<Theme>((theme) => ({
   createButton: {
     position: 'fixed',
     bottom: 30,
-    right: 230,
+    insetInlineEnd: 230,
     zIndex: 1100,
   },
   speedDialButton: {

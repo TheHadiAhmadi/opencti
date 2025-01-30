@@ -51,13 +51,13 @@ const useStyles = makeStyles<Theme>(() => ({
   createButton: {
     position: 'fixed',
     bottom: 30,
-    right: 30,
+    insetInlineEnd: 30,
     zIndex: 1001,
   },
   continue: {
     position: 'fixed',
     bottom: 40,
-    right: 30,
+    insetInlineEnd: 30,
     zIndex: 1001,
   },
   container: {
@@ -460,7 +460,7 @@ interface StixCoreRelationshipCreationFromEntityProps {
   defaultStopTime: string;
   paginationOptions: Record<string, unknown>;
   connectionKey?: string;
-  paddingInlineEnd: number;
+  paddingRight: number;
   variant?: string;
   targetEntities?: TargetEntity[];
   onCreate?: () => void;
@@ -490,7 +490,7 @@ const StixCoreRelationshipCreationFromEntity: FunctionComponent<StixCoreRelation
   const {
     targetEntities: targetEntitiesProps = [],
     entityId,
-    paddingInlineEnd,
+    paddingRight,
     paginationOptions,
     isRelationReversed,
     connectionKey,
@@ -1001,7 +1001,7 @@ const StixCoreRelationshipCreationFromEntity: FunctionComponent<StixCoreRelation
           color="primary"
           aria-label="Add"
           className={classes.createButton}
-          style={{ right: paddingInlineEnd || 30 }}
+          style={{ insetInlineEnd: paddingRight || 30 }}
         >
           <Add />
         </Fab>

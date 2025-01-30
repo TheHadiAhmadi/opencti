@@ -62,7 +62,7 @@ const useStyles = makeStyles<Theme>((theme) => ({
     height: 20,
     float: 'left',
     width: 100,
-    marginRight: 10,
+    marginInlineEnd: 10,
   },
   chipInList2: {
     fontSize: 12,

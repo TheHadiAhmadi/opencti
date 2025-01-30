@@ -204,7 +204,7 @@ StixCoreObjectOpinionsRadarDialogProps
                     {myOpinion ? t_i18n('Update opinion') : t_i18n('Create an opinion')}
                   </DialogTitle>
                   <DialogContent>
-                    <div style={{ marginLeft: 10, marginRight: 10 }}>
+                    <div style={{ marginInlineStart: 10, marginInlineEnd: 10 }}>
                       <Slider
                         sx={{
                           '& .MuiSlider-markLabel': {
@@ -214,16 +214,16 @@ StixCoreObjectOpinionsRadarDialogProps
                           },
                           '& .MuiSlider-thumb[style*="left: 0%"] .MuiSlider-valueLabelOpen':
                             {
-                              left: -5,
+                              insetInlineStart: -5,
                               '&:before': {
-                                left: '22%',
+                                insetInlineStart: '22%',
                               },
                             },
                           '& .MuiSlider-thumb[style*="left: 100%"] .MuiSlider-valueLabelOpen':
                             {
                               right: -5,
                               '&:before': {
-                                left: '88%',
+                                insetInlineStart: '88%',
                               },
                             },
                         }}

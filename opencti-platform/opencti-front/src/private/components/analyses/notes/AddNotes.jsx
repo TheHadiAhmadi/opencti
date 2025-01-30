@@ -22,7 +22,7 @@ const styles = () => ({
     marginTop: -15,
   },
   search: {
-    marginLeft: 'auto',
+    marginInlineStart: 'auto',
     marginRight: ' 20px',
   },
 });

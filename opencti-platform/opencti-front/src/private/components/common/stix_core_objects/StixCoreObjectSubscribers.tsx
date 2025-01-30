@@ -39,7 +39,7 @@ const useStyles = makeStyles<Theme>((theme) => ({
   },
   goIcon: {
     position: 'absolute',
-    right: -10,
+    insetInlineEnd: 10,
   },
 }));
 
@@ -61,7 +61,7 @@ const StixCoreObjectSubscribers: FunctionComponent<ContainerHeaderSharedProps> =
         color={hasSetAccess ? 'primary' : 'inherit'}
         style={{
           cursor: hasSetAccess && triggersKnowledgeCount && triggersKnowledgeCount > 0 ? 'pointer' : 'default',
-          marginRight: 10,
+          marginInlineEnd: 10,
           whiteSpace: 'nowrap',
         }}
         sx={!hasSetAccess ? {

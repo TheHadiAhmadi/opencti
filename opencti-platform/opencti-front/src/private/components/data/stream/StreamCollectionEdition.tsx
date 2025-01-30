@@ -165,7 +165,7 @@ const StreamCollectionEditionContainer: FunctionComponent<{ streamCollection: St
             </AlertTitle>
             <FormControlLabel
               control={<Switch defaultChecked={!!initialValues.stream_public} />}
-              style={{ marginLeft: 1 }}
+              style={{ marginInlineStart: 1 }}
               onChange={(_, checked) => handleSubmitField('stream_public', checked.toString())}
               label={t_i18n('Public stream')}
             />

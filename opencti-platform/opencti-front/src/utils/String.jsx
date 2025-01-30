@@ -112,7 +112,7 @@ export const renderObservableValue = (observable) => {
                   />
                 </Tooltip>
               </div>
-              <div style={{ float: 'left', marginLeft: 10 }}>
+              <div style={{ float: 'left', marginInlineStart: 10 }}>
                 {observable.observable_value}
               </div>
             </div>

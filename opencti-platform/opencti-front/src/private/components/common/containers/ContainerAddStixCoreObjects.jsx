@@ -27,13 +27,13 @@ const useStyles = makeStyles((theme) => ({
   createButton: {
     position: 'fixed',
     bottom: 30,
-    right: 30,
+    insetInlineEnd: 30,
     zIndex: 1100,
   },
   createButtonWithPadding: {
     position: 'fixed',
     bottom: 30,
-    right: 280,
+    insetInlineEnd: 280,
     zIndex: 1100,
   },
   createButtonSimple: {
@@ -43,7 +43,7 @@ const useStyles = makeStyles((theme) => ({
   speedDial: {
     position: 'fixed',
     bottom: 30,
-    right: 30,
+    insetInlineEnd: 30,
     zIndex: 2000,
   },
   speedDialButton: {

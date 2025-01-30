@@ -22,7 +22,7 @@ const styles = (theme) => ({
   createButton: {
     position: 'fixed',
     bottom: 30,
-    right: 230,
+    insetInlineEnd: 230,
   },
   buttons: {
     marginTop: 20,
@@ -38,13 +38,13 @@ const styles = (theme) => ({
   closeButton: {
     position: 'absolute',
     top: 12,
-    left: 5,
+    insetInlineStart: 5,
     color: 'inherit',
   },
   importButton: {
     position: 'absolute',
     top: 15,
-    right: 20,
+    insetInlineEnd: 20,
   },
   container: {
     padding: '10px 20px 20px 20px',

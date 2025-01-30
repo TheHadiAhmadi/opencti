@@ -51,8 +51,8 @@ AddPersonaThreatActorIndividualProps
       header={
         <div
           style={{
-            marginLeft: 'auto',
-            marginRight: '20px',
+            marginInlineStart: 'auto',
+            marginInlineEnd: '20px',
             display: 'flex',
             flexWrap: 'wrap',
             justifyContent: 'flex-end',
@@ -71,7 +71,7 @@ AddPersonaThreatActorIndividualProps
             paginationOptions={{ search, types: ['Persona'] }}
             paginationKey="Pagination_stixCyberObservables"
             controlledDialStyles={{
-              marginLeft: '10px',
+              marginInlineStart: '10px',
               marginTop: '5px',
             }}
           />

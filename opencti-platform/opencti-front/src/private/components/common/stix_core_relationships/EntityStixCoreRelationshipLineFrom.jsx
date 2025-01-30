@@ -40,7 +40,7 @@ const styles = (theme) => ({
   },
   goIcon: {
     position: 'absolute',
-    right: -10,
+    insetInlineEnd: 10,
   },
   itemIconDisabled: {
     color: theme.palette.grey[700],
@@ -189,7 +189,7 @@ class EntityStixCoreRelationshipLineFromComponent extends Component {
                 + R.head(node.x_opencti_inferences).rule.name
               }
             >
-              <AutoFix fontSize="small" style={{ marginLeft: -30 }} />
+              <AutoFix fontSize="small" style={{ marginInlineStart: -30 }} />
             </Tooltip>
           ) : (
             <StixCoreRelationshipPopover

@@ -83,7 +83,7 @@ const useStyles = makeStyles<Theme>((theme) => ({
     position: 'absolute',
     color: theme.palette.primary.main,
     top: 35,
-    right: 20,
+    insetInlineEnd: 20,
   },
   export: {
     float: 'right',

@@ -14,6 +14,7 @@ import { prefixer } from 'stylis';
 
 const cacheRTL = createCache({
   key: 'mui-style-rtl',
+  prepend: true,
   stylisPlugins: [prefixer, rtlPlugin],
 });
 

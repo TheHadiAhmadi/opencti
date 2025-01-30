@@ -50,12 +50,12 @@ const useStyles = makeStyles<Theme>((theme) => ({
     height: 20,
     float: 'left',
     width: 120,
-    marginRight: 10,
+    marginInlineEnd: 10,
   },
   external: {
     position: 'absolute',
     bottom: 0,
-    right: 0,
+    insetInlineEnd: 0,
     color: theme.palette.text?.secondary,
   },
 }));
@@ -187,7 +187,7 @@ StixCoreObjectOrStixCoreRelationshipNoteCardComponentProps
             <div
               style={{
                 float: 'left',
-                marginLeft: 20,
+                marginInlineStart: 20,
                 textTransform: 'none',
               }}
             >

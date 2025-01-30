@@ -23,7 +23,7 @@ const useStyles = makeStyles({
     margin: 0,
     position: 'absolute',
     top: 0,
-    right: 0,
+    insetInlineEnd: 0,
   },
 });
 

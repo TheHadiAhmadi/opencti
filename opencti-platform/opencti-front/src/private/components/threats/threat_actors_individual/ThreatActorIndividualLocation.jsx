@@ -97,7 +97,7 @@ class ThreatActorIndividualLocationsComponent extends Component {
                   </ListItemIcon>
                   <ListItemText primary={location.name} />
                   {types.includes('manual') ? (
-                    <ListItemSecondaryAction style={{ right: 0 }} >
+                    <ListItemSecondaryAction style={{ insetInlineEnd: 0 }} >
                       <Security needs={[KNOWLEDGE_KNUPDATE]}>
                         <IconButton
                           aria-label="Remove"

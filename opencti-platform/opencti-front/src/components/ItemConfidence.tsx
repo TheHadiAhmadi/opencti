@@ -10,7 +10,7 @@ import { hexToRGB } from '../utils/Colors';
 const useStyles = makeStyles(() => ({
   chip: {
     fontSize: 12,
-    marginRight: 7,
+    marginInlineEnd: 7,
     borderRadius: 4,
     width: 120,
   },

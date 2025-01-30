@@ -12,15 +12,15 @@ const WidgetNumber = ({ total, value }: WidgetNumberProps) => {
   const difference = total - value;
 
   return (
-    <>
-      <div style={{ float: 'left', fontSize: 40 }}>
+    <div style={{display: 'flex', alignItems: 'center', gap: '4px'}}>
+      <div style={{ fontSize: 40 }}>
         {n(total)}
       </div>
       <ItemNumberDifference
         difference={difference}
         description={t_i18n('24 hours')}
       />
-    </>
+    </div>
   );
 };
 

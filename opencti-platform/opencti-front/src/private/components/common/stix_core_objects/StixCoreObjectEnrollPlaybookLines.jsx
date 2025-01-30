@@ -83,7 +83,7 @@ const StixCoreObjectEnrollPlaybook = ({
                   </ListItemIcon>
                   <ListItemText primary={playbook.name} />
                   <Security needs={[KNOWLEDGE_KNENRICHMENT]}>
-                    <ListItemSecondaryAction style={{ right: 0 }}>
+                    <ListItemSecondaryAction style={{ insetInlineEnd: 0 }}>
                       <Tooltip title={t_i18n('Trigger this playbook now')}>
                         <IconButton
                           disabled={isSubmitting}

@@ -55,12 +55,12 @@ const useStyles = makeStyles(() => ({
   },
   errorButton: {
     position: 'absolute',
-    right: 10,
+    insetInlineEnd: 10,
     top: 10,
   },
   deleteButton: {
     position: 'absolute',
-    right: 10,
+    insetInlineEnd: 10,
     bottom: 10,
   },
 }));

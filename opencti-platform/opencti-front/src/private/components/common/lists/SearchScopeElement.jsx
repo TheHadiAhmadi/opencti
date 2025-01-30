@@ -59,7 +59,7 @@ const SearchScopeElement = ({
     }));
   };
   return (
-    <InputAdornment position="end" style={{ position: 'absolute', right: 5 }}>
+    <InputAdornment position="end" style={{ position: 'absolute', insetInlineEnd: 5 }}>
       <IconButton onClick={handleOpenSearchScope} size="small" edge="end">
         <PaletteOutlined
           fontSize="small"

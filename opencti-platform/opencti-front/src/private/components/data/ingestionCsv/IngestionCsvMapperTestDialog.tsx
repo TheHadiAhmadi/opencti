@@ -119,7 +119,7 @@ const IngestionCsvMapperTestDialog: FunctionComponent<IngestionCsvMapperTestDial
             {t_i18n('Test')}
           </Button>
           {loading && (
-            <Box sx={{ marginLeft: '8px' }}>
+            <Box sx={{ marginInlineStart: '8px' }}>
               <Loader variant={LoaderVariant.inElement}/>
             </Box>
           )}
@@ -127,7 +127,7 @@ const IngestionCsvMapperTestDialog: FunctionComponent<IngestionCsvMapperTestDial
             && <Box
               sx={{
                 paddingTop: '8px',
-                marginLeft: '12px',
+                marginInlineStart: '12px',
                 fontSize: '1rem',
                 gap: '8px',
                 justifyContent: 'center',

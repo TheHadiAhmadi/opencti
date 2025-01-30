@@ -12,7 +12,7 @@ import AddAttackPatternsLines, { addAttackPatternsLinesQuery } from './AddAttack
 
 const styles = () => ({
   search: {
-    marginLeft: 'auto',
+    marginInlineStart: 'auto',
     marginRight: ' 20px',
   },
 });

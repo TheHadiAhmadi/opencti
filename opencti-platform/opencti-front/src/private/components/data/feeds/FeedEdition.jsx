@@ -52,7 +52,7 @@ const styles = (theme) => ({
   closeButton: {
     position: 'absolute',
     top: 12,
-    left: 5,
+    insetInlineStart: 5,
     color: 'inherit',
   },
   buttons: {
@@ -65,7 +65,7 @@ const styles = (theme) => ({
   importButton: {
     position: 'absolute',
     top: 15,
-    right: 20,
+    insetInlineEnd: 20,
   },
   container: {
     padding: '10px 20px 20px 20px',
@@ -108,7 +108,7 @@ const styles = (theme) => ({
   stepCloseButton: {
     position: 'absolute',
     top: -20,
-    right: -20,
+    insetInlineEnd: 20,
   },
   icon: {
     paddingTop: 4,
@@ -360,7 +360,7 @@ const FeedEditionContainer = (props) => {
                         component={SwitchField}
                         type="checkbox"
                         name="feed_public"
-                        containerstyle={{ marginLeft: 2, marginTop: 20 }}
+                        containerstyle={{ marginInlineStart: 2, marginTop: 20 }}
                         label={t('Public feed')}
                       />
                       {!values.feed_public && (

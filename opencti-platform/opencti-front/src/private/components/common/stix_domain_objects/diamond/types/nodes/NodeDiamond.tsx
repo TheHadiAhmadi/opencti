@@ -21,7 +21,7 @@ const useStyles = makeStyles<Theme>((theme) => ({
       position: 'absolute',
       content: '""',
       top: 0,
-      left: 0,
+      insetInlineStart: 0,
       height: '100%',
       width: '100%',
       transform: 'rotate(45deg)',
@@ -31,7 +31,7 @@ const useStyles = makeStyles<Theme>((theme) => ({
       position: 'absolute',
       content: '""',
       top: 10,
-      left: 10,
+      insetInlineStart: 10,
       height: 'calc(100% - 22px)', /* -22px is 2 * 10px gap on either side - 2px border on either side */
       width: 'calc(100% - 22px)', /* -22px is 2 * 10px gap on either side - 2px border on either side */
       border: `1px solid ${theme.palette.primary.main}`,
@@ -42,33 +42,33 @@ const useStyles = makeStyles<Theme>((theme) => ({
     top: -50,
   },
   handleRight: {
-    right: -50,
+    insetInlineEnd: 50,
   },
   handleBottom: {
     bottom: -50,
   },
   handleLeft: {
-    left: -50,
+    insetInlineStart: -50,
   },
   adversary: {
     position: 'absolute',
     top: -85,
-    left: 81,
+    insetInlineStart: 81,
   },
   infrastructure: {
     position: 'absolute',
     top: 10,
-    right: -5,
+    insetInlineEnd: 5,
   },
   victimology: {
     position: 'absolute',
     top: 110,
-    left: 81,
+    insetInlineStart: 81,
   },
   capabilities: {
     position: 'absolute',
     top: 10,
-    left: -5,
+    insetInlineStart: -5,
   },
 }));
 

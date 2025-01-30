@@ -90,7 +90,7 @@ ExternalReferenceDetailsComponentProps
                   }
                   size="medium"
                   color="primary"
-                  style={{ position: 'absolute', right: 0, top: 0 }}
+                  style={{ position: 'absolute', insetInlineEnd: 0, top: 0 }}
                   disabled={!externalReference.url}
                 >
                   <OpenInBrowserOutlined />

@@ -474,7 +474,7 @@ const ContainerHeader = (props) => {
       position: 'absolute',
       display: 'flex',
       top: 166 + settingsMessagesBannerHeight,
-      right: 24,
+      insetInlineEnd: 24,
     };
   }
 

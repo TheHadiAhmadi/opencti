@@ -187,7 +187,7 @@ class EntityStixCoreRelationshipLineAllComponent extends Component {
                 + R.head(node.x_opencti_inferences).rule.name
               }
             >
-              <AutoFix fontSize="small" style={{ marginLeft: -30 }} />
+              <AutoFix fontSize="small" style={{ marginInlineStart: -30 }} />
             </Tooltip>
           ) : (
             <StixCoreRelationshipPopover

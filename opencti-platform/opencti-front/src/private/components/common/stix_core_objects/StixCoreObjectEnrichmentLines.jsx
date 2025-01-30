@@ -173,7 +173,7 @@ const StixCoreObjectEnrichment = ({
                 </Tooltip>
                 <ListItemText primary={connector.name} />
                 <Security needs={[KNOWLEDGE_KNENRICHMENT]}>
-                  <ListItemSecondaryAction style={{ right: 0 }}>
+                  <ListItemSecondaryAction style={{ insetInlineEnd: 0 }}>
                     <Tooltip
                       title={t('Refresh the knowledge using this connector')}
                     >
@@ -252,7 +252,7 @@ const StixCoreObjectEnrichment = ({
                         </ListItemIcon>
                         <ListItemText primary={nsdt(work.timestamp)} />
                         <Security needs={[KNOWLEDGE_KNENRICHMENT]}>
-                          <ListItemSecondaryAction style={{ right: 0 }}>
+                          <ListItemSecondaryAction style={{ insetInlineEnd: 0 }}>
                             <IconButton
                               onClick={() => deleteWork(work.id)}
                               size="large"

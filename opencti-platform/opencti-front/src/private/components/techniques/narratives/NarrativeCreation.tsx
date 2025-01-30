@@ -290,7 +290,7 @@ export const NarrativeCreationForm: FunctionComponent<NarrativeFormProps> = ({
                 variant="contained"
                 onClick={handleReset}
                 disabled={isSubmitting}
-                sx={{ marginLeft: 2 }}
+                sx={{ marginInlineStart: 2 }}
               >
                 {t_i18n('Cancel')}
               </Button>
@@ -299,7 +299,7 @@ export const NarrativeCreationForm: FunctionComponent<NarrativeFormProps> = ({
                 color="secondary"
                 onClick={submitForm}
                 disabled={isSubmitting}
-                sx={{ marginLeft: 2 }}
+                sx={{ marginInlineStart: 2 }}
               >
                 {t_i18n('Create')}
               </Button>
@@ -383,7 +383,7 @@ const NarrativeCreation: FunctionComponent<NarrativeCreationProps> = ({
               style={{
                 position: 'fixed',
                 bottom: 30,
-                right: 30,
+                insetInlineEnd: 30,
                 zIndex: 2000,
               }}
             >

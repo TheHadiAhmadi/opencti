@@ -36,7 +36,7 @@ const styles = (theme) => ({
   createButton: {
     position: 'fixed',
     bottom: 30,
-    right: 30,
+    insetInlineEnd: 30,
     zIndex: 2000,
   },
   buttons: {
@@ -53,13 +53,13 @@ const styles = (theme) => ({
   closeButton: {
     position: 'absolute',
     top: 12,
-    left: 5,
+    insetInlineStart: 5,
     color: 'inherit',
   },
   importButton: {
     position: 'absolute',
     top: 15,
-    right: 20,
+    insetInlineEnd: 20,
   },
   container: {
     padding: '10px 20px 20px 20px',
@@ -76,7 +76,7 @@ const styles = (theme) => ({
   icon: {
     position: 'absolute',
     top: 8,
-    left: 5,
+    insetInlineStart: 5,
     fontSize: 8,
   },
   type: {
@@ -432,7 +432,7 @@ class StixNestedRefRelationshipCreation extends Component {
                       fromObjects[0].entity_type,
                     )}`,
                     top: 10,
-                    left: 0,
+                    insetInlineStart: 0,
                   }}
                 >
                   <div
@@ -486,7 +486,7 @@ class StixNestedRefRelationshipCreation extends Component {
                   style={{
                     border: `2px solid ${itemColor(toObjects[0].entity_type)}`,
                     top: 10,
-                    right: 0,
+                    insetInlineEnd: 0,
                   }}
                 >
                   <div
@@ -623,7 +623,7 @@ class StixNestedRefRelationshipCreation extends Component {
                 style={{
                   border: `2px solid ${itemColor(fromObjects[0].entity_type)}`,
                   top: 10,
-                  left: 10,
+                  insetInlineStart: 10,
                 }}
               >
                 <div
@@ -687,7 +687,7 @@ class StixNestedRefRelationshipCreation extends Component {
                 style={{
                   border: `2px solid ${itemColor(toObjects[0].entity_type)}`,
                   top: 10,
-                  right: 10,
+                  insetInlineEnd: 10,
                 }}
               >
                 <div
@@ -729,7 +729,7 @@ class StixNestedRefRelationshipCreation extends Component {
               style={{
                 backgroundColor: theme.palette.background.accent,
                 top: 10,
-                left: 10,
+                insetInlineStart: 10,
               }}
             >
               <div
@@ -779,7 +779,7 @@ class StixNestedRefRelationshipCreation extends Component {
               style={{
                 backgroundColor: theme.palette.background.accent,
                 top: 10,
-                right: 10,
+                insetInlineEnd: 10,
               }}
             >
               <div

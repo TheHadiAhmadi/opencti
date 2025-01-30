@@ -22,7 +22,7 @@ const useStyles = makeStyles(() => ({
     textAlign: 'end',
   },
   button: {
-    marginLeft: 10,
+    marginInlineStart: 10,
   },
 }));
 

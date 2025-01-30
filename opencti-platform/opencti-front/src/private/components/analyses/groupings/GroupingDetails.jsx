@@ -59,7 +59,7 @@ const styles = (theme) => ({
   },
   buttonExpand: {
     position: 'absolute',
-    left: 0,
+    insetInlineStart: 0,
     bottom: 0,
     width: '100%',
     height: 25,
@@ -85,7 +85,7 @@ const inlineStyles = {
     minWidth: 80,
     maxWidth: 80,
     marginRight: 24,
-    marginLeft: 24,
+    marginInlineStart: 24,
     whiteSpace: 'nowrap',
     overflow: 'hidden',
     textOverflow: 'ellipsis',

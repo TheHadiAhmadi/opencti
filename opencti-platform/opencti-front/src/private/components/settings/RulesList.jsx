@@ -59,7 +59,7 @@ const useStyles = makeStyles((theme) => ({
     position: 'absolute',
     color: theme.palette.primary.main,
     top: 35,
-    right: 20,
+    insetInlineEnd: 20,
   },
   progress: {
     width: '100%',

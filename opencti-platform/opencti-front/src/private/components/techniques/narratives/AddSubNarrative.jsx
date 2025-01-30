@@ -58,7 +58,7 @@ class AddSubNarrative extends Component {
           title={t('Add subnarratives')}
           header={(
             <div style={{
-              marginLeft: 'auto',
+              marginInlineStart: 'auto',
               marginRight: '20px',
               display: 'flex',
               flexDirection: 'column',

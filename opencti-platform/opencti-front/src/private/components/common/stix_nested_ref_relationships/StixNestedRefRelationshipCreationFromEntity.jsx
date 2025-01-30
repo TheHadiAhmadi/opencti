@@ -52,7 +52,7 @@ const useStyles = makeStyles((theme) => ({
   createButton: {
     position: 'fixed',
     bottom: 30,
-    right: 30,
+    insetInlineEnd: 30,
     zIndex: 1001,
   },
   title: {
@@ -65,7 +65,7 @@ const useStyles = makeStyles((theme) => ({
   closeButton: {
     position: 'absolute',
     top: 12,
-    left: 5,
+    insetInlineStart: 5,
     color: 'inherit',
   },
   container: {
@@ -88,7 +88,7 @@ const useStyles = makeStyles((theme) => ({
   icon: {
     position: 'absolute',
     top: 8,
-    left: 5,
+    insetInlineStart: 5,
     fontSize: 8,
   },
   type: {
@@ -125,7 +125,7 @@ const useStyles = makeStyles((theme) => ({
   continue: {
     position: 'fixed',
     bottom: 40,
-    right: 30,
+    insetInlineEnd: 30,
     zIndex: 1001,
   },
   relationCreate: {
@@ -155,7 +155,7 @@ const useStyles = makeStyles((theme) => ({
   speedDial: {
     position: 'fixed',
     bottom: 30,
-    right: 30,
+    insetInlineEnd: 30,
     zIndex: 2000,
   },
   speedDialButton: {
@@ -741,7 +741,7 @@ const StixNestedRefRelationshipCreationFromEntity = ({
                   style={{
                     border: `2px solid ${itemColor(fromEntity.entity_type)}`,
                     top: 10,
-                    left: 0,
+                    insetInlineStart: 0,
                   }}
                 >
                   <div
@@ -777,7 +777,7 @@ const StixNestedRefRelationshipCreationFromEntity = ({
                   style={{
                     border: `2px solid ${itemColor(toEntities[0].entity_type)}`,
                     top: 10,
-                    right: 0,
+                    insetInlineEnd: 0,
                   }}
                 >
                   <div

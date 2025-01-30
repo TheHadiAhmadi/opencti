@@ -225,7 +225,7 @@ export const htmlToPdfReport = (reportName: string, content: string, templateNam
     pageMargins: [50, 70],
     styles: {
       firstPageTitle: { fontSize: 26, bold: true },
-      firstPageSubtitle: { fontSize: 20, marginTop: 6, marginLeft: 40 },
+      firstPageSubtitle: { fontSize: 20, marginTop: 6, marginInlineStart: 40 },
       firstPageDate: { fontSize: 14, bold: true, opacity: 0.7, marginTop: 15 },
       headerFooter: { opacity: 0.5 },
     },

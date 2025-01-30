@@ -76,8 +76,8 @@ const AddNotesFunctionalComponent: FunctionComponent<AddNotesFunctionalComponent
         title={t_i18n('Add notes')}
         header={(
           <div style={{
-            marginLeft: 'auto',
-            marginRight: '20px',
+            marginInlineStart: 'auto',
+            marginInlineEnd: '20px',
           }}
           >
             <SearchInput
@@ -90,7 +90,7 @@ const AddNotesFunctionalComponent: FunctionComponent<AddNotesFunctionalComponent
               size='small'
               variant='contained'
               sx={{
-                marginLeft: '10px',
+                marginInlineStart: '10px',
                 padding: '7px 10px',
               }}
             >

@@ -112,7 +112,7 @@ const WidgetDistributionList = ({
               <div
                 style={{
                   float: 'right',
-                  marginRight: 20,
+                  marginInlineEnd: 20,
                   fontSize: 18,
                   fontWeight: 600,
                   color: theme.palette.primary.main,

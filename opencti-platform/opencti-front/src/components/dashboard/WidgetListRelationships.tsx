@@ -85,7 +85,7 @@ const WidgetListRelationships = ({
             >
               <ListItemIcon
                 style={{
-                  marginRight: 0,
+                  marginInlineEnd: 0,
                   color: theme.palette.primary.main,
                 }}
               >

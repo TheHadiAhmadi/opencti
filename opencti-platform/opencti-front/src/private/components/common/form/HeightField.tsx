@@ -144,7 +144,7 @@ export const HeightFieldEdit: FunctionComponent<HeightFieldEditProps> = ({
                       });
                     }}
                     size="large"
-                    style={{ position: 'absolute', right: -10, top: 5 }}
+                    style={{ position: 'absolute', insetInlineEnd: 10, top: 5 }}
                   >
                     <DeleteOutlined />
                   </IconButton>
@@ -244,7 +244,7 @@ export const HeightFieldAdd: FunctionComponent<HeightFieldAddProps> = ({
                       arrayHelpers.remove(index);
                     }}
                     size="large"
-                    style={{ position: 'absolute', right: -10, top: 5 }}
+                    style={{ position: 'absolute', insetInlineEnd: 10, top: 5 }}
                   >
                     <DeleteOutlined />
                   </IconButton>

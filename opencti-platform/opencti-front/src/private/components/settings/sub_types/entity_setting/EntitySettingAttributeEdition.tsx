@@ -112,7 +112,7 @@ const EntitySettingAttributeEdition = ({
 
   useEffect(() => {
     if (attribute.name === INPUT_AUTHORIZED_MEMBERS) {
-      const defaultAuthorizedMembers: { id: string, access_right: AccessRight }[] = (attribute.defaultValues ?? [])
+      const defaultAuthorizedMembers: { id: string, access_insetInlineEndAccessRight }[] = (attribute.defaultValues ?? [])
         .map((v) => JSON.parse(v.id))
         .filter((v) => !!v.id && !!v.access_right);
 

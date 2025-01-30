@@ -54,7 +54,7 @@ const useStyles = makeStyles<Theme>((theme) => ({
     height: 20,
     float: 'left',
     width: 100,
-    marginRight: 10,
+    marginInlineEnd: 10,
   },
   chipInList2: {
     fontSize: 12,
@@ -68,7 +68,7 @@ const useStyles = makeStyles<Theme>((theme) => ({
     fontSize: 12,
     height: 20,
     float: 'left',
-    marginRight: 10,
+    marginInlineEnd: 10,
   },
 }));
 
@@ -162,7 +162,7 @@ export const TriggerLineComponent: FunctionComponent<TriggerLineProps> = ({
               {(data.notifiers
                 && data.notifiers.length > 0)
                 ? data.notifiers
-                  .map<React.ReactNode>((n) => <code key={n.id} style={{ marginRight: 5 }}>{n.name}</code>)
+                  .map<React.ReactNode>((n) => <code key={n.id} style={{ marginInlineEnd: 5 }}>{n.name}</code>)
                 : '-'
               }
             </div>

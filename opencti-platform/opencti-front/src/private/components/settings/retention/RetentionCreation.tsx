@@ -40,7 +40,7 @@ const useStyles = makeStyles<Theme>((theme) => ({
   text: {
     display: 'inline-block',
     flexGrow: 1,
-    marginLeft: 10,
+    marginInlineStart: 10,
   },
 }));
 

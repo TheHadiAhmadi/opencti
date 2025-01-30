@@ -24,7 +24,7 @@ const useStyles = makeStyles<Theme>(() => ({
   drawerPaper: {
     position: 'fixed',
     top: '50%',
-    right: 20,
+    insetInlineEnd: 20,
     transform: 'translateY(-50%)',
     width: 400,
     maxWidth: 400,
@@ -126,7 +126,7 @@ EntityDetailsRightsBarProps
         style={{
           display: 'flex',
           position: 'fixed',
-          left: 20,
+          insetInlineStart: 20,
           top: 20,
           width: 360,
         }}

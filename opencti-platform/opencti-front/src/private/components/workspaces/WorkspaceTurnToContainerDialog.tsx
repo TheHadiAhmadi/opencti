@@ -29,7 +29,7 @@ const useStyles = makeStyles<Theme>((theme) => ({
   icon: {
     display: 'inline-block',
     paddingTop: 4,
-    marginRight: theme.spacing(1),
+    marginInlineEnd: theme.spacing(1),
   },
   text: {
     display: 'inline-block',
@@ -234,7 +234,7 @@ const WorkspaceTurnToContainerDialog: FunctionComponent<WorkspaceTurnToContainer
         <IconButton
           onClick={() => setContainerCreation(true)}
           edge="end"
-          style={{ position: 'absolute', top: 68, right: 48 }}
+          style={{ position: 'absolute', top: 68, insetInlineEnd48 }}
           size="large"
         >
           <AddOutlined />

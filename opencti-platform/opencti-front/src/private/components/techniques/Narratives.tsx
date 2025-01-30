@@ -85,7 +85,7 @@ const Narratives: FunctionComponent = () => {
           />
           <div style={{
             marginTop: 0,
-            marginRight: 0,
+            marginInlineEnd: 0,
             display: 'flex',
             alignItems: 'center',
           }}

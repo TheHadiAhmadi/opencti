@@ -199,7 +199,7 @@ const ContainerStixDomainObjectLineComponent = (props) => {
       <ListItemSecondaryAction>
         {isOnlyThroughInference ? (
           <Tooltip title={t_i18n('Inferred knowledge')}>
-            <AutoFix fontSize="small" style={{ marginLeft: -30 }} />
+            <AutoFix fontSize="small" style={{ marginInlineStart: -30 }} />
           </Tooltip>
         ) : (
           <Security needs={[KNOWLEDGE_KNUPDATE]}>

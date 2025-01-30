@@ -9,7 +9,7 @@ const useStyles = makeStyles(() => ({
     fontSize: 12,
     lineHeight: '12px',
     height: 25,
-    marginRight: 7,
+    marginInlineEnd: 7,
     textTransform: 'uppercase',
     borderRadius: 4,
     width: 130,

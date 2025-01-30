@@ -20,7 +20,7 @@ const styles = (theme) => ({
     float: 'left',
   },
   search: {
-    marginLeft: 'auto',
+    marginInlineStart: 'auto',
     marginRight: ' 20px',
   },
   header: {
@@ -30,7 +30,7 @@ const styles = (theme) => ({
   closeButton: {
     position: 'absolute',
     top: 12,
-    left: 5,
+    insetInlineStart: 5,
     color: 'inherit',
   },
   container: {

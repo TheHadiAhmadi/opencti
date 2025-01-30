@@ -307,7 +307,7 @@ export const OrganizationCreationForm: FunctionComponent<OrganizationFormProps> 
               color="secondary"
               onClick={submitForm}
               disabled={isSubmitting}
-              sx={{ marginLeft: 2 }}
+              sx={{ marginInlineStart: 2 }}
             >
               {t_i18n('Create')}
             </Button>

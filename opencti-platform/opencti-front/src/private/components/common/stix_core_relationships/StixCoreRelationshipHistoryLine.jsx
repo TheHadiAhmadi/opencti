@@ -39,7 +39,7 @@ const styles = () => ({
     display: 'block',
     position: 'absolute',
     top: 50,
-    left: 20,
+    insetInlineStart: 20,
     width: 1,
     height: 18,
   },

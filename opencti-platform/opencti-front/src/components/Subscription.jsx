@@ -12,8 +12,8 @@ const SubscriptionAvatarsStyles = () => ({
   avatars: {
     float: 'right',
     display: 'flex',
-    marginLeft: 'auto',
-    marginRight: ' 20px',
+    marginInlineStart: 'auto',
+    marginInlineEnd: ' 20px',
   },
   avatarsGraph: {
     float: 'right',
@@ -23,7 +23,7 @@ const SubscriptionAvatarsStyles = () => ({
   avatar: {
     width: 28,
     height: 28,
-    marginLeft: 10,
+    marginInlineStart: 10,
     textTransform: 'uppercase',
   },
 });

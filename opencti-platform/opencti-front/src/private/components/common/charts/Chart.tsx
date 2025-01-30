@@ -15,13 +15,13 @@ const useStyles = makeStyles<Theme>(() => ({
   container: {
     margin: 0,
     top: 0,
-    right: 32,
+    insetInlineEnd: 32,
     position: 'absolute',
   },
   containerReadOnly: {
     margin: 0,
     top: 0,
-    right: 0,
+    insetInlineEnd: 0,
     position: 'absolute',
   },
 }));

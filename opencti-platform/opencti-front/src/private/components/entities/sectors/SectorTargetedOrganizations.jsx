@@ -51,7 +51,7 @@ const inlineStyles = {
     minWidth: 80,
     maxWidth: 80,
     marginRight: 24,
-    marginLeft: 24,
+    marginInlineStart: 24,
     whiteSpace: 'nowrap',
     overflow: 'hidden',
     textOverflow: 'ellipsis',

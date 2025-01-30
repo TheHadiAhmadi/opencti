@@ -74,7 +74,7 @@ const StixCyberObservableEdition: FunctionComponent<StixCyberObservableEditionPr
             style={{
               position: 'fixed',
               bottom: 30,
-              right: 30,
+              insetInlineEnd: 30,
             }}
           >
             <Edit />

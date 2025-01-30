@@ -198,7 +198,7 @@ const Audit = () => {
   };
 
   const extraFields = hasBothCapabilities ? (
-    <div style={{ marginLeft: 10 }}>
+    <div style={{ marginInlineStart: 10 }}>
       <FormControlLabel
         value="start"
         control={

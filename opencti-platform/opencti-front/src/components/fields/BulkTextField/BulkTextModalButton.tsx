@@ -13,7 +13,7 @@ const BulkTextModalButton = ({ onClick, title, disabled, sx = {} }: BulkTextModa
   const { t_i18n } = useFormatter();
 
   const bulkButton = (
-    <Box sx={{ marginLeft: 'auto', marginRight: 2, ...sx }}>
+    <Box sx={{ marginInlineStart: 'auto', marginInlineEnd: 2, ...sx }}>
       <Button
         color="primary"
         variant="outlined"

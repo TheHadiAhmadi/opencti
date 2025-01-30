@@ -31,7 +31,7 @@ const StixCoreObjectEnrollPlaybook: FunctionComponent<StixCoreObjectEnrollPlaybo
             onClick={handleOpenEnrollPlaybook}
             value="enrich"
             size="small"
-            style={{ marginRight: 3 }}
+            style={{ marginInlineEnd: 3 }}
           >
             <PrecisionManufacturingOutlined fontSize="small" color="primary" />
           </ToggleButton>
