@@ -19,7 +19,7 @@ import AddExternalReferencesLines, { addExternalReferencesLinesQuery } from './A
 // Do not use it for new code.
 const useStyles = makeStyles({
   createButton: {
-    float: 'left',
+    float: 'inline-start',
     marginTop: -15,
   },
   container: {

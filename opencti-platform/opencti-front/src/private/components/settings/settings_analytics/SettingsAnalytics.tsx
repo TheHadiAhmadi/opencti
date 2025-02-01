@@ -48,11 +48,11 @@ const SettingsAnalytics: FunctionComponent<SettingsAnalyticsProps> = ({
   const { id, editContext } = settings;
   return (
     <>
-      <Typography variant="h4" gutterBottom={true} style={{ float: 'left' }}>
+      <Typography variant="h4" gutterBottom={true} style={{ float: 'inline-start' }}>
         {t_i18n('Third-party analytics')}
         <EEChip />
       </Typography>
-      <div style={{ float: 'left', margin: '-2px 0 0 10px' }}>
+      <div style={{ float: 'inline-start', margin: '-2px 0 0 10px' }}>
         <Tooltip
           title={
             <>

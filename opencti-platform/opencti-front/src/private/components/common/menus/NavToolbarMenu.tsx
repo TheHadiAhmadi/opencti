@@ -40,7 +40,7 @@ const NavToolbarMenu: FunctionComponent<{ entries: MenuEntry[] }> = ({ entries }
   const settingsMessagesBannerHeight = useSettingsMessagesBannerHeight();
 
   return (
-    <Drawer variant="permanent" anchor="right" classes={{ paper: classes.drawer }}>
+    <Drawer variant="permanent" anchor="left" classes={{ paper: classes.drawer }}>
       <div className={classes.toolbar} />
       <MenuList component="nav" style={{ marginTop: bannerHeight + settingsMessagesBannerHeight, marginBottom: bannerHeight }}>
         {entries.map((entry, idx) => {

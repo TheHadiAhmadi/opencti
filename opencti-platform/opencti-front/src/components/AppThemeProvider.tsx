@@ -11,6 +11,7 @@ import rtlPlugin from 'stylis-plugin-rtl';
 import createCache from '@emotion/cache';
 import { CacheProvider } from '@emotion/react';
 import { prefixer } from 'stylis';
+import { useIntl } from 'react-intl';
 
 const cacheRTL = createCache({
   key: 'mui-style-rtl',
@@ -26,6 +27,7 @@ interface AppThemeProviderProps {
 const themeBuilder = (
   settings: AppThemeProvider_settings$data,
   themeColor: string,
+  direction: "rtl" | 'ltr'
 ) => {
   if (themeColor === 'light') {
     const platformThemeLightLogo = settings?.platform_theme_light_logo ?? null;
@@ -45,6 +47,7 @@ const themeBuilder = (
       platformThemeLightPrimary,
       platformThemeLightSecondary,
       platformThemeLightAccent,
+      direction
     );
   }
   const platformThemeDarkLogo = settings?.platform_theme_dark_logo ?? null;
@@ -64,6 +67,7 @@ const themeBuilder = (
     platformThemeDarkPrimary,
     platformThemeDarkSecondary,
     platformThemeDarkAccent,
+    direction
   );
 };
 
@@ -75,18 +79,27 @@ const AppThemeProvider: FunctionComponent<AppThemeProviderProps> = ({
   const platformTitle = settings?.platform_title ?? 'OpenCTI - Cyber Threat Intelligence Platform';
   useDocumentTitleModifier(platformTitle);
   useDocumentFaviconModifier(settings?.platform_favicon);
+  const intl = useIntl()
+  const direction = intl.locale === 'fa-ir' ? 'rtl' : 'ltr'
   // region theming
   const defaultTheme = settings?.platform_theme ?? null;
   const platformTheme = defaultTheme !== null && defaultTheme !== 'auto' ? defaultTheme : 'dark';
   const theme = me?.theme && me.theme !== 'default' ? me.theme : platformTheme;
-  const themeComponent = themeBuilder(settings, theme);
+  const themeComponent = themeBuilder(settings, theme, direction);
   const muiTheme = createTheme(themeComponent as ThemeOptions);
   useDocumentThemeModifier(theme);
-  useDocumentDirectionModifier('rtl');
+  useDocumentDirectionModifier(direction);
   // endregion
-  return       <CacheProvider value={cacheRTL}>
-      <ThemeProvider theme={muiTheme}>{children}</ThemeProvider>
-  </CacheProvider>;
+  if (direction === "rtl") {
+    return (
+      <CacheProvider value={cacheRTL}>
+          <ThemeProvider theme={muiTheme}>{children}</ThemeProvider>
+      </CacheProvider>
+    );
+  }
+  return (
+    <ThemeProvider theme={muiTheme}>{children}</ThemeProvider>
+  );
 };
 
 export const ConnectedThemeProvider = createFragmentContainer(

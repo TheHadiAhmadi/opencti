@@ -15,11 +15,11 @@ import Security from '../../../../utils/Security';
 // Do not use it for new code.
 const useStyles = makeStyles(() => ({
   title: {
-    float: 'left',
+    float: 'inline-start',
   },
   actions: {
     margin: '-6px 0 0 0',
-    float: 'right',
+    float: 'inline-end',
   },
   actionButtons: {
     display: 'flex',

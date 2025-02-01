@@ -32,7 +32,7 @@ const styles = (theme) => ({
   bodyItem: {
     height: 20,
     fontSize: 13,
-    float: 'left',
+    float: 'inline-start',
     whiteSpace: 'nowrap',
     overflow: 'hidden',
     textOverflow: 'ellipsis',
@@ -60,7 +60,7 @@ const inlineStylesHeaders = {
     top: '0px',
   },
   relationship_type: {
-    float: 'left',
+    float: 'inline-start',
     width: '20%',
     fontSize: 12,
     fontWeight: '700',
@@ -71,7 +71,7 @@ const inlineStylesHeaders = {
     cursor: 'pointer',
   },
   entity_type: {
-    float: 'left',
+    float: 'inline-start',
     width: '20%',
     fontSize: 12,
     fontWeight: '700',
@@ -81,7 +81,7 @@ const inlineStylesHeaders = {
     paddingInlineEnd: 10,
   },
   name: {
-    float: 'left',
+    float: 'inline-start',
     width: '40%',
     fontSize: 12,
     fontWeight: '700',
@@ -91,7 +91,7 @@ const inlineStylesHeaders = {
     paddingInlineEnd: 10,
   },
   start_time: {
-    float: 'left',
+    float: 'inline-start',
     fontSize: 12,
     fontWeight: '700',
     whiteSpace: 'nowrap',
@@ -154,7 +154,7 @@ class StixDomainObjectNestedEntities extends Component {
     };
     return (
       <div style={{ marginTop: 20 }}>
-        <Typography variant="h4" gutterBottom={true} style={{ float: 'left' }}>
+        <Typography variant="h4" gutterBottom={true} style={{ float: 'inline-start' }}>
           {t('Nested objects')}
         </Typography>
         <Security

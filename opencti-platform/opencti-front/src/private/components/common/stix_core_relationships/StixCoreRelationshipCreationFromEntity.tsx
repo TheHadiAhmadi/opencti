@@ -990,7 +990,7 @@ const StixCoreRelationshipCreationFromEntity: FunctionComponent<StixCoreRelation
           color="primary"
           aria-label="Label"
           onClick={() => setOpen(true)}
-          style={{ float: 'left', margin: '-15px 0 0 -2px' }}
+          style={{ float: 'inline-start', margin: '-15px 0 0 -2px' }}
           size="large"
         >
           <Add fontSize="small" />

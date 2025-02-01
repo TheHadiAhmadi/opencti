@@ -18,7 +18,7 @@ import Drawer from '../../common/drawer/Drawer';
 
 const styles = () => ({
   createButton: {
-    float: 'right',
+    float: 'inline-end',
     marginTop: -15,
   },
   search: {

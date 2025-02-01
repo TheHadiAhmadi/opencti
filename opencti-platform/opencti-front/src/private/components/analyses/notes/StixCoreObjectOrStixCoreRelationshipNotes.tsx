@@ -66,7 +66,7 @@ const StixCoreObjectOrStixCoreRelationshipNotes: FunctionComponent<StixCoreObjec
               <Typography
                 variant="h4"
                 gutterBottom={true}
-                style={{ float: 'left' }}
+                style={{ float: 'inline-start' }}
               >
                 {title}
               </Typography>

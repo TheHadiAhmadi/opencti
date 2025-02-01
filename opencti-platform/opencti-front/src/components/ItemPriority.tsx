@@ -16,7 +16,7 @@ const useStyles = makeStyles(() => ({
   chipInList: {
     fontSize: 12,
     height: 20,
-    float: 'left',
+    float: 'inline-start',
     textTransform: 'uppercase',
     borderRadius: 4,
     width: 80,

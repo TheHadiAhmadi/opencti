@@ -44,11 +44,11 @@ const StixCoreObjectHistory = ({ stixCoreObjectId, withoutRelations }: StixCoreO
           <Typography
             variant="h4"
             gutterBottom
-            style={{ float: 'left' }}
+            style={{ float: 'inline-start' }}
           >
             {t_i18n('Entity')}
           </Typography>
-          <div style={{ float: 'right' }}>
+          <div style={{ float: 'inline-end' }}>
             <SearchInput
               variant="thin"
               onSubmit={handleSearchEntity}
@@ -94,11 +94,11 @@ const StixCoreObjectHistory = ({ stixCoreObjectId, withoutRelations }: StixCoreO
           <Typography
             variant="h4"
             gutterBottom
-            style={{ float: 'left', marginTop: 10 }}
+            style={{ float: 'inline-start', marginTop: 10 }}
           >
             {t_i18n('Relations of the entity')}
           </Typography>
-          <div style={{ float: 'right' }}>
+          <div style={{ float: 'inline-end' }}>
             <SearchInput
               variant="thin"
               onSubmit={handleSearchRelations}

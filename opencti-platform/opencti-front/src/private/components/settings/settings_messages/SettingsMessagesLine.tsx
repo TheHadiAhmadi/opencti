@@ -26,7 +26,7 @@ const useStyles = makeStyles<Theme>((theme) => ({
   },
   bodyItem: {
     fontSize: theme.typography.h3.fontSize,
-    float: 'left',
+    float: 'inline-start',
     whiteSpace: 'nowrap',
     overflow: 'hidden',
     textOverflow: 'ellipsis',

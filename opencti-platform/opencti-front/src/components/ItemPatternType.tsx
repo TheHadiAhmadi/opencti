@@ -20,7 +20,7 @@ const useStyles = makeStyles(() => ({
     fontSize: 12,
     lineHeight: '12px',
     height: 20,
-    float: 'left',
+    float: 'inline-start',
     marginInlineEnd: 7,
     borderRadius: 4,
     width: 80,

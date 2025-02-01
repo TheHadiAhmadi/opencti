@@ -169,7 +169,7 @@ const GroupEditionConfidenceComponent: FunctionComponent<GroupEditionConfidenceP
               name="overrides"
               render={(arrayHelpers) => (
                 <div>
-                  <Typography variant="h4" gutterBottom={true} style={{ float: 'left', marginTop: '20px' }}>
+                  <Typography variant="h4" gutterBottom={true} style={{ float: 'inline-start', marginTop: '20px' }}>
                     {t_i18n('Add a specific max confidence level for an entity type')}
                   </Typography>
                   <IconButton

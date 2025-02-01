@@ -83,7 +83,7 @@ const useStyles = makeStyles<Theme>((theme) => ({
     flex: 1,
   },
   barRightContainer: {
-    float: 'left',
+    float: 'inline-start',
   },
   subtitle: {
     color: theme.palette.text?.secondary,

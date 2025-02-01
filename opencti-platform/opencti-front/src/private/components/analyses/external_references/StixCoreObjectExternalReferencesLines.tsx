@@ -247,7 +247,7 @@ StixCoreObjectExternalReferencesLinesContainerProps
   };
   return (
     <div style={{ height: '100%' }}>
-      <Typography variant="h4" gutterBottom={true} style={{ float: 'left' }}>
+      <Typography variant="h4" gutterBottom={true} style={{ float: 'inline-start' }}>
         {t_i18n('External references')}
       </Typography>
       <Security

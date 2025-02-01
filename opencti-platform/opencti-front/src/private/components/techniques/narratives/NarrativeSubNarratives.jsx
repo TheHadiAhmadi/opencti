@@ -45,7 +45,7 @@ class NarrativeSubNarrativesComponent extends Component {
     const { t, narrative } = this.props;
     return (
       <div style={{ height: '100%' }}>
-        <Typography variant="h3" gutterBottom={true} style={{ float: 'left' }}>
+        <Typography variant="h3" gutterBottom={true} style={{ float: 'inline-start' }}>
           {t('Subnarratives')}
         </Typography>
         <Security needs={[KNOWLEDGE_KNUPDATE]}>

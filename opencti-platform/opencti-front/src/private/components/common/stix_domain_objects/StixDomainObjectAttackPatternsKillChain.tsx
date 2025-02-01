@@ -180,7 +180,7 @@ const StixDomainObjectAttackPatternsKillChain: FunctionComponent<StixDomainObjec
                                            >
         <div
           style={{
-            float: 'left',
+            float: 'inline-start',
           }}
         >
           <SearchInput
@@ -192,7 +192,7 @@ const StixDomainObjectAttackPatternsKillChain: FunctionComponent<StixDomainObjec
         <Box
           style={{
             display: 'flex',
-            float: 'left',
+            float: 'inline-start',
             alignItems: 'center',
             flexWrap: 'wrap',
             marginInlineEnd: 20,
@@ -208,7 +208,7 @@ const StixDomainObjectAttackPatternsKillChain: FunctionComponent<StixDomainObjec
         </Box>
         <div
           style={{
-            float: 'left',
+            float: 'inline-start',
             display: 'flex',
             margin: '-6px 4px 0 0',
           }}
@@ -224,7 +224,7 @@ const StixDomainObjectAttackPatternsKillChain: FunctionComponent<StixDomainObjec
         {currentView === 'matrix' && (
         <div
           style={{
-            float: 'left',
+            float: 'inline-start',
             display: 'flex',
             padding: '0 10px 2px 10px',
           }}
@@ -255,7 +255,7 @@ const StixDomainObjectAttackPatternsKillChain: FunctionComponent<StixDomainObjec
           </FormControl>
         </div>
         )}
-        <div style={{ float: 'right', margin: 0 }}>
+        <div style={{ float: 'inline-end', margin: 0 }}>
           {currentView !== 'list' && currentView !== 'courses-of-action' && currentView !== 'matrix-in-line' && (
           <Tooltip
             title={
@@ -369,7 +369,7 @@ const StixDomainObjectAttackPatternsKillChain: FunctionComponent<StixDomainObjec
 
           <div
             style={{
-              float: 'right',
+              float: 'inline-end',
               margin: '0 0 0 20px',
             }}
           >

@@ -13,11 +13,11 @@ import Drawer from '../../common/drawer/Drawer';
 
 const styles = (theme) => ({
   createButton: {
-    float: 'left',
+    float: 'inline-start',
     marginTop: -15,
   },
   title: {
-    float: 'left',
+    float: 'inline-start',
   },
   search: {
     marginInlineStart: 'auto',

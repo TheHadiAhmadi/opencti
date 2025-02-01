@@ -20,7 +20,7 @@ const styles = () => ({
     fontSize: 12,
     lineHeight: '12px',
     height: 20,
-    float: 'right',
+    float: 'inline-end',
     textTransform: 'uppercase',
     borderRadius: 4,
   },

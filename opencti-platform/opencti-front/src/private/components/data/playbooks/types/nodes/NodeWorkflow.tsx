@@ -77,7 +77,7 @@ const NodeWorkflow = ({ id, data }: NodeProps) => {
   return (
     <div className={classes.node}>
       <ItemIcon type={data.component.icon} variant="inline" />
-      <div style={{ float: 'left' }}>
+      <div style={{ float: 'inline-start' }}>
         <Tooltip title={data.name}>
           <div className={classes.name}>{data.name}</div>
         </Tooltip>

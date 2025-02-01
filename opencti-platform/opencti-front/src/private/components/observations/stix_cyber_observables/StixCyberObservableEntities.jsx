@@ -38,7 +38,7 @@ const styles = (theme) => ({
   bodyItem: {
     height: 20,
     fontSize: 13,
-    float: 'left',
+    float: 'inline-start',
     whiteSpace: 'nowrap',
     overflow: 'hidden',
     textOverflow: 'ellipsis',
@@ -66,7 +66,7 @@ const inlineStylesHeaders = {
     top: '0px',
   },
   relationship_type: {
-    float: 'left',
+    float: 'inline-start',
     width: '10%',
     fontSize: 12,
     fontWeight: '700',
@@ -77,7 +77,7 @@ const inlineStylesHeaders = {
     paddingInlineEnd: 10,
   },
   entity_tyoe: {
-    float: 'left',
+    float: 'inline-start',
     width: '10%',
     fontSize: 12,
     fontWeight: '700',
@@ -87,7 +87,7 @@ const inlineStylesHeaders = {
     paddingInlineEnd: 10,
   },
   name: {
-    float: 'left',
+    float: 'inline-start',
     width: '22%',
     fontSize: 12,
     fontWeight: '700',
@@ -97,7 +97,7 @@ const inlineStylesHeaders = {
     paddingInlineEnd: 10,
   },
   createdBy: {
-    float: 'left',
+    float: 'inline-start',
     width: '12%',
     fontSize: 12,
     fontWeight: '700',
@@ -107,7 +107,7 @@ const inlineStylesHeaders = {
     paddingInlineEnd: 10,
   },
   creator: {
-    float: 'left',
+    float: 'inline-start',
     width: '12%',
     fontSize: 12,
     fontWeight: '700',
@@ -117,7 +117,7 @@ const inlineStylesHeaders = {
     paddingInlineEnd: 10,
   },
   start_time: {
-    float: 'left',
+    float: 'inline-start',
     width: '10%',
     fontSize: 12,
     fontWeight: '700',
@@ -128,7 +128,7 @@ const inlineStylesHeaders = {
     paddingInlineEnd: 10,
   },
   stop_time: {
-    float: 'left',
+    float: 'inline-start',
     width: '10%',
     fontSize: 12,
     fontWeight: '700',
@@ -139,7 +139,7 @@ const inlineStylesHeaders = {
     paddingInlineEnd: 10,
   },
   confidence: {
-    float: 'left',
+    float: 'inline-start',
     width: '12%',
     fontSize: 12,
     fontWeight: '700',
@@ -211,7 +211,7 @@ class StixCyberObservableEntities extends Component {
     };
     return (
       <div style={{ height: '100%' }}>
-        <Typography variant="h4" gutterBottom={true} style={{ float: 'left' }}>
+        <Typography variant="h4" gutterBottom={true} style={{ float: 'inline-start' }}>
           {t('Relations')}
         </Typography>
         <Security
@@ -230,7 +230,7 @@ class StixCyberObservableEntities extends Component {
             defaultStopTime={defaultStopTime}
           />
         </Security>
-        <div style={{ float: 'right', marginTop: -10 }}>
+        <div style={{ float: 'inline-end', marginTop: -10 }}>
           <SearchInput
             variant="thin"
             onSubmit={this.handleSearch.bind(this)}

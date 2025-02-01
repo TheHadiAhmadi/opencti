@@ -47,7 +47,7 @@ const styles = (theme) => ({
     margin: 0,
   },
   title: {
-    float: 'left',
+    float: 'inline-start',
     textTransform: 'uppercase',
   },
   gridContainer: {
@@ -97,25 +97,25 @@ const inlineStylesHeaders = {
     top: '0px',
   },
   name: {
-    float: 'left',
+    float: 'inline-start',
     width: '35%',
     fontSize: 12,
     fontWeight: '700',
   },
   creator_name: {
-    float: 'left',
+    float: 'inline-start',
     width: '20%',
     fontSize: 12,
     fontWeight: '700',
   },
   labels: {
-    float: 'left',
+    float: 'inline-start',
     width: '20%',
     fontSize: 12,
     fontWeight: '700',
   },
   lastModified: {
-    float: 'left',
+    float: 'inline-start',
     width: '20%',
     fontSize: 12,
     fontWeight: '700',
@@ -357,11 +357,11 @@ class ImportContentComponent extends Component {
               <Typography
                 variant="h4"
                 gutterBottom={true}
-                style={{ float: 'left' }}
+                style={{ float: 'inline-start' }}
               >
                 {t('Uploaded files')}
               </Typography>
-              <div style={{ float: 'left', marginTop: -15 }}>
+              <div style={{ float: 'inline-start', marginTop: -15 }}>
                 <FileUploader
                   onUploadSuccess={() => relay.refetch()}
                   size="medium"

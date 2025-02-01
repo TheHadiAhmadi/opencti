@@ -68,7 +68,7 @@ DataComponentDataSourcesProps
 
   return (
     <div>
-      <Typography variant="h3" gutterBottom={true} style={{ float: 'left' }}>
+      <Typography variant="h3" gutterBottom={true} style={{ float: 'inline-start' }}>
         {t_i18n('Data source')}
       </Typography>
       {!dataSourceId && <AddDataSources dataComponentId={data.id} />}

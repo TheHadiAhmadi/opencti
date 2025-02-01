@@ -16,7 +16,7 @@ import Loader, { LoaderVariant } from '../../../../components/Loader';
 // Do not use it for new code.
 const useStyles = makeStyles(() => ({
   createButton: {
-    float: 'left',
+    float: 'inline-start',
     marginTop: -15,
   },
 }));

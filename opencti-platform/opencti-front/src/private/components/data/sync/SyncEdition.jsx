@@ -180,11 +180,11 @@ const SyncEditionContainer = ({ synchronizer }) => {
               &nbsp;&nbsp;{t_i18n('Remote OpenCTI configuration')}{' '}
               {isStreamAccessible ? (
                 <CheckCircleOutlined
-                  style={{ fontSize: 22, color: '#4caf50', float: 'left' }}
+                  style={{ fontSize: 22, color: '#4caf50', float: 'inline-start' }}
                 />
               ) : (
                 <WarningOutlined
-                  style={{ fontSize: 22, color: '#f44336', float: 'left' }}
+                  style={{ fontSize: 22, color: '#f44336', float: 'inline-start' }}
                 />
               )}
             </AlertTitle>

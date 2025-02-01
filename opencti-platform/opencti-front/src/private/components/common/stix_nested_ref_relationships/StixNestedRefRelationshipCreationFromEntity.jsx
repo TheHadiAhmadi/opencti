@@ -56,7 +56,7 @@ const useStyles = makeStyles((theme) => ({
     zIndex: 1001,
   },
   title: {
-    float: 'left',
+    float: 'inline-start',
   },
   header: {
     backgroundColor: theme.palette.background.nav,
@@ -142,12 +142,12 @@ const useStyles = makeStyles((theme) => ({
   buttonBack: {
     marginTop: 20,
     textAlign: 'start',
-    float: 'left',
+    float: 'inline-start',
   },
   buttons: {
     marginTop: 20,
     textAlign: 'end',
-    float: 'right',
+    float: 'inline-end',
   },
   button: {
     marginInlineStart: theme.spacing(2),
@@ -905,7 +905,7 @@ const StixNestedRefRelationshipCreationFromEntity = ({
           color="primary"
           aria-label="Label"
           onClick={handleOpen}
-          style={{ float: 'left', margin: '-15px 0 0 -2px' }}
+          style={{ float: 'inline-start', margin: '-15px 0 0 -2px' }}
           size="large"
         >
           <Add fontSize="small" />

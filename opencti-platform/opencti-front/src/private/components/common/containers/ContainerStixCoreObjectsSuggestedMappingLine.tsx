@@ -35,7 +35,7 @@ const useStyles = makeStyles<Theme>((theme) => ({
   bodyItem: {
     height: 20,
     fontSize: 13,
-    float: 'left',
+    float: 'inline-start',
     whiteSpace: 'nowrap',
     overflow: 'hidden',
     textOverflow: 'ellipsis',
@@ -47,7 +47,7 @@ const useStyles = makeStyles<Theme>((theme) => ({
   chipInList: {
     fontSize: 12,
     height: 20,
-    float: 'left',
+    float: 'inline-start',
     width: 120,
     textTransform: 'uppercase',
     borderRadius: 4,

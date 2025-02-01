@@ -55,7 +55,7 @@ const useStyles = makeStyles<Theme>((theme) => ({
   bodyItem: {
     height: 20,
     fontSize: 13,
-    float: 'left',
+    float: 'inline-start',
     whiteSpace: 'nowrap',
     overflow: 'hidden',
     textOverflow: 'ellipsis',
@@ -68,7 +68,7 @@ const useStyles = makeStyles<Theme>((theme) => ({
 
 const inlineStyles: Record<string, CSSProperties> = {
   name: {
-    float: 'left',
+    float: 'inline-start',
     width: '25%',
     height: 20,
     whiteSpace: 'nowrap',
@@ -76,7 +76,7 @@ const inlineStyles: Record<string, CSSProperties> = {
     textOverflow: 'ellipsis',
   },
   connector_type: {
-    float: 'left',
+    float: 'inline-start',
     width: '10%',
     height: 20,
     whiteSpace: 'nowrap',
@@ -84,7 +84,7 @@ const inlineStyles: Record<string, CSSProperties> = {
     textOverflow: 'ellipsis',
   },
   auto: {
-    float: 'left',
+    float: 'inline-start',
     width: '15%',
     height: 20,
     whiteSpace: 'nowrap',
@@ -92,7 +92,7 @@ const inlineStyles: Record<string, CSSProperties> = {
     textOverflow: 'ellipsis',
   },
   messages: {
-    float: 'left',
+    float: 'inline-start',
     width: '10%',
     paddingInlineStart: 5,
     height: 20,
@@ -101,11 +101,11 @@ const inlineStyles: Record<string, CSSProperties> = {
     textOverflow: 'ellipsis',
   },
   active: {
-    float: 'left',
+    float: 'inline-start',
     width: '15%',
   },
   updated_at: {
-    float: 'left',
+    float: 'inline-start',
     width: '15%',
     paddingInlineStart: 5,
     height: 20,

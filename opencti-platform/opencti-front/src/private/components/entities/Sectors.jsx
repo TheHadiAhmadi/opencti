@@ -56,9 +56,9 @@ class Sectors extends Component {
             variant="small"
             onSubmit={this.handleSearch.bind(this)}
             keyword={searchTerm}
-            style={{ float: 'left' }}
+            style={{ float: 'inline-start' }}
           />
-          <div style={{ float: 'right' }}>
+          <div style={{ float: 'inline-end' }}>
             <Security needs={[KNOWLEDGE_KNUPDATE]}>
               <SectorCreation />
             </Security>

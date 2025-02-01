@@ -55,7 +55,7 @@ const useStyles = makeStyles(() => ({
   },
   aliasesInput: {
     margin: '4px 15px 0 10px',
-    float: 'left',
+    float: 'inline-start',
   },
   actionButtons: {
     display: 'flex',
@@ -637,7 +637,7 @@ const StixDomainObjectHeader = (props) => {
               validationSchema={enableReferences ? aliasValidation(t_i18n) : null}
             >
               {({ submitForm, isSubmitting, setFieldValue, values }) => (
-                <Form style={{ float: 'right' }}>
+                <Form style={{ float: 'inline-end' }}>
                   <Field
                     component={TextField}
                     variant="standard"
@@ -762,7 +762,7 @@ const StixDomainObjectHeader = (props) => {
           validationSchema={aliasValidation(t_i18n)}
         >
           {({ submitForm, isSubmitting, setFieldValue, values }) => (
-            <Form style={{ float: 'right' }}>
+            <Form style={{ float: 'inline-end' }}>
               <CommitMessage
                 handleClose={handleCloseCommitDelete}
                 open={openCommitDelete}

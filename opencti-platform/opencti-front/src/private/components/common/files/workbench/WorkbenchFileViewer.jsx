@@ -59,7 +59,7 @@ const WorkbenchFileViewerBase = ({
   return (
     <Grid item xs={6}>
       <div style={{ height: '100%' }}>
-        <Typography variant="h4" gutterBottom={true} style={{ float: 'left' }}>
+        <Typography variant="h4" gutterBottom={true} style={{ float: 'inline-start' }}>
           {t('Analyst workbenches')}
         </Typography>
         <Security needs={[KNOWLEDGE_KNASKIMPORT]} placeholder={<div style={{ height: 28 }}/>}>

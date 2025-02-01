@@ -69,7 +69,7 @@ const useStyles = makeStyles<Theme>((theme) => ({
   },
   number: {
     marginTop: 10,
-    float: 'left',
+    float: 'inline-start',
     fontSize: 30,
   },
   title: {
@@ -86,10 +86,10 @@ const useStyles = makeStyles<Theme>((theme) => ({
     insetInlineEnd: 20,
   },
   export: {
-    float: 'right',
+    float: 'inline-end',
   },
   filters: {
-    float: 'left',
+    float: 'inline-start',
     display: 'flex',
     alignItems: 'center',
     gap: 5,
@@ -435,7 +435,7 @@ StixDomainObjectThreatKnowledgeProps
         indicatorColor="primary"
         textColor="primary"
         onChange={(_, value) => handleChangeViewType(value)}
-        style={{ float: 'left' }}
+        style={{ float: 'inline-start' }}
       >
         <Tab label={t_i18n('Diamond')} value="diamond" />
         <Tab label={t_i18n('Timeline')} value="timeline" />

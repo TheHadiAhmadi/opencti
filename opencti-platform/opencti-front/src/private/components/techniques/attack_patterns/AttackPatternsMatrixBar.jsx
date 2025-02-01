@@ -72,7 +72,7 @@ class AttackPatternsMatrixBar extends Component {
               >
                 <div
                   style={{
-                    float: 'left',
+                    float: 'inline-start',
                     margin: '7px 10px 0 0',
                     display: 'flex',
                   }}
@@ -91,7 +91,7 @@ class AttackPatternsMatrixBar extends Component {
                 </div>
                 <div
                   style={{
-                    float: 'left',
+                    float: 'inline-start',
                     margin: '0 10px 0 10px',
                     display: 'flex',
                   }}

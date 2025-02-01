@@ -17,7 +17,7 @@ const useStyles = makeStyles(() => ({
     textTransform: 'uppercase',
   },
   headerItem: {
-    float: 'left',
+    float: 'inline-start',
     fontSize: 12,
     fontWeight: '700',
   },
@@ -27,7 +27,7 @@ const useStyles = makeStyles(() => ({
     padding: 0,
   },
   sortableHeaderItem: {
-    float: 'left',
+    float: 'inline-start',
     fontSize: 12,
     fontWeight: '700',
     cursor: 'pointer',

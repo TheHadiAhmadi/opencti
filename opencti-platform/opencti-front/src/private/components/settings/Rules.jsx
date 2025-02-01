@@ -28,7 +28,7 @@ const useStyles = makeStyles(() => ({
     padding: '0 200px 50px 0',
   },
   parameters: {
-    float: 'left',
+    float: 'inline-start',
     marginTop: -10,
   },
 }));
@@ -56,7 +56,7 @@ const Rules = () => {
           return (
             <>
               <div className={classes.parameters}>
-                <div style={{ float: 'left', marginRight: 20 }}>
+                <div style={{ float: 'inline-start', marginRight: 20 }}>
                   <SearchInput
                     variant="small"
                     onSubmit={helpers.handleSearch}

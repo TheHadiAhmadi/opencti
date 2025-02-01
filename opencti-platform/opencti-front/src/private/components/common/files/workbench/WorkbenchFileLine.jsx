@@ -40,7 +40,7 @@ const styles = (theme) => ({
   chipInList: {
     fontSize: 12,
     height: 20,
-    float: 'left',
+    float: 'inline-start',
     marginRight: 10,
   },
   linesContainer: {
@@ -58,7 +58,7 @@ const styles = (theme) => ({
   bodyItem: {
     height: 20,
     fontSize: 13,
-    float: 'left',
+    float: 'inline-start',
     whiteSpace: 'nowrap',
     overflow: 'hidden',
     textOverflow: 'ellipsis',
@@ -72,10 +72,10 @@ const styles = (theme) => ({
     insetInlineEnd: 10,
   },
   inputLabel: {
-    float: 'left',
+    float: 'inline-start',
   },
   sortIcon: {
-    float: 'left',
+    float: 'inline-start',
     margin: '-5px 0 0 15px',
   },
   icon: {

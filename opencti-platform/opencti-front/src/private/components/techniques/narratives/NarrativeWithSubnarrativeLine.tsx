@@ -55,7 +55,7 @@ const NarrativeWithSubnarrativeLine: FunctionComponent<NarrativeWithSubnarrative
                   width: '30%',
                   height: 20,
                   lineHeight: '20px',
-                  float: 'left',
+                  float: 'inline-start',
                   whiteSpace: 'nowrap',
                   overflow: 'hidden',
                   textOverflow: 'ellipsis',
@@ -67,7 +67,7 @@ const NarrativeWithSubnarrativeLine: FunctionComponent<NarrativeWithSubnarrative
                 style={{
                   height: 20,
                   fontSize: 13,
-                  float: 'left',
+                  float: 'inline-start',
                   whiteSpace: 'nowrap',
                   overflow: 'hidden',
                   textOverflow: 'ellipsis',

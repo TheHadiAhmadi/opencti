@@ -61,7 +61,7 @@ const endDate = now();
 // Do not use it for new code.
 const useStyles = makeStyles<Theme>((theme) => ({
   floatingButton: {
-    float: 'left',
+    float: 'inline-start',
     margin: '-8px 0 0 5px',
   },
   gridContainer: {
@@ -381,7 +381,7 @@ const User: FunctionComponent<UserProps> = ({ data, refetch }) => {
                 <Typography
                   variant="h3"
                   gutterBottom={true}
-                  style={{ float: 'left' }}
+                  style={{ float: 'inline-start' }}
                 >
                   {t_i18n('2FA state')}
                 </Typography>
@@ -402,7 +402,7 @@ const User: FunctionComponent<UserProps> = ({ data, refetch }) => {
                 </pre>
               </Grid>
               <Grid item xs={12}>
-                <Typography variant="h3" gutterBottom={true} style={{ float: 'left' }}>
+                <Typography variant="h3" gutterBottom={true} style={{ float: 'inline-start' }}>
                   {t_i18n('Token')}
                 </Typography>
                 <Security needs={[SETTINGS_SETACCESSES]}>
@@ -593,7 +593,7 @@ const User: FunctionComponent<UserProps> = ({ data, refetch }) => {
                 <Typography
                   variant="h3"
                   gutterBottom={true}
-                  style={{ float: 'left' }}
+                  style={{ float: 'inline-start' }}
                 >
                   {t_i18n('Sessions')}
                 </Typography>
@@ -627,10 +627,10 @@ const User: FunctionComponent<UserProps> = ({ data, refetch }) => {
                           <ListItemText
                             primary={
                               <>
-                                <div style={{ float: 'left', width: '50%' }}>
+                                <div style={{ float: 'inline-start', width: '50%' }}>
                                   {nsdt(session.created)}
                                 </div>
-                                <div style={{ float: 'left', width: '20%' }}>
+                                <div style={{ float: 'inline-start', width: '20%' }}>
                                   {session.ttl
                                     ? Math.round(session.ttl / 60)
                                     : 0}{' '}
@@ -662,7 +662,7 @@ const User: FunctionComponent<UserProps> = ({ data, refetch }) => {
                 <Typography
                   variant="h3"
                   gutterBottom={true}
-                  style={{ float: 'left' }}
+                  style={{ float: 'inline-start' }}
                 >
                   {t_i18n('Max Confidence Level')}
                 </Typography>
@@ -759,7 +759,7 @@ const User: FunctionComponent<UserProps> = ({ data, refetch }) => {
             <UserHistory userId={user.id} />
           ) : (
             <>
-              <Typography variant="h4" gutterBottom={true} style={{ float: 'left' }}>
+              <Typography variant="h4" gutterBottom={true} style={{ float: 'inline-start' }}>
                 {t_i18n('History')}
               </Typography>
               <div style={{ display: 'table', height: '100%', width: '100%' }}>

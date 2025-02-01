@@ -81,14 +81,14 @@ class CourseOfActionAttackPatternComponent extends Component {
     const expandable = attackPatternsEdges.length > 7;
     return (
       <div style={{ marginTop: 20 }}>
-        <Typography variant="h3" gutterBottom={true} style={{ float: 'left' }}>
+        <Typography variant="h3" gutterBottom={true} style={{ float: 'inline-start' }}>
           {t('Mitigated attack patterns')}
         </Typography>
         <AddAttackPatterns
           courseOfAction={courseOfAction}
           courseOfActionAttackPatterns={courseOfAction.attackPatterns.edges}
         />
-        <div style={{ float: 'right', margin: '-10px 15px 0 0' }}>
+        <div style={{ float: 'inline-end', margin: '-10px 15px 0 0' }}>
           {expandable && (
             <IconButton
               color="primary"

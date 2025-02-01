@@ -91,7 +91,7 @@ const useStyles = makeStyles((theme) => ({
   chipInList: {
     fontSize: 12,
     height: 20,
-    float: 'left',
+    float: 'inline-start',
     width: 120,
     textTransform: 'uppercase',
     borderRadius: 4,
@@ -106,7 +106,7 @@ const inlineStylesHeaders = {
     top: '0px',
   },
   type: {
-    float: 'left',
+    float: 'inline-start',
     width: '10%',
     fontSize: 12,
     fontWeight: '700',
@@ -116,7 +116,7 @@ const inlineStylesHeaders = {
     paddingInlineEnd: 10,
   },
   value: {
-    float: 'left',
+    float: 'inline-start',
     width: '22%',
     fontSize: 12,
     fontWeight: '700',
@@ -126,7 +126,7 @@ const inlineStylesHeaders = {
     paddingInlineEnd: 10,
   },
   author: {
-    float: 'left',
+    float: 'inline-start',
     width: '12%',
     fontSize: 12,
     fontWeight: '700',
@@ -136,7 +136,7 @@ const inlineStylesHeaders = {
     paddingInlineEnd: 10,
   },
   creator: {
-    float: 'left',
+    float: 'inline-start',
     width: '12%',
     fontSize: 12,
     fontWeight: '700',
@@ -146,7 +146,7 @@ const inlineStylesHeaders = {
     paddingInlineEnd: 10,
   },
   labels: {
-    float: 'left',
+    float: 'inline-start',
     width: '16%',
     fontSize: 12,
     fontWeight: '700',
@@ -157,7 +157,7 @@ const inlineStylesHeaders = {
     cursor: 'default',
   },
   created_at: {
-    float: 'left',
+    float: 'inline-start',
     width: '10%',
     fontSize: 12,
     fontWeight: '700',
@@ -167,7 +167,7 @@ const inlineStylesHeaders = {
     paddingInlineEnd: 10,
   },
   analyses: {
-    float: 'left',
+    float: 'inline-start',
     width: '8%',
     fontSize: 12,
     fontWeight: '700',
@@ -177,7 +177,7 @@ const inlineStylesHeaders = {
     paddingInlineEnd: 10,
   },
   markings: {
-    float: 'left',
+    float: 'inline-start',
     fontSize: 12,
     fontWeight: '700',
     whiteSpace: 'nowrap',
@@ -189,7 +189,7 @@ const inlineStylesHeaders = {
 
 const inlineStyles = {
   type: {
-    float: 'left',
+    float: 'inline-start',
     width: '10%',
     height: 20,
     whiteSpace: 'nowrap',
@@ -198,7 +198,7 @@ const inlineStyles = {
     paddingInlineEnd: 10,
   },
   value: {
-    float: 'left',
+    float: 'inline-start',
     width: '22%',
     height: 20,
     whiteSpace: 'nowrap',
@@ -207,7 +207,7 @@ const inlineStyles = {
     paddingInlineEnd: 10,
   },
   author: {
-    float: 'left',
+    float: 'inline-start',
     width: '12%',
     height: 20,
     whiteSpace: 'nowrap',
@@ -216,7 +216,7 @@ const inlineStyles = {
     paddingInlineEnd: 10,
   },
   creator: {
-    float: 'left',
+    float: 'inline-start',
     width: '12%',
     height: 20,
     whiteSpace: 'nowrap',
@@ -225,7 +225,7 @@ const inlineStyles = {
     paddingInlineEnd: 10,
   },
   labels: {
-    float: 'left',
+    float: 'inline-start',
     width: '16%',
     height: 20,
     whiteSpace: 'nowrap',
@@ -234,7 +234,7 @@ const inlineStyles = {
     paddingInlineEnd: 10,
   },
   created_at: {
-    float: 'left',
+    float: 'inline-start',
     width: '10%',
     height: 20,
     whiteSpace: 'nowrap',
@@ -243,7 +243,7 @@ const inlineStyles = {
     paddingInlineEnd: 10,
   },
   analyses: {
-    float: 'left',
+    float: 'inline-start',
     width: '8%',
     height: 20,
     whiteSpace: 'nowrap',
@@ -252,7 +252,7 @@ const inlineStyles = {
     paddingInlineEnd: 10,
   },
   markings: {
-    float: 'left',
+    float: 'inline-start',
     height: 20,
     whiteSpace: 'nowrap',
     overflow: 'hidden',
@@ -420,7 +420,7 @@ const SearchBulk = () => {
         <ToggleButtonGroup
           size="small"
           color="primary"
-          style={{ float: 'right', marginTop: -5 }}
+          style={{ float: 'inline-end', marginTop: -5 }}
         >
           {!exportDisabled && (
             <ToggleButton

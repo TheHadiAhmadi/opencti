@@ -49,10 +49,10 @@ const FileExportViewerComponent: FunctionComponent<FileExportViewerComponentProp
 
   return (
     <Grid item xs={6}>
-      <Typography variant="h4" gutterBottom={true} style={{ float: 'left' }}>
+      <Typography variant="h4" gutterBottom={true} style={{ float: 'inline-start' }}>
         {t_i18n('Exported files')}
       </Typography>
-      <div style={{ float: 'left', marginTop: -15 }}>
+      <div style={{ float: 'inline-start', marginTop: -15 }}>
         <Tooltip
           title={
             isExportPossible

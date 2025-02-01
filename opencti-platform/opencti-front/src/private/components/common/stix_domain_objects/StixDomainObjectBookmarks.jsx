@@ -39,7 +39,7 @@ class StixDomainObjectBookmarksComponent extends Component {
           <Typography
             variant="h4"
             gutterBottom={true}
-            style={{ padding: '0 0 5px 18px', float: 'left' }}
+            style={{ padding: '0 0 5px 18px', float: 'inline-start' }}
           >
             {t('Favorite entities')}
           </Typography>
@@ -49,7 +49,7 @@ class StixDomainObjectBookmarksComponent extends Component {
             <InformationOutline
               fontSize="small"
               color="primary"
-              style={{ cursor: 'default', float: 'left', margin: '-3px 0 0 10px' }}
+              style={{ cursor: 'default', float: 'inline-start', margin: '-3px 0 0 10px' }}
             />
           </Tooltip>
           <div className="clearfix" />

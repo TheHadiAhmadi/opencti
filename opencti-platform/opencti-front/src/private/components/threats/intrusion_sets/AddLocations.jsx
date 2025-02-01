@@ -14,7 +14,7 @@ import { insertNode } from '../../../../utils/store';
 
 const styles = () => ({
   createButton: {
-    float: 'left',
+    float: 'inline-start',
     marginTop: -15,
   },
   search: {

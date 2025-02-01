@@ -34,6 +34,7 @@ import { NotificationsLinesPaginationQuery$variables } from './__generated__/Not
 import MarkdownDisplay from '../../../../components/MarkdownDisplay';
 import { isNotEmptyField } from '../../../../utils/utils';
 import useApiMutation from '../../../../utils/hooks/useApiMutation';
+import { useTheme } from '@mui/styles';
 
 // Deprecated - https://mui.com/system/styles/basics/
 // Do not use it for new code.
@@ -48,7 +49,7 @@ const useStyles = makeStyles<Theme>((theme) => ({
   bodyItem: {
     height: 20,
     fontSize: 13,
-    float: 'left',
+    float: 'inline-start',
     whiteSpace: 'nowrap',
     overflow: 'hidden',
     textOverflow: 'ellipsis',
@@ -60,14 +61,14 @@ const useStyles = makeStyles<Theme>((theme) => ({
   chipInList: {
     fontSize: 12,
     height: 20,
-    float: 'left',
+    float: 'inline-start',
     width: 100,
     marginInlineEnd: 10,
   },
   chipInList2: {
     fontSize: 12,
     height: 20,
-    float: 'left',
+    float: 'inline-start',
     width: 150,
     textTransform: 'uppercase',
     borderRadius: 4,
@@ -156,6 +157,7 @@ NotificationLineProps
   const events = data.notification_content.map((n) => n.events).flat();
   const isDigest = data.notification_type === 'digest';
   const firstEvent = events.at(0);
+  const theme = useTheme()
   const [commitMarkRead] = useApiMutation(
     notificationLineNotificationMarkReadMutation,
   );
@@ -230,7 +232,7 @@ NotificationLineProps
   const isLinkAvailable = events.length === 1 && isNotEmptyField(firstEvent?.instance_id) && firstOperation !== 'delete';
   const isClickableLine = isDigest || isLinkAvailable;
   return (
-    <div>
+    <div dir={theme.direction}>
       {/* eslint-disable-next-line @typescript-eslint/ban-ts-comment */}
       {/* @ts-ignore */}
       <ListItem classes={{ root: classes.item }} divider={true} button={isClickableLine}

@@ -11,10 +11,10 @@ import { KNOWLEDGE_KNUPDATE } from '../../../../utils/hooks/useGranted';
 // Do not use it for new code.
 const useStyles = makeStyles(() => ({
   title: {
-    float: 'left',
+    float: 'inline-start',
   },
   popover: {
-    float: 'left',
+    float: 'inline-start',
     marginTop: '-13px',
   },
 }));

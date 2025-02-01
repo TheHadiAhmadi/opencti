@@ -48,7 +48,7 @@ const useStyles = makeStyles<Theme>((theme) => ({
   chipInList: {
     fontSize: 12,
     height: 20,
-    float: 'left',
+    float: 'inline-start',
     width: 120,
     marginInlineEnd: 10,
   },
@@ -169,7 +169,7 @@ StixCoreObjectOrStixCoreRelationshipNoteCardComponentProps
             <div
               style={{
                 paddingTop: 2,
-                float: 'left',
+                float: 'inline-start',
                 textTransform: 'none',
               }}
             >
@@ -186,7 +186,7 @@ StixCoreObjectOrStixCoreRelationshipNoteCardComponentProps
             </div>
             <div
               style={{
-                float: 'left',
+                float: 'inline-start',
                 marginInlineStart: 20,
                 textTransform: 'none',
               }}
@@ -203,7 +203,7 @@ StixCoreObjectOrStixCoreRelationshipNoteCardComponentProps
             </div>
             <div
               style={{
-                float: 'right',
+                float: 'inline-end',
                 textTransform: 'none',
               }}
             >

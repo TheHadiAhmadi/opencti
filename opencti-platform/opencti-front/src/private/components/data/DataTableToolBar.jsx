@@ -1196,7 +1196,7 @@ class DataTableToolBar extends Component {
             <IconButton
               onClick={() => this.setState({ containerCreation: true })}
               edge="end"
-              style={{ position: 'absolute', top: 22, insetInlineEnd48 }}
+              style={{ position: 'absolute', top: 22, insetInlineEnd: 48 }}
               size="large"
             >
               <AddOutlined />
@@ -1989,10 +1989,10 @@ class DataTableToolBar extends Component {
                 maxWidth="md"
               >
                 <DialogTitle>
-                  <div style={{ float: 'left' }}>
+                  <div style={{ float: 'inline-start' }}>
                     {t('Launch a background task')}
                   </div>
-                  <div style={{ float: 'right' }}>
+                  <div style={{ float: 'inline-end' }}>
                     <span
                       style={{
                         padding: '2px 5px 2px 5px',
@@ -2609,7 +2609,7 @@ class DataTableToolBar extends Component {
                   <IconButton
                     onClick={() => this.setState({ containerCreation: true })}
                     edge="end"
-                    style={{ position: 'absolute', top: 68, insetInlineEnd48 }}
+                    style={{ position: 'absolute', top: 68, insetInlineEnd: 48 }}
                     size="large"
                   >
                     <AddOutlined />
@@ -2710,7 +2710,7 @@ class DataTableToolBar extends Component {
                   <IconButton
                     onClick={() => this.setState({ organizationCreation: true })}
                     edge="end"
-                    style={{ position: 'absolute', top: 68, insetInlineEnd48 }}
+                    style={{ position: 'absolute', top: 68, insetInlineEnd: 48 }}
                     size="large"
                   >
                     <AddOutlined />

@@ -492,7 +492,7 @@ class CaseRfiKnowledgeGraphBar extends Component {
               >
                 <div
                   style={{
-                    float: 'left',
+                    float: 'inline-start',
                     marginInlineStart: navOpen ? 185 : 60,
                     height: '100%',
                     display: 'flex',
@@ -889,7 +889,7 @@ class CaseRfiKnowledgeGraphBar extends Component {
                 {caseData && (
                   <div
                     style={{
-                      float: 'right',
+                      float: 'inline-end',
                       display: 'flex',
                       height: '100%',
                     }}

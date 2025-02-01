@@ -40,10 +40,10 @@ const useStyles = makeStyles(() => ({
     padding: '0 200px 50px 0',
   },
   title: {
-    float: 'left',
+    float: 'inline-start',
   },
   popover: {
-    float: 'left',
+    float: 'inline-start',
     marginTop: '-13px',
   },
 }));

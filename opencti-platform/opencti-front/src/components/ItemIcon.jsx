@@ -112,7 +112,7 @@ const iconSelector = (type, variant, fontSize, color, isReversed) => {
         width: 15,
         height: 15,
         margin: '0 7px 0 0',
-        float: 'left',
+        float: 'inline-start',
         paddingTop: 2,
         transform: isReversed ? 'rotate(-90deg)' : 'none',
       };

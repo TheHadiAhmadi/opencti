@@ -13,7 +13,7 @@ import NarrativeCreation from './NarrativeCreation';
 
 const styles = () => ({
   createButton: {
-    float: 'left',
+    float: 'inline-start',
     marginTop: -15,
   },
 });

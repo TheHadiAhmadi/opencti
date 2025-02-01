@@ -374,7 +374,7 @@ const ProfileOverviewComponent = (props) => {
         </Formik>
       </Paper>
       <Paper classes={{ root: classes.paper }} variant="outlined">
-        <Typography variant="h1" gutterBottom={true} style={{ float: 'left' }}>
+        <Typography variant="h1" gutterBottom={true} style={{ float: 'inline-start' }}>
           {t('User experience')}
         </Typography>
         <Formik
@@ -480,10 +480,10 @@ const ProfileOverviewComponent = (props) => {
         </Formik>
       </Paper>
       <Paper classes={{ root: classes.paper }} variant="outlined">
-        <Typography variant="h1" gutterBottom={true} style={{ float: 'left' }}>
+        <Typography variant="h1" gutterBottom={true} style={{ float: 'inline-start' }}>
           {t('Authentication')}
         </Typography>
-        <div style={{ float: 'right', marginTop: -5 }}>
+        <div style={{ float: 'inline-end', marginTop: -5 }}>
           {useOtp && (
             <Button
               type="button"

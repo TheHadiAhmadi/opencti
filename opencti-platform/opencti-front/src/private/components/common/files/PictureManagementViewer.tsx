@@ -74,7 +74,7 @@ PictureManagementViewerProps
   return (
     <Grid item xs={6}>
       <div style={{ height: '100%' }} className="break">
-        <Typography variant="h4" gutterBottom={true} style={{ float: 'left' }}>
+        <Typography variant="h4" gutterBottom={true} style={{ float: 'inline-start' }}>
           {t_i18n('Pictures Management')}
         </Typography>
         <div className="clearfix" />

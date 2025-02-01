@@ -44,7 +44,7 @@ const styles = () => ({
     height: 18,
   },
   avatar: {
-    float: 'left',
+    float: 'inline-start',
     width: 30,
     height: 30,
     margin: '7px 0 0 0',
@@ -71,7 +71,7 @@ const styles = () => ({
     textOverflow: 'ellipsis',
   },
   date: {
-    float: 'right',
+    float: 'inline-end',
     textAlign: 'end',
     width: 180,
     paddingTop: 4,

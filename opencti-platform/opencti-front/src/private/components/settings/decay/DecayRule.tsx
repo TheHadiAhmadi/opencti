@@ -45,11 +45,11 @@ const useStyles = makeStyles<Theme>((theme) => ({
     borderRadius: 6,
   },
   popover: {
-    float: 'left',
+    float: 'inline-start',
     marginTop: '-13px',
   },
   title: {
-    float: 'left',
+    float: 'inline-start',
   },
 }));
 

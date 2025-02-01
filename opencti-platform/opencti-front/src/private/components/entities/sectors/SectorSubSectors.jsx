@@ -45,7 +45,7 @@ class SectorSubSectorsComponent extends Component {
     const { t, sector } = this.props;
     return (
       <div style={{ height: '100%' }}>
-        <Typography variant="h3" gutterBottom={true} style={{ float: 'left' }}>
+        <Typography variant="h3" gutterBottom={true} style={{ float: 'inline-start' }}>
           {t('Subsectors')}
         </Typography>
         <Security needs={[KNOWLEDGE_KNUPDATE]}>

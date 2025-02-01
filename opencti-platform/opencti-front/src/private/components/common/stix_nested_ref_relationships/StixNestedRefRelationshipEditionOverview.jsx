@@ -42,10 +42,10 @@ const styles = (theme) => ({
     borderBottom: '1px solid #5c5c5c',
   },
   title: {
-    float: 'left',
+    float: 'inline-start',
   },
   button: {
-    float: 'right',
+    float: 'inline-end',
     backgroundColor: '#f44336',
     borderColor: '#f44336',
     color: '#ffffff',
@@ -55,7 +55,7 @@ const styles = (theme) => ({
     },
   },
   buttonLeft: {
-    float: 'left',
+    float: 'inline-start',
   },
 });
 

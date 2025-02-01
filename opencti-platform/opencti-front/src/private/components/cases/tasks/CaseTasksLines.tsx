@@ -39,11 +39,11 @@ const useStyles = makeStyles<Theme>((theme) => ({
     overflowY: 'inherit',
   },
   createButton: {
-    float: 'left',
+    float: 'inline-start',
     marginTop: -15,
   },
   applyButton: {
-    float: 'right',
+    float: 'inline-end',
     marginTop: -15,
   },
   buttons: {
@@ -142,7 +142,7 @@ const CaseTasksLines: FunctionComponent<CaseTasksLinesProps> = ({
       <Typography
         variant="h4"
         gutterBottom={true}
-        style={{ float: 'left', paddingBottom: 11 }}
+        style={{ float: 'inline-start', paddingBottom: 11 }}
       >
         {t_i18n('Tasks')}
       </Typography>

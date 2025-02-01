@@ -23,7 +23,7 @@ const styles = () => ({
   labelInList: {
     fontSize: 12,
     height: 20,
-    float: 'left',
+    float: 'inline-start',
     margin: '0 7px 0 0',
     borderRadius: 4,
   },
@@ -35,7 +35,7 @@ const styles = () => ({
   },
   labelInput: {
     margin: '4px 0 0 10px',
-    float: 'right',
+    float: 'inline-end',
   },
 });
 

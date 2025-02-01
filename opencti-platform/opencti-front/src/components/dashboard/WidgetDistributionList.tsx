@@ -111,7 +111,7 @@ const WidgetDistributionList = ({
               />
               <div
                 style={{
-                  float: 'right',
+                  float: 'inline-end',
                   marginInlineEnd: 20,
                   fontSize: 18,
                   fontWeight: 600,

@@ -32,7 +32,7 @@ const DataSourceDataComponentsComponent: FunctionComponent<{
 
   return (
     <div>
-      <Typography variant="h3" gutterBottom={true} style={{ float: 'left' }}>
+      <Typography variant="h3" gutterBottom={true} style={{ float: 'inline-start' }}>
         {t_i18n('Data components')}
       </Typography>
       <AddDataComponents dataSource={dataSource} />

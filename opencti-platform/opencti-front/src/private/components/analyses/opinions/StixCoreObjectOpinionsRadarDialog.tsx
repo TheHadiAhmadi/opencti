@@ -175,7 +175,7 @@ StixCoreObjectOpinionsRadarDialogProps
           aria-label="Label"
           onClick={handleOpen}
           style={{
-            float: 'left',
+            float: 'inline-start',
             margin: '-15px 0 0 -2px',
           }}
           size="large"

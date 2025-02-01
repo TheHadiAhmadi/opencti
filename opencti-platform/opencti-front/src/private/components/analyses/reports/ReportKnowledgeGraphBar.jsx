@@ -518,7 +518,7 @@ class ReportKnowledgeGraphBar extends Component {
               >
                 <div
                   style={{
-                    float: 'left',
+                    float: 'inline-start',
                     marginInlineStart: navOpen ? 185 : 60,
                     height: '100%',
                     display: 'flex',
@@ -956,7 +956,7 @@ class ReportKnowledgeGraphBar extends Component {
                 </div>
                 {report && (
                   <div
-                    style={{ float: 'right', display: 'flex', height: '100%' }}
+                    style={{ float: 'inline-end', display: 'flex', height: '100%' }}
                   >
                     {onAdd && (
                       <ContainerAddStixCoreObjectsInGraph

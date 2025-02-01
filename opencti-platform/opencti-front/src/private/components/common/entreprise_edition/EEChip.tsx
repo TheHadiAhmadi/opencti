@@ -27,7 +27,7 @@ const useStyles = makeStyles<Theme>((theme) => ({
     cursor: 'pointer',
   },
   containerFloating: {
-    float: 'left',
+    float: 'inline-start',
     fontSize: 'xx-small',
     height: 14,
     display: 'inline-flex',

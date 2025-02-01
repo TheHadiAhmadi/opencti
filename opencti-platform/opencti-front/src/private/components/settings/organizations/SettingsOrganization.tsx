@@ -47,7 +47,7 @@ const useStyles = makeStyles<Theme>((theme) => ({
     borderRadius: 4,
   },
   title: {
-    float: 'left',
+    float: 'inline-start',
   },
 }));
 const settingsOrganizationFragment = graphql`

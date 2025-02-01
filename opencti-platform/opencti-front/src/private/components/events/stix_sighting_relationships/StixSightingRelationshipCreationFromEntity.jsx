@@ -51,10 +51,10 @@ const useStyles = makeStyles((theme) => ({
     zIndex: 1001,
   },
   title: {
-    float: 'left',
+    float: 'inline-start',
   },
   search: {
-    float: 'right',
+    float: 'inline-end',
   },
   header: {
     backgroundColor: theme.palette.background.nav,
@@ -473,7 +473,7 @@ const StixSightingRelationshipCreationFromEntity = ({
             color="secondary"
             aria-label="Label"
             onClick={handleOpen}
-            style={{ float: 'left', margin: '-15px 0 0 -2px' }}
+            style={{ float: 'inline-start', margin: '-15px 0 0 -2px' }}
             size="large"
           >
             <Add fontSize="small" />

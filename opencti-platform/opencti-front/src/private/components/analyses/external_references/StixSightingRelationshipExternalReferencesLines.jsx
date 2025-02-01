@@ -178,7 +178,7 @@ class StixSightingRelationshipExternalReferencesLinesContainer extends Component
     const expandable = externalReferencesEdges.length > 7;
     return (
       <div style={{ height: '100%' }}>
-        <Typography variant="h4" gutterBottom={true} style={{ float: 'left' }}>
+        <Typography variant="h4" gutterBottom={true} style={{ float: 'inline-start' }}>
           {t('External references')}
         </Typography>
         <Security needs={[KNOWLEDGE_KNUPDATE]} placeholder={<div style={{ height: 29 }} />}>

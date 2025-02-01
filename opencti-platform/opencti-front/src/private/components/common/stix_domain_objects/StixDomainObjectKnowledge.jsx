@@ -33,7 +33,7 @@ const styles = (theme) => ({
   },
   number: {
     marginTop: 10,
-    float: 'left',
+    float: 'inline-start',
     fontSize: 30,
   },
   title: {

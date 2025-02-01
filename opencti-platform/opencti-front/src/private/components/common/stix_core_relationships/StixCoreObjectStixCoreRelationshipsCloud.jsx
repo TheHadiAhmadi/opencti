@@ -202,7 +202,7 @@ class StixCoreObjectStixCoreRelationshipsCloud extends Component {
           <Typography
             variant="h4"
             gutterBottom={true}
-            style={{ float: 'left', padding: '10px 0 0 10px' }}
+            style={{ float: 'inline-start', padding: '10px 0 0 10px' }}
           >
             {title || `${t('Distribution:')} ${t(`entity_${entityType}`)}`}
           </Typography>

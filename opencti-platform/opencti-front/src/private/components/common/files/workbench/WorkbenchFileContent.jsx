@@ -73,11 +73,11 @@ const useStyles = makeStyles((theme) => ({
     margin: 0,
   },
   title: {
-    float: 'left',
+    float: 'inline-start',
     textTransform: 'uppercase',
   },
   popover: {
-    float: 'left',
+    float: 'inline-start',
     marginTop: '-13px',
   },
   createButton: {
@@ -124,7 +124,7 @@ const useStyles = makeStyles((theme) => ({
 
 const inlineStylesHeaders = {
   ttype: {
-    float: 'left',
+    float: 'inline-start',
     width: '18%',
     fontSize: 12,
     fontWeight: '700',
@@ -134,7 +134,7 @@ const inlineStylesHeaders = {
     paddingInlineEnd: 10,
   },
   default_value: {
-    float: 'left',
+    float: 'inline-start',
     width: '30%',
     fontSize: 12,
     fontWeight: '700',
@@ -144,7 +144,7 @@ const inlineStylesHeaders = {
     paddingInlineEnd: 10,
   },
   labels: {
-    float: 'left',
+    float: 'inline-start',
     width: '22%',
     fontSize: 12,
     fontWeight: '700',
@@ -155,7 +155,7 @@ const inlineStylesHeaders = {
     cursor: 'default',
   },
   markings: {
-    float: 'left',
+    float: 'inline-start',
     width: '20%',
     fontSize: 12,
     fontWeight: '700',
@@ -165,7 +165,7 @@ const inlineStylesHeaders = {
     paddingInlineEnd: 10,
   },
   in_platform: {
-    float: 'left',
+    float: 'inline-start',
     width: '10%',
     fontSize: 12,
     fontWeight: '700',
@@ -179,7 +179,7 @@ const inlineStylesHeaders = {
 
 const inlineStyles = {
   ttype: {
-    float: 'left',
+    float: 'inline-start',
     width: '18%',
     height: 20,
     whiteSpace: 'nowrap',
@@ -188,7 +188,7 @@ const inlineStyles = {
     paddingInlineEnd: 10,
   },
   default_value: {
-    float: 'left',
+    float: 'inline-start',
     width: '30%',
     height: 20,
     whiteSpace: 'nowrap',
@@ -197,7 +197,7 @@ const inlineStyles = {
     paddingInlineEnd: 10,
   },
   labels: {
-    float: 'left',
+    float: 'inline-start',
     width: '22%',
     height: 20,
     whiteSpace: 'nowrap',
@@ -206,7 +206,7 @@ const inlineStyles = {
     paddingInlineEnd: 10,
   },
   markings: {
-    float: 'left',
+    float: 'inline-start',
     width: '20%',
     height: 20,
     whiteSpace: 'nowrap',
@@ -215,7 +215,7 @@ const inlineStyles = {
     paddingInlineEnd: 10,
   },
   in_platform: {
-    float: 'left',
+    float: 'inline-start',
     width: '8%',
     height: 20,
     whiteSpace: 'nowrap',
@@ -4115,7 +4115,7 @@ const WorkbenchFileContentComponent = ({
         <WorkbenchFilePopover file={file} />
       </div>
       <Security needs={[KNOWLEDGE_KNUPDATE]}>
-        <div style={{ float: 'right' }}>
+        <div style={{ float: 'inline-end' }}>
           <Button
             variant="contained"
             onClick={handleOpenValidate}

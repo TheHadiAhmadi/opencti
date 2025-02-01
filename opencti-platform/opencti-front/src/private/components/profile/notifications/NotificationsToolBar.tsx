@@ -302,10 +302,10 @@ const NotificationsToolBar: FunctionComponent<NotificationsToolBarProps> = ({
             maxWidth="md"
           >
             <DialogTitle>
-              <div style={{ float: 'left' }}>
+              <div style={{ float: 'inline-start' }}>
                 {t_i18n('Launch a background task')}
               </div>
-              <div style={{ float: 'right' }}>
+              <div style={{ float: 'inline-end' }}>
                 <span className={classes.selectedElementsNumber}>
                   {n(numberOfSelectedElements)}
                 </span>{' '}

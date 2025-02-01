@@ -135,7 +135,7 @@ const SupportPackages = () => {
                 {t_i18n('Generated Support Package')}
               </Typography>
               <Button
-                style={{ float: 'right', marginTop: '-40px' }}
+                style={{ float: 'inline-end', marginTop: '-40px' }}
                 onClick={generateSupportPackage}
                 size="small"
                 variant="outlined"

@@ -21,7 +21,7 @@ const useStyles = makeStyles<Theme>((theme) => ({
     paddingBottom: 50,
   },
   createButton: {
-    float: 'left',
+    float: 'inline-start',
     marginTop: -15,
     marginBottom: 0,
   },
@@ -261,11 +261,11 @@ const ScaleConfiguration: FunctionComponent<EntitySettingScaleProps> = ({
               value: string | number,
             ) => handleUpdateValueOfTick(validateForm, 'max', name, value)}
           />
-          <div style={{ marginTop: 30, float: 'left' }}>
+          <div style={{ marginTop: 30, float: 'inline-start' }}>
             <Typography
               variant="h3"
               gutterBottom={true}
-              style={{ float: 'left', marginBottom: 0 }}
+              style={{ float: 'inline-start', marginBottom: 0 }}
             >
               {t_i18n('Ticks')}
             </Typography>

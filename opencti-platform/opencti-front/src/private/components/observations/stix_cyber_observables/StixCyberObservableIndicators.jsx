@@ -30,7 +30,7 @@ import { insertNode } from '../../../../utils/store';
 
 const inlineStyles = {
   pattern_type: {
-    float: 'left',
+    float: 'inline-start',
     width: '20%',
     height: 20,
     whiteSpace: 'nowrap',
@@ -38,7 +38,7 @@ const inlineStyles = {
     textOverflow: 'ellipsis',
   },
   observable_value: {
-    float: 'left',
+    float: 'inline-start',
     width: '50%',
     height: 20,
     whiteSpace: 'nowrap',
@@ -46,7 +46,7 @@ const inlineStyles = {
     textOverflow: 'ellipsis',
   },
   created_at: {
-    float: 'left',
+    float: 'inline-start',
     height: 20,
     whiteSpace: 'nowrap',
     overflow: 'hidden',
@@ -129,7 +129,7 @@ const StixCyberObservableIndicatorsComponent = ({ stixCyberObservable }) => {
 
   return (
     <div style={{ marginTop: 20 }}>
-      <Typography variant="h3" gutterBottom={true} style={{ float: 'left' }}>
+      <Typography variant="h3" gutterBottom={true} style={{ float: 'inline-start' }}>
         {t_i18n('Indicators composed with this observable')}
       </Typography>
       <Security needs={[KNOWLEDGE_KNUPDATE]}>
@@ -138,7 +138,7 @@ const StixCyberObservableIndicatorsComponent = ({ stixCyberObservable }) => {
           aria-label='Add or create indicators button'
           color="primary"
           onClick={handleOpenAddOrCreateIndicatorMenu}
-          style={{ float: 'left', margin: '-15px 0 0 -2px' }}
+          style={{ float: 'inline-start', margin: '-15px 0 0 -2px' }}
           size="large"
         >
           <Add fontSize="small" />

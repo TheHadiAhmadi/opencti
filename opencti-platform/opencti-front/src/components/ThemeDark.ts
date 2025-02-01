@@ -23,11 +23,12 @@ const ThemeDark = (
   primary: string | null = null,
   secondary: string | null = null,
   accent: string | null = null,
+  direction: 'rtl' | 'ltr' = 'ltr'
 ): ExtendedThemeOptions => ({
+  direction,
   logo: logo || fileUri(LogoText),
   logo_collapsed: logo_collapsed || fileUri(LogoCollapsed),
   borderRadius: 4,
-  direction: 'rtl',
   palette: {
     mode: 'dark',
     common: { white: '#ffffff', grey: '#7A7C85', lightGrey: '#ffffffb3' },

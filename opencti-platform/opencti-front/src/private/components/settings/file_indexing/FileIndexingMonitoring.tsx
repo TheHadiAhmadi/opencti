@@ -70,7 +70,7 @@ const useStyles = makeStyles<Theme>((theme) => ({
     color: theme.palette.text?.secondary,
   },
   progress: {
-    float: 'right',
+    float: 'inline-end',
     margin: '25px 90px 0 50px',
     flexGrow: 1,
   },
@@ -82,7 +82,7 @@ const useStyles = makeStyles<Theme>((theme) => ({
   number: {
     fontSize: 30,
     fontWeight: 800,
-    float: 'left',
+    float: 'inline-start',
   },
   header: {
     textTransform: 'uppercase',

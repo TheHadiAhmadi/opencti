@@ -23,8 +23,9 @@ const ThemeLight = (
   primary: string | null = null,
   secondary: string | null = null,
   accent: string | null = null,
+  direction: 'rtl' | 'ltr' = 'ltr'
 ): ExtendedThemeOptions => ({
-  direction: 'rtl',
+  direction,
   logo: logo || fileUri(LogoText),
   logo_collapsed: logo_collapsed || fileUri(LogoCollapsed),
   borderRadius: 4,

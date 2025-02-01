@@ -48,7 +48,7 @@ class ThreatActorGroupLocationsComponent extends Component {
     const { t, threatActorGroup } = this.props;
     return (
       <>
-        <Typography variant="h3" gutterBottom={true} style={{ float: 'left' }}>
+        <Typography variant="h3" gutterBottom={true} style={{ float: 'inline-start' }}>
           {t('Located at')}
         </Typography>
         <Security

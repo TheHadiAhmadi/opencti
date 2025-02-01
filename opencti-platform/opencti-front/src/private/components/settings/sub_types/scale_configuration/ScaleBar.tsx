@@ -45,7 +45,7 @@ const ScaleBar = ({ scale }: { scale: ScaleConfig }) => {
               {tick.value}
             </span>
             {index === scale.ticks.length && (
-              <span style={{ color: `${tick.color}`, float: 'right' }}>{scale.max.value}</span>
+              <span style={{ color: `${tick.color}`, float: 'inline-end' }}>{scale.max.value}</span>
             )}
           </div>
           <div>

@@ -37,7 +37,7 @@ const useStyles = makeStyles((theme) => ({
     zIndex: 1100,
   },
   createButtonSimple: {
-    float: 'left',
+    float: 'inline-start',
     marginTop: -15,
   },
   speedDial: {

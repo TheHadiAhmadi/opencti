@@ -262,8 +262,8 @@ class ListLines extends Component {
                 <div
                   style={
                     parametersWithPadding
-                      ? { float: 'left', padding: '7px 20px 0 0' }
-                      : { float: 'left', padding: '7px 5px 0 0' }
+                      ? { float: 'inline-start', padding: '7px 20px 0 0' }
+                      : { float: 'inline-start', padding: '7px 5px 0 0' }
                   }
                 >
                   <strong>{`${numberOfElements.number}${numberOfElements.symbol}`}</strong>{' '}

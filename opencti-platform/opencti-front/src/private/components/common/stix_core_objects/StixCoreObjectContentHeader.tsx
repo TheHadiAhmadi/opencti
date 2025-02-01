@@ -23,7 +23,7 @@ const StixCoreObjectContentHeader: FunctionComponent<StixCoreObjectContentHeader
   return (
     <div style={{
       margin: '-65px 0 0 0',
-      float: 'right',
+      float: 'inline-end',
     }}
     >
       <ToggleButtonGroup size="small" exclusive={true}>

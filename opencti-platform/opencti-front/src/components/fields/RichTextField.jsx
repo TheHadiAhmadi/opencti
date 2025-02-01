@@ -108,14 +108,14 @@ const RichTextField = (props) => {
       <InputLabel
         shrink={true}
         required={required}
-        style={{ float: 'left' }}
+        style={{ float: 'inline-start' }}
         error={meta.error}
       >
         {label}
       </InputLabel>
       <IconButton
         size="small"
-        style={{ float: 'right', marginTop: -7 }}
+        style={{ float: 'inline-end', marginTop: -7 }}
         onClick={() => setFullScreen(true)}
       >
         <FullscreenOutlined fontSize="small" />

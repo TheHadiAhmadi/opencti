@@ -425,10 +425,10 @@ const Settings = () => {
                     </Paper>
                   </Grid>
                   <Grid item xs={6}>
-                    <Typography variant="h4" gutterBottom={true} stye={{ float: 'left' }}>
+                    <Typography variant="h4" gutterBottom={true} stye={{ float: 'inline-start' }}>
                       {t_i18n('OpenCTI platform')}
                     </Typography>
-                    <div style={{ float: 'right', marginTop: isSensitive ? theme.spacing(-5) : theme.spacing(-4.5), position: 'relative' }}>
+                    <div style={{ float: 'inline-end', marginTop: isSensitive ? theme.spacing(-5) : theme.spacing(-4.5), position: 'relative' }}>
                       {!isEnterpriseEdition ? (
                         <EnterpriseEditionButton disabled={!isAllowed} inLine />
                       ) : (

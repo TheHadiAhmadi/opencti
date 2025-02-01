@@ -24,7 +24,7 @@ const IndicatorObservablesComponent = ({ indicator }) => {
 
   return (
     <div style={{ marginTop: 20, height: 300 }} ref={(r) => setRef(r)}>
-      <Typography variant="h3" gutterBottom={true} style={{ float: 'left' }}>
+      <Typography variant="h3" gutterBottom={true} style={{ float: 'inline-start' }}>
         {t_i18n('Based on')}
       </Typography>
       <Security needs={[KNOWLEDGE_KNUPDATE]}>

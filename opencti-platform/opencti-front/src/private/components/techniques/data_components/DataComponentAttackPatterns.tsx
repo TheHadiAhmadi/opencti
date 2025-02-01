@@ -47,7 +47,7 @@ const DataComponentAttackPatternsComponent: FunctionComponent<{
         marginTop: 20,
       }}
     >
-      <Typography variant="h3" gutterBottom={true} style={{ float: 'left' }}>
+      <Typography variant="h3" gutterBottom={true} style={{ float: 'inline-start' }}>
         {t_i18n('Attack patterns')}
       </Typography>
       <AddAttackPatterns dataComponent={dataComponent} />

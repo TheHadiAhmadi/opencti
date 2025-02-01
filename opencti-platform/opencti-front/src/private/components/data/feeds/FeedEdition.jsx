@@ -76,7 +76,7 @@ const styles = (theme) => ({
     borderBottom: '1px solid #5c5c5c',
   },
   title: {
-    float: 'left',
+    float: 'inline-start',
   },
   step: {
     position: 'relative',

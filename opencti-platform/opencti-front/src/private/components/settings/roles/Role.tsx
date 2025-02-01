@@ -38,10 +38,10 @@ const useStyles = makeStyles<Theme>((theme) => ({
     marginBottom: 20,
   },
   title: {
-    float: 'left',
+    float: 'inline-start',
   },
   popover: {
-    float: 'left',
+    float: 'inline-start',
     marginTop: '-13px',
   },
   paper: {

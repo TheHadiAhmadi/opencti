@@ -49,27 +49,27 @@ import { truncate } from '../../../utils/String';
 // Do not use it for new code.
 const useStyles = makeStyles(() => ({
   title: {
-    float: 'left',
+    float: 'inline-start',
   },
   popover: {
-    float: 'left',
+    float: 'inline-start',
     marginTop: '-13px',
   },
   manageAccess: {
     margin: '-5px 4px 0 0',
-    float: 'right',
+    float: 'inline-end',
   },
   turnToReportOrCase: {
     margin: '-5px 4px 0 0',
-    float: 'right',
+    float: 'inline-end',
   },
   export: {
-    float: 'right',
+    float: 'inline-end',
     margin: '-5px 0 0 0',
     display: 'flex',
   },
   tags: {
-    float: 'right',
+    float: 'inline-end',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'end',
@@ -83,7 +83,7 @@ const useStyles = makeStyles(() => ({
   },
   tagsInput: {
     margin: '4px 15px 0 10px',
-    float: 'right',
+    float: 'inline-end',
   },
 }));
 
@@ -226,7 +226,7 @@ const WorkspaceHeader = ({
                 style={{
                   display: 'flex',
                   margin: '-5px 0 0 5px',
-                  float: 'left',
+                  float: 'inline-start',
                 }}
               >
                 <FormControl
@@ -294,7 +294,7 @@ const WorkspaceHeader = ({
             }
           >
             <div
-              style={{ display: 'flex', margin: '-5px 0 0 5px', float: 'left' }}
+              style={{ display: 'flex', margin: '-5px 0 0 5px', float: 'inline-start' }}
             >
               <FormControl
                 size="small"
@@ -358,7 +358,7 @@ const WorkspaceHeader = ({
         )}
         {variant === 'dashboard' && (
           <Security needs={[EXPLORE_EXUPDATE_PUBLISH]} hasAccess={canManage}>
-            <div style={{ margin: '-5px 0 0 0px', float: 'right' }}>
+            <div style={{ margin: '-5px 0 0 0px', float: 'inline-end' }}>
               <WorkspaceShareButton workspaceId={workspace.id} />
             </div>
           </Security>
@@ -449,7 +449,7 @@ const WorkspaceHeader = ({
             ) : (
               <Tooltip title={t_i18n('Add tag')}>
                 <IconButton
-                  style={{ float: 'left', marginTop: '-5px', marginRight: '3px' }}
+                  style={{ float: 'inline-start', marginTop: '-5px', marginRight: '3px' }}
                   color="primary"
                   aria-label="Add tag"
                   onClick={handleOpenTag}
@@ -469,12 +469,12 @@ const WorkspaceHeader = ({
               mountOnEnter={true}
               unmountOnExit={true}
             >
-              <div style={{ float: 'left', marginTop: -5 }}>
+              <div style={{ float: 'inline-start', marginTop: -5 }}>
                 <Formik
                   initialValues={{ new_tag: '' }}
                   onSubmit={onSubmitCreateTag}
                 >
-                  <Form style={{ float: 'right' }}>
+                  <Form style={{ float: 'inline-end' }}>
                     <Field
                       component={TextField}
                       variant="standard"
@@ -504,7 +504,7 @@ const WorkspaceHeader = ({
                   onSubmit={onSubmitCreateTag}
                 >
                   {({ submitForm }) => (
-                    <Form style={{ float: 'right' }}>
+                    <Form style={{ float: 'inline-end' }}>
                       <Field
                         component={TextField}
                         variant="standard"

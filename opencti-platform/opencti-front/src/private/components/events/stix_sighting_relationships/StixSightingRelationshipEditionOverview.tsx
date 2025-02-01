@@ -52,10 +52,10 @@ const useStyles = makeStyles<Theme>((theme) => ({
     padding: '10px 20px 20px 20px',
   },
   title: {
-    float: 'left',
+    float: 'inline-start',
   },
   button: {
-    float: 'right',
+    float: 'inline-end',
     backgroundColor: theme.palette.error.main,
     borderColor: theme.palette.error.main,
     color: theme.palette.common.white,

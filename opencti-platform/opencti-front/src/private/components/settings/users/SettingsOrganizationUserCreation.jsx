@@ -36,7 +36,7 @@ const useStyles = makeStyles((theme) => ({
     marginInlineStart: theme.spacing(2),
   },
   createButton: {
-    float: 'left',
+    float: 'inline-start',
     marginTop: -15,
   },
   createButtonFab: {

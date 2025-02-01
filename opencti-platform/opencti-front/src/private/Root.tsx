@@ -360,13 +360,13 @@ const RootComponent: FunctionComponent<RootComponentProps> = ({ queryRef }) => {
     >
 
         <StyledEngineProvider injectFirst={true}>
-          <ConnectedThemeProvider settings={settings}>
-            <ConnectedIntlProvider settings={settings}>
+          <ConnectedIntlProvider settings={settings}>
+            <ConnectedThemeProvider settings={settings}>
               <AnalyticsProvider instance={Analytics(platformAnalyticsConfiguration)}>
                 <Index settings={settings} />
               </AnalyticsProvider>
-            </ConnectedIntlProvider>
-          </ConnectedThemeProvider>
+            </ConnectedThemeProvider>
+          </ConnectedIntlProvider>
         </StyledEngineProvider>
     </UserContext.Provider>
   );

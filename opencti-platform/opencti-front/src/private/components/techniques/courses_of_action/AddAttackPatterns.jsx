@@ -49,7 +49,7 @@ class AddAttackPatterns extends Component {
           color="primary"
           aria-label="Attack Pattern"
           onClick={this.handleOpen.bind(this)}
-          style={{ float: 'left', margin: '-15px 0 0 -2px' }}
+          style={{ float: 'inline-start', margin: '-15px 0 0 -2px' }}
           size="large"
         >
           <Add fontSize="small" />

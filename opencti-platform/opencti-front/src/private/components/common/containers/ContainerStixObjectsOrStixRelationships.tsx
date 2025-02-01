@@ -126,7 +126,7 @@ ContainerStixObjectsOrStixRelationshipsComponentProps
       <Typography
         variant="h4"
         gutterBottom={true}
-        style={{ float: 'left', paddingBottom: 11 }}
+        style={{ float: 'inline-start', paddingBottom: 11 }}
       >
         {title ?? t_i18n('Related entities')}
       </Typography>

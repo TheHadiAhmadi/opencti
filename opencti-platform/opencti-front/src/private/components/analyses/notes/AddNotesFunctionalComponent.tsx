@@ -62,7 +62,7 @@ const AddNotesFunctionalComponent: FunctionComponent<AddNotesFunctionalComponent
         onClick={handleOpen}
         size="large"
         style={{
-          float: 'right',
+          float: 'inline-end',
           marginTop: -15,
         }}
       >

@@ -23,11 +23,11 @@ const styles = (theme) => ({
     padding: 0,
   },
   createButton: {
-    float: 'left',
+    float: 'inline-start',
     marginTop: -15,
   },
   title: {
-    float: 'left',
+    float: 'inline-start',
   },
   header: {
     backgroundColor: theme.palette.background.nav,

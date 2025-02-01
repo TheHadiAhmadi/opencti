@@ -52,7 +52,7 @@ const FileExternalReferencesViewerBase = ({
   });
   return (
     <Grid item xs={6}>
-      <Typography variant="h4" gutterBottom={true} style={{ float: 'left' }}>
+      <Typography variant="h4" gutterBottom={true} style={{ float: 'inline-start' }}>
         {t('External references files')}
       </Typography>
       <div className="clearfix" />

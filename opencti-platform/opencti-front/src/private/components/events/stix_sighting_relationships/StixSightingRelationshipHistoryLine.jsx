@@ -43,7 +43,7 @@ const styles = (theme) => ({
     height: 18,
   },
   avatar: {
-    float: 'left',
+    float: 'inline-start',
     width: 40,
     height: 40,
     margin: '5px 10px 0 0',
@@ -70,7 +70,7 @@ const styles = (theme) => ({
     textOverflow: 'ellipsis',
   },
   date: {
-    float: 'right',
+    float: 'inline-end',
     textAlign: 'end',
     width: 180,
     paddingTop: 2,

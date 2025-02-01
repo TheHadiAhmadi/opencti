@@ -31,7 +31,7 @@ const styles = {
   bodyItem: {
     height: 20,
     fontSize: 13,
-    float: 'left' as 'left' | 'right' | 'none' | undefined,
+    float: 'inline-start' as 'left' | 'right' | 'none' | undefined,
     whiteSpace: 'nowrap',
     overflow: 'hidden',
     textOverflow: 'ellipsis',
@@ -45,7 +45,7 @@ const styles = {
   chipInList: {
     fontSize: 12,
     height: 20,
-    float: 'left' as 'left' | 'right' | 'none' | undefined,
+    float: 'inline-start' as 'left' | 'right' | 'none' | undefined,
     borderRadius: 4,
     width: 120,
   },

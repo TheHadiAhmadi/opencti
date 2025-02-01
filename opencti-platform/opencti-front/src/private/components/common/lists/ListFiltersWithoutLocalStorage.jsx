@@ -12,7 +12,7 @@ import { useFormatter } from '../../../../components/i18n';
 // Do not use it for new code.
 const useStyles = makeStyles(() => ({
   filters: {
-    float: 'left',
+    float: 'inline-start',
     margin: '-3px 0 0 -5px',
   },
   container: {
@@ -56,7 +56,7 @@ const ListFiltersWithoutLocalStorage = ({
             onClick={handleOpenFilters}
             startIcon={icon}
             size="small"
-            style={{ float: 'left', margin: '0 15px 0 7px' }}
+            style={{ float: 'inline-start', margin: '0 15px 0 7px' }}
           >
             {t_i18n('Filters')}
           </Button>
@@ -66,7 +66,7 @@ const ListFiltersWithoutLocalStorage = ({
           <IconButton
             color={color}
             onClick={handleOpenFilters}
-            style={{ float: 'left', marginTop: -2 }}
+            style={{ float: 'inline-start', marginTop: -2 }}
             size={size || 'large'}
           >
             {icon}

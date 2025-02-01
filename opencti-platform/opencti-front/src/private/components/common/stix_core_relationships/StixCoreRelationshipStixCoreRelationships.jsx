@@ -63,7 +63,7 @@ class StixCoreRelationshipStixCoreRelationships extends Component {
               <Typography
                 variant="h4"
                 gutterBottom={true}
-                style={{ float: 'left' }}
+                style={{ float: 'inline-start' }}
               >
                 {t('Linked entities')}
               </Typography>

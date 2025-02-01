@@ -56,7 +56,7 @@ class StixCoreObjectExternalReferences extends Component {
             <>
               <Typography
                 variant="h4"
-                style={{ float: 'left', marginBottom: 15 }}
+                style={{ float: 'inline-start', marginBottom: 15 }}
               >
                 {t('External references')}
               </Typography>

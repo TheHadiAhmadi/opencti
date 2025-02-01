@@ -134,10 +134,10 @@ const SubType: React.FC<SubTypeProps> = ({ data }) => {
         </Grid>
         {subType.settings?.availableSettings.includes('attributes_configuration') && (
           <Grid item xs={12}>
-            <Typography variant="h4" gutterBottom={true} style={{ float: 'left' }}>
+            <Typography variant="h4" gutterBottom={true} style={{ float: 'inline-start' }}>
               {t_i18n('Attributes')}
             </Typography>
-            <div style={{ float: 'right', marginTop: -12 }}>
+            <div style={{ float: 'inline-end', marginTop: -12 }}>
               <SearchInput
                 variant="thin"
                 onSubmit={helpers.handleSearch}

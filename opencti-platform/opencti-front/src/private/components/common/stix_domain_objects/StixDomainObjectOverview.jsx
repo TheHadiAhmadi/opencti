@@ -370,11 +370,11 @@ const StixDomainObjectOverview = ({
               <Typography
                 variant="h3"
                 gutterBottom={true}
-                style={{ float: 'left' }}
+                style={{ float: 'inline-start' }}
               >
                 {t_i18n('Standard STIX ID')}
               </Typography>
-              <div style={{ float: 'left', margin: '-3px 0 0 8px' }}>
+              <div style={{ float: 'inline-start', margin: '-3px 0 0 8px' }}>
                 <Tooltip
                   title={t_i18n(
                     'In OpenCTI, a predictable STIX ID is generated based on one or multiple attributes of the entity.',
@@ -384,7 +384,7 @@ const StixDomainObjectOverview = ({
                 </Tooltip>
               </div>
               <Security needs={[KNOWLEDGE_KNUPDATE]}>
-                <div style={{ float: 'right', margin: '-5px 0 0 8px' }}>
+                <div style={{ float: 'inline-end', margin: '-5px 0 0 8px' }}>
                   <IconButton
                     aria-label="Close"
                     disableRipple={true}

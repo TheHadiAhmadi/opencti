@@ -123,11 +123,11 @@ const SettingsMessages = ({
   const handleCloseCreate = () => setDisplayCreate(false);
   return (
     <>
-      <Typography variant="h4" gutterBottom={true} style={{ float: 'left' }}>
+      <Typography variant="h4" gutterBottom={true} style={{ float: 'inline-start' }}>
         {t_i18n('Platform announcement')}
       </Typography>
       <IconButton
-        style={{ float: 'left', marginTop: -15 }}
+        style={{ float: 'inline-start', marginTop: -15 }}
         color="primary"
         aria-label="Add"
         onClick={handleOpenCreate}

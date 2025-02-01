@@ -33,7 +33,7 @@ const useStyles = makeStyles<Theme>((theme) => ({
     display: 'flex',
     alignItems: 'center',
     fontSize: 13,
-    float: 'left',
+    float: 'inline-start',
     whiteSpace: 'nowrap',
     overflow: 'hidden',
     textOverflow: 'ellipsis',
@@ -43,7 +43,7 @@ const useStyles = makeStyles<Theme>((theme) => ({
     height: 40,
     display: 'flex',
     alignItems: 'center',
-    float: 'left',
+    float: 'inline-start',
     paddingInlineEnd: 10,
   },
   itemIconDisabled: {
@@ -52,14 +52,14 @@ const useStyles = makeStyles<Theme>((theme) => ({
   chipInList: {
     fontSize: 12,
     height: 20,
-    float: 'left',
+    float: 'inline-start',
     width: 100,
     marginInlineEnd: 10,
   },
   chipInList2: {
     fontSize: 12,
     height: 20,
-    float: 'left',
+    float: 'inline-start',
     width: 140,
     textTransform: 'uppercase',
     borderRadius: 4,
@@ -67,7 +67,7 @@ const useStyles = makeStyles<Theme>((theme) => ({
   chipInList3: {
     fontSize: 12,
     height: 20,
-    float: 'left',
+    float: 'inline-start',
     marginInlineEnd: 10,
   },
 }));

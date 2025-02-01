@@ -16,7 +16,7 @@ import DataComponentCreation from '../data_components/DataComponentCreation';
 // Do not use it for new code.
 const useStyles = makeStyles(() => ({
   createButton: {
-    float: 'left',
+    float: 'inline-start',
     marginTop: -15,
   },
 }));

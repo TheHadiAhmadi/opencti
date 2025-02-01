@@ -71,7 +71,7 @@ const useStyles = makeStyles<Theme>((theme) => ({
   extraColumn: {
     height: 58,
     width: '50%',
-    float: 'left',
+    float: 'inline-start',
     display: '-webkit-box',
     overflow: 'hidden',
     textOverflow: 'ellipsis',

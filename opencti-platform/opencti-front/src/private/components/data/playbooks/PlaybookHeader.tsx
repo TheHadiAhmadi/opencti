@@ -45,15 +45,15 @@ const interval$ = interval(FIVE_SECONDS);
 // Do not use it for new code.
 const useStyles = makeStyles(() => ({
   title: {
-    float: 'left',
+    float: 'inline-start',
     textTransform: 'uppercase',
   },
   popover: {
-    float: 'left',
+    float: 'inline-start',
     marginTop: '-13px',
   },
   status: {
-    float: 'left',
+    float: 'inline-start',
     margin: '3px 0 0 5px',
   },
   chip: {
@@ -65,7 +65,7 @@ const useStyles = makeStyles(() => ({
   },
   activity: {
     marginTop: -10,
-    float: 'right',
+    float: 'inline-end',
   },
 }));
 

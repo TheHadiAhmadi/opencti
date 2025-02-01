@@ -23,14 +23,14 @@ const styles = (theme) => ({
     padding: 0,
   },
   createButton: {
-    float: 'left',
+    float: 'inline-start',
     marginTop: -15,
   },
   title: {
-    float: 'left',
+    float: 'inline-start',
   },
   search: {
-    float: 'right',
+    float: 'inline-end',
   },
   header: {
     backgroundColor: theme.palette.background.nav,
@@ -102,7 +102,7 @@ class AddSubSector extends Component {
                 onSubmit={this.handleSearch.bind(this)}
                 keyword={this.state.search}
               />
-              <div style={{ float: 'right' }}>
+              <div style={{ float: 'inline-end' }}>
                 <SectorCreation
                   display={this.state.open}
                   contextual={true}

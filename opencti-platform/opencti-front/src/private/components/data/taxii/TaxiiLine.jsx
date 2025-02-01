@@ -38,7 +38,7 @@ const styles = (theme) => ({
     display: 'flex',
     alignItems: 'center',
     fontSize: 13,
-    float: 'left',
+    float: 'inline-start',
     whiteSpace: 'nowrap',
     overflow: 'hidden',
     textOverflow: 'ellipsis',
@@ -48,7 +48,7 @@ const styles = (theme) => ({
     height: 40,
     display: 'flex',
     alignItems: 'center',
-    float: 'left',
+    float: 'inline-start',
     paddingInlineEnd: 10,
   },
   goIcon: {

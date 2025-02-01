@@ -9,23 +9,23 @@ import { useTheme } from '@mui/styles';
 
 const styles = (theme) => ({
   diff: {
-    float: 'left',
+    float: 'inline-start',
     padding: '2px 5px 2px 5px',
     fontSize: 12,
   },
   diffDescription: {
     margin: '2px 0 0 10px',
-    float: 'left',
+    float: 'inline-start',
     fontSize: 9,
     color: theme.palette.text.primary,
   },
   diffIcon: {
-    float: 'left',
+    float: 'inline-start',
     margin: '1px 5px 0 0',
     fontSize: 13,
   },
   diffNumber: {
-    float: 'left',
+    float: 'inline-start',
   },
 });
 
@@ -46,7 +46,7 @@ const inlineStyles = {
 
 const ItemNumberDifference = (props) => {
   const { t, difference, classes, description } = props;
-  const dir = dcument.body.getAttribute('dir') ?? 'ltr'
+  const dir = document.body.getAttribute('dir') ?? 'ltr'
   
   if (difference < 0) {
     return (

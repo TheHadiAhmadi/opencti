@@ -107,11 +107,11 @@ const GroupUsers: FunctionComponent<GroupUsersProps> = ({ groupId }) => {
       <Typography
         variant="h4"
         gutterBottom={true}
-        style={{ float: 'left' }}
+        style={{ float: 'inline-start' }}
       >
         {t_i18n('Members')}
       </Typography>
-      <div style={{ float: 'right', marginTop: -12 }}>
+      <div style={{ float: 'inline-end', marginTop: -12 }}>
         <SearchInput
           variant="thin"
           onSubmit={helpers.handleSearch}

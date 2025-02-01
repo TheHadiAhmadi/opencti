@@ -51,14 +51,14 @@ const useStyles = makeStyles<Theme>((theme) => ({
     margin: `${theme.spacing(2)} 0 ${theme.spacing(0.5)} 0`,
   },
   buttonMore: {
-    float: 'left',
+    float: 'inline-start',
   },
   buttonAction: {
-    float: 'right',
+    float: 'inline-end',
     marginInlineStart: theme.spacing(2),
   },
   createButton: {
-    float: 'left',
+    float: 'inline-start',
     marginTop: -15,
   },
 }));
@@ -243,7 +243,7 @@ StixCoreObjectOrStixCoreRelationshipNotesCardsProps
   };
   return (
     <div style={{ marginTop }}>
-      <Typography variant="h4" gutterBottom={true} style={{ float: 'left' }}>
+      <Typography variant="h4" gutterBottom={true} style={{ float: 'inline-start' }}>
         {title}
       </Typography>
       <Security needs={[KNOWLEDGE_KNPARTICIPATE]}>

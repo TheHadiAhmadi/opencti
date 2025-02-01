@@ -9,9 +9,10 @@ export const LANGUAGES = {
   CHINESE: 'zh-cn',
   GERMAN: 'de-de',
   KOREAN: 'ko-kr',
+  PERSIAN: 'fa-ir',
 };
 
-export const DEFAULT_LANG = LANGUAGES.ENGLISH;
+export const DEFAULT_LANG = LANGUAGES.PERSIAN;
 // These window.navigator contain language information
 // 1. languages -> [] of preferred languages (eg ["en-US", "zh-CN", "ja-JP"]) Firefox^32, Chrome^32
 // 2. language  -> Preferred language as String (eg "en-US") Firefox^5, IE^11, Safari,
@@ -35,6 +36,7 @@ const availableLanguages = [
   LANGUAGES.CHINESE,
   LANGUAGES.GERMAN,
   LANGUAGES.KOREAN,
+  LANGUAGES.PERSIAN,
 ];
 
 const detectedLocale = R.pipe(

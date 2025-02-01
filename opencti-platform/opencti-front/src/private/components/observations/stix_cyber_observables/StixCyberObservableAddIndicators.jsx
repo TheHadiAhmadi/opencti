@@ -24,14 +24,14 @@ const styles = (theme) => ({
     padding: 0,
   },
   createButton: {
-    float: 'left',
+    float: 'inline-start',
     marginTop: -15,
   },
   title: {
-    float: 'left',
+    float: 'inline-start',
   },
   search: {
-    float: 'right',
+    float: 'inline-end',
   },
   header: {
     backgroundColor: theme.palette.background.nav,

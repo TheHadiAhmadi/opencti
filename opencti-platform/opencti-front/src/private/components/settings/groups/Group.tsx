@@ -44,10 +44,10 @@ const useStyles = makeStyles<Theme>((theme) => ({
     marginBottom: 20,
   },
   title: {
-    float: 'left',
+    float: 'inline-start',
   },
   popover: {
-    float: 'left',
+    float: 'inline-start',
     marginTop: '-13px',
   },
   paper: {
@@ -273,7 +273,7 @@ const Group = ({ groupData }: { groupData: Group_group$key }) => {
                 <Typography
                   variant="h3"
                   gutterBottom={true}
-                  style={{ float: 'left' }}
+                  style={{ float: 'inline-start' }}
                 >
                   {t_i18n('Max Confidence Level')}
                 </Typography>
@@ -304,7 +304,7 @@ const Group = ({ groupData }: { groupData: Group_group$key }) => {
           </Paper>
         </Grid>
         <Grid item xs={12}>
-          <Typography variant="h4" gutterBottom={true} style={{ float: 'left' }}>
+          <Typography variant="h4" gutterBottom={true} style={{ float: 'inline-start' }}>
             {t_i18n('Markings')}
           </Typography>
           <div className="clearfix" />

@@ -26,7 +26,7 @@ const useStyles = makeStyles((theme) => ({
     padding: '10px 20px 20px 20px',
   },
   title: {
-    float: 'left',
+    float: 'inline-start',
   },
 }));
 

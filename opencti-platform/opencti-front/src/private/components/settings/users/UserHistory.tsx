@@ -16,7 +16,7 @@ import UserHistoryLines, { userHistoryLinesQuery } from './UserHistoryLines';
 import useGranted, { KNOWLEDGE, SETTINGS_SECURITYACTIVITY } from '../../../../utils/hooks/useGranted';
 
 const createdByUserRedirectButton = {
-  float: 'left',
+  float: 'inline-start',
   marginTop: '-15px',
 };
 
@@ -81,10 +81,10 @@ const UserHistory: FunctionComponent<UserHistoryProps> = ({
   };
   return (
     <>
-      <Typography variant="h4" gutterBottom={true} style={{ float: 'left' }}>
+      <Typography variant="h4" gutterBottom={true} style={{ float: 'inline-start' }}>
         {t_i18n('History')}
       </Typography>
-      <div style={{ float: 'right', marginTop: -12 }}>
+      <div style={{ float: 'inline-end', marginTop: -12 }}>
         <SearchInput
           variant="thin"
           onSubmit={handleSearchEntity}

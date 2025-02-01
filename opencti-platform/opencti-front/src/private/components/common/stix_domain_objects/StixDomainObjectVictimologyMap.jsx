@@ -29,7 +29,7 @@ const styles = () => ({
     marginInlineStart: 10,
   },
   updateButton: {
-    float: 'right',
+    float: 'inline-end',
     margin: '7px 10px 0 0',
   },
 });

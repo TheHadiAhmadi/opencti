@@ -252,7 +252,7 @@ const StixCoreObjectContainer = ({ elementId }) => {
           <IconButton
             onClick={() => setContainerCreation(true)}
             edge="end"
-            style={{ position: 'absolute', top: 68, insetInlineEnd48 }}
+            style={{ position: 'absolute', top: 68, insetInlineEnd: 48 }}
             size="large"
           >
             <AddOutlined />

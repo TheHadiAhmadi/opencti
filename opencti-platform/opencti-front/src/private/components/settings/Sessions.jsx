@@ -17,7 +17,7 @@ const styles = () => ({
     padding: '0 200px 50px 0',
   },
   parameters: {
-    float: 'left',
+    float: 'inline-start',
     marginTop: -10,
   },
 });
@@ -59,7 +59,7 @@ class Sessions extends Component {
         <AccessesMenu />
         <Breadcrumbs elements={[{ label: t('Settings') }, { label: t('Security') }, { label: t('Sessions'), current: true }]} />
         <div className={classes.parameters}>
-          <div style={{ float: 'left', marginRight: 20 }}>
+          <div style={{ float: 'inline-start', marginRight: 20 }}>
             <SearchInput
               variant="small"
               onSubmit={this.handleSearch.bind(this)}

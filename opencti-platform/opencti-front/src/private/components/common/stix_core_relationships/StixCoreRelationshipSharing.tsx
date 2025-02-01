@@ -41,7 +41,7 @@ interface OrganizationForm {
 const useStyles = makeStyles<Theme>(() => ({
   organization: {
     margin: '0 7px 0 0',
-    float: 'left',
+    float: 'inline-start',
     fontSize: 12,
     lineHeight: '12px',
     height: 28,
@@ -148,7 +148,7 @@ ContainerHeaderSharedProps
     const edges = stixCoreRelationship?.objectOrganization ?? [];
     return (
       <React.Fragment>
-        <Typography variant="h3" gutterBottom={true} style={{ float: 'left' }}>
+        <Typography variant="h3" gutterBottom={true} style={{ float: 'inline-start' }}>
           {t_i18n('Organizations sharing')}
         </Typography>
         <EETooltip title={t_i18n('Share with an organization')}>
@@ -156,7 +156,7 @@ ContainerHeaderSharedProps
             color="primary"
             aria-label="Label"
             onClick={isEnterpriseEdition ? handleOpenSharing : () => {}}
-            style={{ float: 'left', margin: '-6px 0 0 3px' }}
+            style={{ float: 'inline-start', margin: '-6px 0 0 3px' }}
             size="small"
           >
             <BankPlus fontSize="small" color={isEnterpriseEdition ? 'primary' : 'disabled'} />

@@ -178,11 +178,11 @@ ExternalReferenceFileImportViewerBaseProps
   return (
     <React.Fragment>
       <div style={{ height: '100%' }} className="break">
-        <Typography variant="h4" gutterBottom={true} style={{ float: 'left' }}>
+        <Typography variant="h4" gutterBottom={true} style={{ float: 'inline-start' }}>
           {t_i18n('Uploaded files')}
         </Typography>
         <Security needs={[KNOWLEDGE_KNUPLOAD]} placeholder={<div style={{ height: 30 }} />}>
-          <div style={{ float: 'left', marginTop: -17 }}>
+          <div style={{ float: 'inline-start', marginTop: -17 }}>
             <FileUploader
               entityId={id}
               onUploadSuccess={() => {

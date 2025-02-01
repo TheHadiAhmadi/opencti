@@ -55,7 +55,7 @@ const styles = (theme) => ({
     textAlign: 'end',
   },
   title: {
-    float: 'left',
+    float: 'inline-start',
   },
 });
 

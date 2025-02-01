@@ -23,10 +23,10 @@ import Breadcrumbs from '../../../../components/Breadcrumbs';
 // Do not use it for new code.
 const useStyles = makeStyles(() => ({
   title: {
-    float: 'left',
+    float: 'inline-start',
   },
   popover: {
-    float: 'left',
+    float: 'inline-start',
     marginTop: '-13px',
   },
 }));

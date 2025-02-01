@@ -64,11 +64,11 @@ FileImportViewerComponentProps
   return (
     <Grid item xs={6}>
       <>
-        <Typography variant="h4" gutterBottom={true} style={{ float: 'left' }}>
+        <Typography variant="h4" gutterBottom={true} style={{ float: 'inline-start' }}>
           {t_i18n('Uploaded files')}
         </Typography>
         <Security needs={[KNOWLEDGE_KNUPLOAD]} placeholder={<div style={{ height: 25 }} />}>
-          <div style={{ float: 'left', marginTop: -15 }}>
+          <div style={{ float: 'inline-start', marginTop: -15 }}>
             <FileUploader
               entityId={id}
               onUploadSuccess={() => relay.refetch({ id })}

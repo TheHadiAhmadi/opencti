@@ -19,7 +19,7 @@ type BulkRelationDialogContainerProps = {
 const inlinedStyle = {
   button: {
     display: 'flex',
-    float: 'right',
+    float: 'inline-end',
     alignItems: 'center',
   },
 };

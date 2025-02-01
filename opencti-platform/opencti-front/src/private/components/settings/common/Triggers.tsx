@@ -23,7 +23,7 @@ import { GqlFilterGroup, emptyFilterGroup } from '../../../../utils/filters/filt
 // Do not use it for new code.
 const useStyles = makeStyles(() => ({
   createButton: {
-    float: 'left',
+    float: 'inline-start',
     marginTop: -15,
   },
   paper: {
@@ -113,10 +113,10 @@ const Triggers: FunctionComponent<TriggersProps> = ({
   const [openDigest, setOpenDigest] = useState(false);
   return (
     <Grid item xs={12} style={{ marginTop: 10 }}>
-      <Typography variant="h4" gutterBottom={true} style={{ float: 'left' }}>
+      <Typography variant="h4" gutterBottom={true} style={{ float: 'inline-start' }}>
         {t_i18n('Triggers and Digests')}
       </Typography>
-      <div style={{ float: 'right', marginTop: -12 }}>
+      <div style={{ float: 'inline-end', marginTop: -12 }}>
         <SearchInput
           variant="thin"
           onSubmit={helpers.handleSearch}

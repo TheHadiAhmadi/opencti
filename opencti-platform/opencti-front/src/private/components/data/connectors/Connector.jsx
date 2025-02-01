@@ -50,12 +50,12 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: 20,
   },
   title: {
-    float: 'left',
+    float: 'inline-start',
     marginRight: 30,
     textTransform: 'uppercase',
   },
   popover: {
-    float: 'right',
+    float: 'inline-end',
     marginTop: '-13px',
   },
   paper: {
@@ -65,7 +65,7 @@ const useStyles = makeStyles((theme) => ({
   },
   chip: {
     height: 30,
-    float: 'left',
+    float: 'inline-start',
     margin: '0 10px 10px 0',
     borderRadius: 4,
     backgroundColor: theme.palette.background.accent,

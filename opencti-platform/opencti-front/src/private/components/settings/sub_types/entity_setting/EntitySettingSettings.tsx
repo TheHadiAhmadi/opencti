@@ -88,7 +88,7 @@ const EntitySettingSettings = ({
           <Typography
             variant="h3"
             gutterBottom={true}
-            style={{ float: 'left' }}
+            style={{ float: 'inline-start' }}
           >
             {t_i18n('Hidden in interface')}
           </Typography>
@@ -141,7 +141,7 @@ const EntitySettingSettings = ({
           <Typography
             variant="h3"
             gutterBottom={true}
-            style={{ float: 'left' }}
+            style={{ float: 'inline-start' }}
           >
             {t_i18n('Automatic references at file upload')}
           </Typography>
@@ -188,7 +188,7 @@ const EntitySettingSettings = ({
           <Typography
             variant="h3"
             gutterBottom={true}
-            style={{ float: 'left' }}
+            style={{ float: 'inline-start' }}
           >
             {t_i18n('Enforce references')}
           </Typography>

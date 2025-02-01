@@ -23,7 +23,7 @@ import { isEmptyField } from '../../../../utils/utils';
 const inlineStyles = {
   type: {
     fontSize: 13,
-    float: 'left',
+    float: 'inline-start',
     width: '30%',
     height: 20,
     whiteSpace: 'nowrap',
@@ -32,7 +32,7 @@ const inlineStyles = {
   },
   default_value: {
     fontSize: 13,
-    float: 'left',
+    float: 'inline-start',
     width: '50%',
     height: 20,
     whiteSpace: 'nowrap',
@@ -41,7 +41,7 @@ const inlineStyles = {
   },
   in_platform: {
     fontSize: 13,
-    float: 'left',
+    float: 'inline-start',
     width: '15%',
     height: 20,
     whiteSpace: 'nowrap',
